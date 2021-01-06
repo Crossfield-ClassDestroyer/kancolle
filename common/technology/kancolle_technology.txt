@@ -1,0 +1,715 @@
+#克莱因力场
+tech_klein = {
+	cost = 20000  
+	area = physics
+	tier = 5
+	category = { field_manipulation }	
+	prerequisites = { "tech_kancolle_tanatonium" }
+	weight = 60
+	is_rare = yes
+	ai_update_type = all
+	modifier = {
+	ship_shield_mult = 0.1
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+#矢量推进器
+tech_vector_thruster = {
+	cost = 20000
+	area = engineering
+	tier = 5
+	category = { propulsion }		
+	prerequisites = { "tech_kancolle_tanatonium" }
+	is_rare = yes
+	weight = 60
+	ai_update_type = all
+	modifier = {
+	ship_base_speed_mult = 0.05
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+#重力子引擎
+tech_ftl_kancolle = {
+	cost = 20000
+	area = engineering
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_kancolle_tanatonium" }		
+	is_rare = yes
+	weight = 60
+	ai_update_type = all
+	modifier = {
+	ship_base_speed_mult = 0.05
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+#海雾反应堆
+tech_shinkai_processor = {
+	cost = 10000
+	area = physics
+	tier = 4
+	category = { field_manipulation }
+	prerequisites = { "tech_kancolle_tanatonium" }		
+	is_rare = yes
+	weight = 100
+	ai_update_type = all
+	modifier = {
+	country_energy_produces_mult = 0.05
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+#超重力炮
+tech_Hypergravity_gun = {
+	cost = 20000
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { "tech_kancolle_tanatonium" }	
+	is_rare = yes
+	weight = 60
+	ai_update_type = all
+	modifier = {
+	ship_weapon_damage = 0.1
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+#侵蚀鱼雷
+tech_Erosion_torpedo = {
+	cost = 20000
+	area = engineering
+	tier = 5
+	category = { materials }
+	prerequisites = { "tech_kancolle_tanatonium" }	
+	is_rare = yes
+	weight = 60
+	ai_update_type = all
+	modifier = {
+	ship_weapon_damage = 0.05
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#塔纳特妮姆反应
+tech_kancolle_tanatonium = {
+	cost = 25000
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	is_rare = yes
+	weight = 0
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_update_type = all
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#重力子反应
+tech_kancolle_zhonglizi = {
+	cost = 5000
+	area = physics
+	tier = 3
+	category = { field_manipulation }	
+	is_rare = yes
+	weight = 0
+	ai_update_type = all
+	modifier = {
+	all_technology_research_speed = 0.05
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#资源储备
+tech_kancolle_ziyuan = {
+	cost = 0
+	area = physics
+	tier = 1
+	category = { field_manipulation }	
+	is_rare = yes
+	weight = 0
+	ai_update_type = all
+	modifier = {
+	country_resource_max_add = 350000
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#心智模型
+tech_mental_model = {
+	cost = 30000
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { "tech_kancolle_tanatonium" }		
+	is_rare = yes
+	weight = 100
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_update_type = all
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#镇守府改革
+tech_zhenshoufu_revolution = {
+	cost = 12000
+	area = society
+	tier = 5
+	category = { statecraft }	
+	is_rare = yes
+	weight = 0
+	ai_update_type = all
+	modifier = {
+	country_government_civic_points_add = 1
+	country_base_influence_produces_add = 1
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#一级明石工厂
+tech_akashi_factory1 = {
+	cost = 2000
+	area = engineering
+	tier = 1
+	category = { industry }		
+	weight = 100
+	ai_update_type = all
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}			
+		}
+		modifier = {
+			factor = 100
+			has_authority = auth_kan			
+		}		
+	}
+
+	ai_weight = {
+		factor = 0
+		modifier = {
+			factor = 100
+			OR = {
+				has_authority = auth_kan
+			}
+		}
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+}
+
+#二级明石工厂
+tech_akashi_factory2 = {
+	cost = 4000
+	area = engineering
+	tier = 2
+	category = { industry }	
+	prerequisites = { "tech_akashi_factory1" }		
+	weight = 100
+	ai_update_type = all
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#三级明石工厂
+tech_akashi_factory3 = {
+	cost = 6000
+	area = engineering
+	tier = 3
+	category = { industry }	
+	prerequisites = { "tech_kancolle_tanatonium" }			
+	weight = 100
+	ai_update_type = all
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#一级夕张工作室
+tech_yubari_research1 = {
+	cost = 2000
+	area = physics
+	tier = 0
+	category = { computing }		
+	weight = 100
+	ai_update_type = all
+	ai_weight = {
+		factor = 0
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+}
+#二级夕张工作室
+tech_yubari_research2 = {
+	cost = 4000
+	area = physics
+	tier = 2
+	category = { computing }
+	prerequisites = { "tech_yubari_research1" }		
+	weight = 100
+	ai_update_type = all
+	ai_weight = {
+		factor = 0
+	}
+	potential = {
+		has_authority = auth_kan
+	}
+}
+
+#三级夕张工作室
+tech_yubari_research3 = {
+	cost = 6000
+	area = physics
+	tier = 3
+	category = { computing }	
+	prerequisites = { "tech_kancolle_tanatonium" }		
+	weight = 100
+	ai_update_type = all
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#妖精星期六义务劳动
+tech_elf_volunteer = {
+	cost = 15000
+	area = society
+	tier = 5
+	category = { statecraft }		
+	is_rare = yes
+	weight = 100
+	ai_update_type = all
+	modifier = {
+	country_minerals_produces_mult = 0.05
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#妖精管理
+tech_elf_manage = {
+	cost = 12000
+	area = society
+	tier = 5
+	category = { statecraft }		
+	is_rare = yes
+	weight = 100
+	ai_update_type = all
+	modifier = {
+	country_food_produces_mult = 0.05
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#基因重新定向
+tech_kancolle_high_DNA = {
+	cost = @tier5cost1
+	area = society
+	tier = 5
+	is_rare = yes
+	icon = tech_kancolle_high_DNA
+	category = { biology }	
+	weight = 0
+	
+	gateway = biological
+	
+	feature_flags = {
+		advanced_gene_modding
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+	potential = {
+		has_ascension_perk = ap_kancolle_tanatonium
+        has_authority = auth_kan
+
+	}
+}
+
+#改进一级舰炮
+tech_improved_first_navy_gun = {
+	cost = 3000
+	area = engineering
+	tier = 1
+	category = { voidcraft }
+	is_rare = yes	
+	weight = 0
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#改进二级舰炮
+tech_improved_second_navy_gun = {
+	cost = 5000
+	area = engineering
+	tier = 2
+	category = { voidcraft }
+	is_rare = yes
+	prerequisites = { "tech_kancolle_tanatonium" }	
+	weight = 0
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#改进三级舰炮
+tech_improved_third_navy_gun = {
+	cost = 6000
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	is_rare = yes
+	weight = 0
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#改进四级舰炮
+tech_improved_fourth_navy_gun = {
+	cost = 8000
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	is_rare = yes	
+	weight = 0
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#改进五级舰炮
+tech_improved_fifth_navy_gun = {
+	cost = 12000
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	is_rare = yes	
+	weight = 0
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#35.6cm波动连装炮改二
+tech_356mm_navy_gun = {
+	cost = 12000
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	is_rare = yes
+	prerequisites = { "tech_kancolle_tanatonium" }	
+	weight = 0
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#41cm波动连装炮改二
+tech_410mm_navy_gun = {
+	cost = 13000
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	is_rare = yes
+	prerequisites = { "tech_kancolle_tanatonium" }	
+	weight = 0
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#46cm波动连装炮改
+tech_460mm_navy_gun = {
+	cost = 14000
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	is_rare = yes
+	prerequisites = { "tech_kancolle_tanatonium" }	
+	weight = 0
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#16inch三连装空间碎裂炮mk.7+GFCS
+tech_406mm_navy_gun = {
+	cost = 15000
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	is_rare = yes
+	prerequisites = { "tech_kancolle_tanatonium" }	
+	weight = 0
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#点防波动炮
+tech_bofors_navy_gun = {
+	cost = 8000
+	area = physics
+	tier = 4
+	category = { field_manipulation }
+	is_rare = yes
+	prerequisites = { "tech_kancolle_tanatonium" }	
+	weight = 0
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#特大动发艇+战车11联队
+tech_senshia11 = {
+	cost = 4000
+	area = society
+	tier = 2
+	category = { military_theory }
+	is_rare = yes
+	prerequisites = { "tech_zhenshoufu_revolution" }	
+	weight = 0
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#特二式内火艇
+tech_tonishiki = {
+	cost = 6000
+	area = society
+	tier = 3
+	category = { military_theory }
+	is_rare = yes
+	prerequisites = { "tech_senshia11" }	
+	weight = 0
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#M4A1DD
+tech_M4A1DD = {
+	cost = 8000
+	area = society
+	tier = 4
+	category = { military_theory }
+	is_rare = yes
+	prerequisites = { "tech_tonishiki" }	
+	weight = 0
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#妖精工厂
+tech_kancolle_elf_factory = {
+	cost = 20000
+	area = engineering
+	tier = 0
+	category = { industry }		
+	weight = 0
+	prereqfor_desc = {
+		diplo_action = {
+			title = "kancolle_elf_factory_plus"
+			desc = "kancolle_elf_factory_desc"
+		}
+	}
+	ai_update_type = all
+	ai_weight = {
+		factor = 0
+	}
+	potential = {
+        has_authority = auth_kan
+		has_ascension_perk = ap_kancolle_megastructures
+	}
+}
+
+#咖喱炮
+tech_kari_gun = {
+	cost = 15000
+	area = physics
+	tier = 5
+	category = { field_manipulation }
+	is_dangerous = yes
+	prerequisites = { "tech_colossus" }	
+	weight = 100
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_kan
+		has_ascension_perk = ap_colossus
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#战果商店
+tech_senka_shopping = {
+	cost = 6000
+	area = society
+	tier = 3
+	category = { statecraft }
+	weight = 100
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_kan
+	}
+	ai_weight = {
+		factor = 0
+	}
+}

@@ -1,0 +1,603 @@
+namespace = kantaicollection
+planet_event = {
+	id = kantaicollection.1
+	title = "kantaicollection.1.name"
+	desc = "kantaicollection.1.desc"
+	picture = GFX_evt_kancolle_world
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		default_hide_option = yes
+		name = "kantaicollection.1.a"
+		}
+}
+
+country_event = {
+	id = kantaicollection.2
+	title = "kantaicollection.2.name"
+	desc = "kantaicollection.2.desc"
+	picture = GFX_evt_kancolle_factory1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		default_hide_option = yes
+		name = "kantaicollection.2.a"
+		}
+}
+
+country_event = {
+	id = kantaicollection.3
+	title = "kantaicollection.3.name"
+	desc = "kantaicollection.3.desc"
+	picture = GFX_evt_kancolle_factory2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		default_hide_option = yes
+		name = "kantaicollection.3.a"
+		}
+}
+
+country_event = {
+	id = kantaicollection.4
+	title = "kantaicollection.4.name"
+	desc = "kantaicollection.4.desc"
+	picture = GFX_evt_kancolle_factory3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		default_hide_option = yes
+		name = "kantaicollection.4.a"
+		}
+}
+
+country_event = {
+	id = kantaicollection.5
+	title = "kantaicollection.5.name"
+	desc = "kantaicollection.5.desc"
+	picture = GFX_evt_kancolle_factory4
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		default_hide_option = yes
+		name = "kantaicollection.5.a"
+		}
+}
+
+#咖喱炮
+planet_event = {
+	id = kantaicollection.6
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				exists = owner
+				owner = { NOT = { is_same_value = from.owner } }
+			}
+			from.owner = {
+				country_event = { id = kantaicollection.7 }
+			}
+		}
+		if = {
+			limit = {
+				exists = owner
+				owner = {
+					NOT = { is_same_value = from.owner }
+					OR = {
+						is_country_type = default
+						is_country_type = fallen_empire
+						is_country_type = awakened_fallen_empire
+					}
+				}
+			}
+			# Generate threat
+			add_threat = { who = from.owner amount = 3 }
+			# modifier for allies + those upset by conversion
+			every_country = {
+				limit = {
+					NOR = {
+						is_same_value = from.owner
+						is_same_value = root.owner
+						AND = {
+							has_federation = yes
+							is_in_federation_with = from.owner
+						}
+					}
+					OR = {
+						has_communications = from.owner
+						has_communications = root.owner
+					}
+					OR = {
+						AND = {
+							has_federation = yes
+							is_in_federation_with = root.owner
+						}
+						has_ai_personality = awakened_fallen_empire_materialist
+						AND = {
+							is_country_type = default
+							OR = {
+								is_materialist = yes
+								is_egalitarian = yes
+								has_authority = auth_machine_intelligence
+							}
+						}
+					}
+				}
+			}
+			# modifiers for kari_gun
+			owner = {
+				add_opinion_modifier = {
+					modifier = opinion_kari_my_world
+					who = from.owner
+				}
+				if = {
+					limit = { NOT = { has_ethic = ethic_gestalt_consciousness } }
+					
+				}
+			}
+			# Add war exhaustion to planet owner 
+			owner = {
+				add_static_war_exhaustion = {
+					attacker = from.fleet.owner
+					location = root
+					value_for_planet_destruction = 1.0
+				}
+			}
+		}
+		every_owned_pop = {
+			kill_pop = yes
+		}
+		remove_all_buildings = yes
+		# Special graphics for Habitats and Ring Worlds
+		if = {
+			limit = {
+				is_planet_class = pc_habitat
+			}
+			spawn_habitat_cracker_effect = yes
+			remove_planet = yes
+		}
+		else_if = {
+			limit = {
+				is_planet_class = pc_ringworld_habitable
+			}
+			spawn_ringworld_cracker_effect = yes
+			change_pc = pc_ringworld_habitable_damaged
+		}
+		else_if = {
+			limit = { habitable_planet = yes }
+			change_pc = pc_kari
+			clear_deposits = yes
+			random_list = {
+					10 = { add_deposit = d_dark_matter_deposit_1 }
+					45 = { add_deposit = d_exotic_gases_3  }
+					45 = { add_deposit = d_exotic_gases_5  }
+			}
+		}
+		else = {
+			change_pc = pc_kari
+			clear_deposits = yes
+		}
+	}
+}
+
+country_event = {
+	id = kantaicollection.7
+	title = kantaicollection.7.name
+	desc = kantaicollection.7.desc
+	picture = GFX_evt_kancolle_kari
+	show_sound = event_mystic_reveal
+	location = from
+	
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = fired_kari }
+	}
+
+	immediate = {
+		set_country_flag = fired_kari
+	}
+
+	option = {
+		name = kantaicollection.7.a
+		from = {
+			custom_tooltip = kantaicollection.7.tooltip
+		}
+	}
+}
+
+planet_event = {
+	id = kantaicollection.8
+	title = "kantaicollection.8.name"
+	desc = "kantaicollection.8.desc"
+	picture = GFX_evt_kancolle_world
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		default_hide_option = yes
+		name = "kantaicollection.8.a"
+		}
+}
+
+# 开启探索雪风号遗址
+event = {
+	id = kantaicollection.10
+	hide_window = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = kancolle_yukikaze_kaini }
+		mid_game_years_passed >= 5
+		has_ascension_perk = ap_kancolle_tanatonium
+		any_country = {
+			is_ai = no
+			OR = {
+				has_authority = auth_kan
+			}
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = {		
+				is_ai = no
+				OR = {
+					has_authority = auth_kan
+				}		
+			}
+			country_event = { id = kantaicollection.11 random = 360  }	
+		}	
+	}
+}
+
+# 雪风号探索飞船遗址
+country_event = {
+	id = kantaicollection.11
+	title = "kantaicollection.11.name"
+	desc = "kantaicollection.11.desc"
+	picture = GFX_evt_yukikaze_ship
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		set_global_flag = kancolle_yukikaze_kaini
+		random_planet_within_border = {
+			limit = {
+				OR = {
+					is_planet_class = pc_desert
+					is_planet_class = pc_arid
+					is_planet_class = pc_savannah
+					is_planet_class = pc_tropical
+					is_planet_class = pc_continental
+					is_planet_class = pc_ocean
+					is_planet_class = pc_tundra
+					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_gaia
+				}
+				NOT = { exists = archaeological_site }
+			}
+			save_event_target_as = yukikaze_spaceship
+		}
+	}
+	
+	option = {
+		name = "kantaicollection.11.a"
+		event_target:yukikaze_spaceship = {
+			create_archaeological_site = site_kancolle_yukikaze
+		}		
+	}
+}
+
+#飞船遗址
+fleet_event = {
+	id = kantaicollection.12
+	#archaeology_window = yes
+	title = "kantaicollection.12.name"
+	desc = "kantaicollection.12.desc"
+	picture = GFX_evt_yukikaze_ship_remin
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "kantaicollection.12.a"
+		owner = {
+			add_resource = { consumer_goods = 30 }
+		}
+	}
+}
+
+#找到雪风
+fleet_event = {
+	id = kantaicollection.13
+	#archaeology_window = yes
+	title = "kantaicollection.12.name"
+	desc = "kantaicollection.12.desc"
+	picture = GFX_evt_finding_yukikaze
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "kantaicollection.12.a"
+		owner = {
+			add_resource = { alloys = 30 }
+		}
+		hidden_effect = {
+			owner = {
+				country_event = { id = kantaicollection.9 }
+			}	
+		}		
+	}
+}
+
+#联络雪风
+country_event = {
+	id = kantaicollection.9
+	title = "TRANSMISSION"
+	desc = "kantaicollection.9.desc"
+	show_sound = event_kancolle_yukikaze_kiseki
+
+	diplomatic = yes
+
+	picture_event_data = {
+		room = "yukikaze_room"
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = kantaicollection.9.a
+		response_text = kantaicollection.9.a.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = kantaicollection.9.b
+		response_text = kantaicollection.9.b.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = kantaicollection.9.c
+		response_text = kantaicollection.9.c.response
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = { id = kantaicollection.14 }
+		}
+	}
+}
+
+#建立雪风联络界面
+country_event = {
+	id = kantaicollection.14
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		create_country = {
+			name = "NAME_yukikaze"
+			type = kancolle_yukikaze_kaini
+			flag = {
+				icon= {
+					category = "yukikaze"
+					file = "Yukikaze.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "sinus.dds"
+				}
+				colors={
+					"blue"
+					"blue"
+					"null"
+					"null"
+				}
+			}
+		}
+		last_created_country = {
+			establish_communications_no_message = root
+		}
+		save_global_event_target_as = yukikaze_owner
+	}
+}
+
+#雪风主界面
+country_event = {
+	id = kantaicollection.15
+	title = "kantaicollection.15.name"
+    trigger = {
+        OR = {
+            has_authority = auth_kan
+        }
+        exists = event_target:yukikaze_owner
+        event_target:yukikaze_owner = {
+            NOT = { is_hostile = root }
+        }
+        NOT = { has_country_flag = kancolle_yukikaze_kaini_cooldown }
+        OR = { 
+            #防止视窗多开
+            NOT = { has_country_flag = engaged_with_kancolle_yukikaze_kaini }
+			kancolle_yukikaze_kaini_active_diplo = no 
+			from = { is_same_value = root } # returning from open sub-menu
+		}
+        from = { OR = {
+            is_country_type = kancolle_yukikaze_kaini
+            is_same_value = root # returned from menu
+        }}
+        is_ai = no
+        NOT = { has_global_flag = kancolle_yukikaze_kaini_disabled }
+    }
+
+    # 介绍1
+	desc = { text = kancolle_yukikaze_kaini_hello1 }
+
+    # 介绍2
+	desc = { text = kancolle_yukikaze_kaini_hello2 }
+
+    # 介绍3
+	desc = { text = kancolle_yukikaze_kaini_hello3 }
+
+    diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = yukikaze_room
+    }
+    
+    immediate = {
+        set_country_flag = engaged_with_kancolle_yukikaze_kaini
+    }
+
+	after = {
+		hidden_effect = { 
+			remove_country_flag = engaged_with_kancolle_yukikaze_kaini
+		}
+	}
+    # 变身总督
+	option = { # Governor
+		name = kantaicollection.15.a
+		response_text = kantaicollection.15.a.response
+		trigger = {
+			NOT = { has_country_flag = yukikaze_governor_active }
+		}
+		hidden_effect = {
+			country_event = {
+				id = kantaicollection.16
+			}
+		}
+	}
+
+    # 变身科学家
+	option = { # Governor
+		name = kantaicollection.15.b
+		response_text = kantaicollection.15.b.response
+		trigger = {
+			NOT = { has_country_flag = yukikaze_scientist_active }
+		}
+		hidden_effect = {
+			country_event = {
+				id = kantaicollection.17
+			}
+		}
+	}
+
+    # 变身舰队司令
+	option = { # Governor
+		name = kantaicollection.15.c
+		response_text = kantaicollection.15.c.response
+		trigger = {
+			NOT = { has_country_flag = yukikaze_admiral_active }
+		}
+		hidden_effect = {
+			country_event = {
+				id = kantaicollection.18
+			}
+		}
+	}
+
+    # 变身将军
+	option = { # Governor
+		name = kantaicollection.15.d
+		response_text = kantaicollection.15.d.response
+		trigger = {
+			NOT = { has_country_flag = yukikaze_general_active }
+		}
+		hidden_effect = {
+			country_event = {
+				id = kantaicollection.19
+			}
+		}
+	}
+
+    # 退出
+    option = { 
+        name = kancolle_yukikaze_kaini_exit
+        default_hide_option = yes
+        remove_country_flag = engaged_with_kancolle_yukikaze_kaini
+    }
+}
+
+#总督
+country_event = {
+	id = kantaicollection.16
+	title = kantaicollection.16
+	hide_window = yes
+	is_triggered_only = yes
+	diplomatic = yes
+	force_open = yes
+
+	picture_event_data = {
+		room = yukikaze_room
+	}
+
+	immediate = {
+		create_yukikaze_governor = yes
+	}
+}
+
+#科学家
+country_event = {
+	id = kantaicollection.17
+	title = kantaicollection.17
+	hide_window = yes
+	is_triggered_only = yes
+	diplomatic = yes
+	force_open = yes
+
+	picture_event_data = {
+		room = yukikaze_room
+	}
+
+	immediate = {
+		create_yukikaze_scientist = yes
+	}
+}
+
+#海军上将
+country_event = {
+	id = kantaicollection.18
+	title = kantaicollection.18
+	hide_window = yes
+	is_triggered_only = yes
+	diplomatic = yes
+	force_open = yes
+
+	picture_event_data = {
+		room = yukikaze_room
+	}
+
+	immediate = {
+		create_yukikaze_admiral = yes
+	}
+}
+
+#将军
+country_event = {
+	id = kantaicollection.19
+	title = kantaicollection.19
+	hide_window = yes
+	is_triggered_only = yes
+	diplomatic = yes
+	force_open = yes
+
+	picture_event_data = {
+		room = yukikaze_room
+	}
+
+	immediate = {
+		create_yukikaze_general = yes
+	}
+}

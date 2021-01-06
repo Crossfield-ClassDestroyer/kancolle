@@ -1,0 +1,143 @@
+namespace = kanmusu_traits
+
+### Empire init
+event = {
+	id = kanmusu_traits.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_country = {
+			if = {
+				limit = {
+					has_trait = "kancolle_trait_CIA"
+					NOT = { has_modifier = kancolle_modifier_CIA }
+				}
+				add_modifier = {
+					modifier = kancolle_modifier_CIA
+					days = -1
+				}
+			}
+			if = {
+				limit = {
+					has_trait = "kancolle_trait_redpasta"
+					NOT = { has_modifier = kancolle_modifier_redpasta }
+				}
+				add_modifier = {
+					modifier = kancolle_modifier_redpasta
+					days = -1
+				}
+			}
+			if = {
+				limit = {
+					has_trait = "kancolle_trait_sengan"
+					NOT = { has_modifier = kancolle_modifier_sengan }
+				}
+				add_modifier = {
+					modifier = kancolle_modifier_sengan
+					days = -1
+				}
+			}
+			if = {
+				limit = {
+					has_trait = "kancolle_trait_3333"
+					NOT = { has_modifier = kancolle_modifier_3333 }
+				}
+				add_modifier = {
+					modifier = kancolle_modifier_3333
+					days = -1
+				}
+			}
+			if = {
+				limit = {
+					has_trait = "kancolle_trait_4662"
+					NOT = { has_modifier = kancolle_modifier_4662 }
+				}
+				add_modifier = {
+					modifier = wg_modifier_125
+					days = -1
+				}
+			}	
+			if = {
+				limit = {
+					has_trait = "kancolle_trait_namiyaojing"
+					NOT = { has_modifier = kancolle_modifier_namiyaojing }
+				}
+				add_modifier = {
+					modifier = kancolle_modifier_namiyaojing
+					days = -1
+				}
+			}
+			}		
+		}
+	}
+
+#  Remove trait bonuses if no trait
+event = {
+	id = kanmusu_traits.2
+	hide_window = yes
+	is_triggered_only = yes
+		every_country = {
+			if = {
+				limit = {
+					has_trait = "kancolle_trait_CIA"
+					NOT = { has_modifier = kancolle_modifier_CIA }
+				}
+				remove_modifier = {
+					modifier = kancolle_modifier_CIA
+					days = -1
+				}
+			}
+			if = {
+				limit = {
+					has_trait = "kancolle_trait_redpasta"
+					NOT = { has_modifier = kancolle_modifier_redpasta }
+				}
+				remove_modifier = {
+					modifier = kancolle_modifier_redpasta
+					days = -1
+				}
+			}
+			if = {
+				limit = {
+					has_trait = "kancolle_trait_sengan"
+					NOT = { has_modifier = kancolle_modifier_sengan }
+				}
+				remove_modifier = {
+					modifier = kancolle_modifier_sengan
+					days = -1
+				}
+			}
+			if = {
+				limit = {
+					has_trait = "kancolle_trait_3333"
+					NOT = { has_modifier = kancolle_modifier_3333 }
+				}
+				remove_modifier = {
+					modifier = kancolle_modifier_3333
+					days = -1
+				}
+			}
+			if = {
+				limit = {
+					has_trait = "kancolle_trait_4662"
+					NOT = { has_modifier = kancolle_modifier_4662 }
+				}
+				remove_modifier = {
+					modifier = wg_modifier_125
+					days = -1
+				}
+			}	
+			if = {
+				limit = {
+					has_trait = "kancolle_trait_namiyaojing"
+					NOT = { has_modifier = kancolle_modifier_namiyaojing }
+				}
+				remove_modifier = {
+					modifier = kancolle_modifier_namiyaojing
+					days = -1
+				}
+			}
+			}		
+		}
+	}
+}

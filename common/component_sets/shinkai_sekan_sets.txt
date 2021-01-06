@@ -1,0 +1,63 @@
+#怨念护盾
+component_set = {
+	key = "resentment_shield"
+
+	icon = "GFX_resentment_shield"
+	icon_frame = 1
+}
+
+#怨念推进器
+component_set = {
+	key = "resentment_thruster"
+
+	icon = "GFX_resentment_thruster"
+	icon_frame = 1
+}
+
+#怨念引擎
+component_set = {
+	key = "ftl_senkaisekan"
+
+	icon = "GFX_ftl_senkaisekan"
+	icon_frame = 1
+}
+
+#怨念反应堆
+component_set = {
+	key = "resentment_processor"
+
+	icon = "GFX_resentment_processor"
+	icon_frame = 1
+}
+
+#怨念重力炮
+component_set = {
+	key = "resentment_gravity_gun"
+
+	icon = "GFX_resentment_gravity_gun"
+	icon_frame = 1
+}
+
+#深海舰装
+component_set = {
+	key = "shinkaisekan_gun"
+
+	icon = "GFX_shinkaisekan_gun"
+	icon_frame = 1
+}
+
+#深海16inch三连装炮改二
+component_set = {
+	key = "senkai_16inch_gun"
+
+	icon = "GFX_senkai_16inch_gun"
+	icon_frame = 1
+}
+
+#深海电探
+component_set = {
+	key = "senkai_radar"
+
+	icon = "GFX_senkai_radar"
+	icon_frame = 1
+}

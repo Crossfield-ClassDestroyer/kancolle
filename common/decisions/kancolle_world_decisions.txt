@@ -1,0 +1,126 @@
+#建设镇守府世界
+decision_kancolle_world = {
+	owned_planets_only = yes
+	icon = decision_kancolle_world
+
+	enactment_time = 3600
+	resources = {
+		category = decisions
+		cost = {
+			influence = 200
+			minerals = 20000
+		}
+	}
+	
+	potential = {
+		NOR = {
+			is_planet_class = pc_city
+			is_planet_class = pc_kancolle
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+		habitable_structure = no
+		exists = owner
+		owner = { has_ascension_perk = ap_kancolle_world }
+	}
+	
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_arcology_project_requirements
+			free_district_slots < 1
+			num_districts = { type = district_farming value < 1 }
+			num_districts = { type = district_mining value < 1 }
+			num_districts = { type = district_generator value < 1 }
+		}
+		num_uncleared_blockers < 1
+	}
+	
+	effect = {
+		# Make city-planet
+		custom_tooltip = decision_kancolle_world_effects
+		hidden_effect = {		
+			clear_deposits = yes
+			change_pc = pc_kancolle
+			add_district = district_kancolle_kanmusu_city
+			add_district = district_kancolle_kanmusu_city
+			add_district = district_kancolle_kanmusu_city
+			add_district = district_kancolle_kanmusu_city
+			add_district = district_kancolle_kanmusu_city
+			add_district = district_kancolle_kanmusu_city
+			add_district = district_kancolle_kanmusu_city
+			add_deposit = d_tanatonium_core	
+			add_deposit = d_navy_factory
+			add_deposit = d_shinkai_center
+			add_deposit = d_iron_bottom_sound
+			add_deposit = d_big_therm	
+			add_deposit = d_united_fleet_dormitory
+			set_planet_entity = {
+				entity = "kcsh_ocean_planet"
+			}
+			planet_event = { id = kantaicollection.1 }
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#世界扩展
+decision_kancolle_world_change = {
+	owned_planets_only = yes
+	icon = decision_kancolle_world
+
+	enactment_time = 1800
+	resources = {
+		category = decisions
+		cost = {
+			influence = 100
+			minerals = 5000
+			energy = 5000
+			food = 5000
+			sr_tanatonium = 50
+		}
+	}
+	
+	potential = {
+		NOR = {
+			is_planet_class = pc_city
+			is_planet_class = pc_gaia
+			is_planet_class = pc_kancolle
+			has_modifier = resort_colony
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+		}
+		habitable_structure = no
+		exists = owner
+		owner = { has_ascension_perk = ap_kancolle_world }
+	}
+	
+	allow = {
+		num_pops > 0
+		planet_size < 25
+	}
+	
+	effect = {
+		# Make gaia-planet
+		custom_tooltip = decision_kancolle_world_change_effects
+		hidden_effect = {		
+			clear_deposits = yes
+			change_pc = pc_gaia
+			set_planet_size = 25
+			add_deposit = d_plant_sutsutsuki
+			add_deposit = d_elf_power_station
+			add_deposit = d_oriur_sea	
+			add_deposit = d_tanatonium_core	
+			add_deposit = d_big_therm	
+			add_deposit = d_united_fleet_dormitory
+			planet_event = { id = kantaicollection.8 }
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}

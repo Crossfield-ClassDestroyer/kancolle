@@ -1,0 +1,571 @@
+########################
+#
+# 先驱者事件集
+#
+# 强袭魔女与少战先驱者
+#
+########################
+
+namespace = Strike_Witches_precursor
+
+### The Vultaum Star Assembly
+
+# 开启强袭魔女与少战先驱者事件链
+event = {
+	id = Strike_Witches_precursor.0
+	hide_window = yes
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = Strike_Witches_precursors }
+		any_country = {
+			is_ai = no
+			OR = {
+				has_authority = auth_kan
+			}
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = {		
+				is_ai = no
+				OR = {
+					has_authority = auth_kan
+				}		
+			}
+			country_event = { id = Strike_Witches_precursor.1 days = 3600  }	
+		}	
+	}
+}
+
+# 魔女与战车
+country_event = {
+	id = Strike_Witches_precursor.1
+	title = "Strike_Witches_precursor.1.name"
+	desc = "Strike_Witches_precursor.1.desc"
+	picture = GFX_evt_Strike_witches
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		set_global_flag = Strike_Witches_precursors
+		random_planet_within_border = {
+			limit = {
+				OR = {
+					is_planet_class = pc_gas_giant
+					is_planet_class = pc_barren
+					is_planet_class = pc_barren_cold
+					is_planet_class = pc_frozen
+				}
+				NOT = { exists = archaeological_site }
+			}
+			save_event_target_as = first_precursors_planet
+		}
+	}
+	
+	option = {
+		name = "Strike_Witches_precursor.1.a"
+		event_target:first_precursors_planet = {
+			create_archaeological_site = site_Strike_Witches_1
+		}		
+	}
+}
+
+# 军事同盟
+fleet_event = {
+	id = Strike_Witches_precursor.11
+	#archaeology_window = yes
+	title = "Strike_Witches_precursor.11.name"
+	desc = "Strike_Witches_precursor.11.desc"
+	picture = GFX_evt_witches_panzer
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Strike_Witches_precursor.11.a"
+		owner = {
+			add_resource = { minor_artifacts = 2 }
+		}
+	}
+}
+
+# 501统合战斗航空团
+fleet_event = {
+	id = Strike_Witches_precursor.12
+	#archaeology_window = yes
+	title = "Strike_Witches_precursor.12.name"
+	desc = "Strike_Witches_precursor.12.desc"
+	picture = GFX_evt_501_witches
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Strike_Witches_precursor.12.a"
+		owner = {
+			add_resource = { minor_artifacts = 3 }
+		}
+		hidden_effect = {
+			owner = {
+				country_event = { id = Strike_Witches_precursor.2 }
+			}	
+		}		
+	}
+}
+
+# 涅洛伊研究室
+country_event = {
+	id = Strike_Witches_precursor.2
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		random_planet_within_border = {
+			limit = {
+				OR = {
+					is_planet_class = pc_frozen
+				}
+				NOT = { exists = archaeological_site }
+			}
+			save_event_target_as = second_precursors_planet
+		}
+		event_target:second_precursors_planet = {
+			create_archaeological_site = site_Strike_Witches_2
+		}	
+	}
+}
+
+# 战斗脚的涅洛伊化
+fleet_event = {
+	id = Strike_Witches_precursor.21
+	#archaeology_window = yes
+	title = "Strike_Witches_precursor.21.name"
+	desc = "Strike_Witches_precursor.21.desc"
+	picture = GFX_evt_unit_neuroi
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Strike_Witches_precursor.21.a"
+		owner = {
+			add_resource = { minor_artifacts = 4 }
+		}
+	}
+}
+
+# 战车涅洛伊化
+fleet_event = {
+	id = Strike_Witches_precursor.22
+	#archaeology_window = yes
+	title = "Strike_Witches_precursor.22.name"
+	desc = "Strike_Witches_precursor.22.desc"
+	picture = GFX_evt_panzer_neuroi
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Strike_Witches_precursor.22.a"
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+		hidden_effect = {
+			owner = {
+				country_event = { id = Strike_Witches_precursor.3 }
+			}	
+		}		
+	}
+}
+
+# 胜利之剑军事行动
+country_event = {
+	id = Strike_Witches_precursor.3
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		random_planet_within_border = {
+			limit = {
+				OR = {
+					is_planet_class = pc_barren
+				}
+				NOT = { exists = archaeological_site }
+			}
+			save_event_target_as = third_precursors_planet
+		}
+		event_target:third_precursors_planet = {
+			create_archaeological_site = site_girls_panzer_1
+		}	
+	}
+}
+
+# 轨道轰炸
+fleet_event = {
+	id = Strike_Witches_precursor.31
+	#archaeology_window = yes
+	title = "Strike_Witches_precursor.31.name"
+	desc = "Strike_Witches_precursor.31.desc"
+	picture = GFX_evt_witches_hongzha
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Strike_Witches_precursor.31.a"
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+	}
+}
+
+# 空降战车
+fleet_event = {
+	id = Strike_Witches_precursor.32
+	#archaeology_window = yes
+	title = "Strike_Witches_precursor.32.name"
+	desc = "Strike_Witches_precursor.32.desc"
+	picture = GFX_evt_panzer_kongjiang
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Strike_Witches_precursor.32.a"
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+	}
+}
+
+# 魔女进入战场
+fleet_event = {
+	id = Strike_Witches_precursor.33
+	#archaeology_window = yes
+	title = "Strike_Witches_precursor.33.name"
+	desc = "Strike_Witches_precursor.33.desc"
+	picture = GFX_evt_witches_going
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Strike_Witches_precursor.33.a"
+		owner = {
+			add_resource = { minor_artifacts = 10 }
+		}
+	}
+}
+
+# 胜利之剑行动的胜利
+fleet_event = {
+	id = Strike_Witches_precursor.34
+	#archaeology_window = yes
+	title = "Strike_Witches_precursor.34.name"
+	desc = "Strike_Witches_precursor.34.desc"
+	picture = GFX_evt_panzer_victory
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Strike_Witches_precursor.34.a"
+		owner = {
+			add_resource = { influence = 200 }
+		}
+		hidden_effect = {
+			owner = {
+				country_event = { id = Strike_Witches_precursor.4 }
+			}	
+		}		
+	}
+}
+
+# 庆祝行动
+country_event = {
+	id = Strike_Witches_precursor.4
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		random_planet_within_border = {
+			limit = {
+				OR = {
+					is_planet_class = pc_barren
+				}
+				NOT = { exists = archaeological_site }
+			}
+			save_event_target_as = fourth_precursors_planet
+		}
+		event_target:fourth_precursors_planet = {
+			create_archaeological_site = site_girls_panzer_2
+		}	
+	}
+}
+
+# 战车道大赛
+fleet_event = {
+	id = Strike_Witches_precursor.41
+	#archaeology_window = yes
+	title = "Strike_Witches_precursor.41.name"
+	desc = "Strike_Witches_precursor.41.desc"
+	picture = GFX_evt_panzer_qingzhu
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Strike_Witches_precursor.41.a"
+		owner = {
+			add_resource = { unity = 1500 }
+		}
+	}
+}
+
+# 空战演习
+fleet_event = {
+	id = Strike_Witches_precursor.42
+	#archaeology_window = yes
+	title = "Strike_Witches_precursor.42.name"
+	desc = "Strike_Witches_precursor.42.desc"
+	picture = GFX_evt_witches_qingzhu
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Strike_Witches_precursor.42.a"
+		owner = {
+			add_resource = { unity = 1500 }
+		}
+		hidden_effect = {
+			owner = {
+				country_event = { id = Strike_Witches_precursor.5 }
+			}	
+		}		
+	}
+}
+
+#最终之地
+country_event = {
+	id = Strike_Witches_precursor.5
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		random_planet_within_border = {
+			limit = {
+				OR = {
+					is_planet_class = pc_molten
+					is_planet_class = pc_barren
+					is_planet_class = pc_barren_cold
+				}
+				NOT = { exists = archaeological_site }
+			}
+			save_event_target_as = fifth_precursors_planet
+		}
+		event_target:fifth_precursors_planet = {
+			create_archaeological_site = site_final_war
+		}	
+	}
+}
+
+# 新扶桑海事变
+fleet_event = {
+	id = Strike_Witches_precursor.51
+	#archaeology_window = yes
+	title = "Strike_Witches_precursor.51.name"
+	desc = "Strike_Witches_precursor.51.desc"
+	picture = GFX_evt_fuso_sea
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Strike_Witches_precursor.51.a"
+		owner = {
+			add_resource = { minor_artifacts = 10 }
+		}
+	}
+}
+
+# 南风行动
+fleet_event = {
+	id = Strike_Witches_precursor.52
+	#archaeology_window = yes
+	title = "Strike_Witches_precursor.52.name"
+	desc = "Strike_Witches_precursor.52.desc"
+	picture = GFX_evt_operation_southwind
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Strike_Witches_precursor.52.a"
+		owner = {
+			add_resource = { minor_artifacts = 15 }
+		}
+	}
+}
+
+# 南风行动失败
+fleet_event = {
+	id = Strike_Witches_precursor.53
+	#archaeology_window = yes
+	title = "Strike_Witches_precursor.53.name"
+	desc = "Strike_Witches_precursor.53.desc"
+	picture = GFX_evt_fail_southwind
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Strike_Witches_precursor.53.a"
+		owner = {
+			add_resource = { minor_artifacts = 2 }
+		}
+	}
+}
+
+# 最终命运
+fleet_event = {
+	id = Strike_Witches_precursor.54
+	#archaeology_window = yes
+	title = "Strike_Witches_precursor.54.name"
+	desc = "Strike_Witches_precursor.54.desc"
+	picture = GFX_evt_witchespanzer_final
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Strike_Witches_precursor.42.a"
+		owner = {
+			add_relic = "r_Neuroi"
+		}
+		hidden_effect = {
+			owner = {
+			country_event = { id = Strike_Witches_precursor.6 days = 1800  }	
+			}	
+		}		
+	}
+}
+
+# 秘密之地
+country_event = {
+	id = Strike_Witches_precursor.6
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		random_planet_within_border = {
+			limit = {
+				OR = {
+					is_planet_class = pc_ocean
+				}
+				NOT = { exists = archaeological_site }
+			}
+			save_event_target_as = fifth_precursors_planet
+		}
+		event_target:fifth_precursors_planet = {
+			create_archaeological_site = site_witches_secret
+		}	
+	}
+}
+
+# 魔女大门
+fleet_event = {
+	id = Strike_Witches_precursor.61
+	#archaeology_window = yes
+	title = "Strike_Witches_precursor.61.name"
+	desc = "Strike_Witches_precursor.61.desc"
+	picture = GFX_evt_neuroi_research
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Strike_Witches_precursor.61.a"
+		owner = {
+			add_resource = { minor_artifacts = 50 }
+		}
+	}
+}
+
+# 魔女的祝福
+fleet_event = {
+	id = Strike_Witches_precursor.62
+	#archaeology_window = yes
+	title = "Strike_Witches_precursor.62.name"
+	desc = "Strike_Witches_precursor.62.desc"
+	picture = GFX_evt_neuroi_research
+	show_sound = event_finding_loot
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Strike_Witches_precursor.62.a"
+		owner = {
+			add_modifier = {
+				modifier = "kancolle_modifier_witches"
+		}
+	}
+}

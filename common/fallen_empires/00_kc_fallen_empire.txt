@@ -1,0 +1,126 @@
+# kc_fallen_empire = {
+# 	graphical_culture = "fallen_empire_03"
+# 	initializer = "kc_fallen_empire_capital_system"
+
+# 	weight_modifier = {
+# 		base = 0
+# #		modifier = {
+# #			factor = 999999
+# #			any_country = {
+# #				OR = {
+# #					has_authority = auth_kan
+# #				}
+# #			}
+# #		}
+# 	}
+
+# 	possible = {
+		
+# 	}
+	
+# 	create_country_effect = {
+# 		set_global_flag = created_kc_fallen_empire
+# 		create_species = {
+# 			name = "NAME_KC_FE_species_KC"
+# 			class = "KAN"
+# 			portrait = "KanColle_portraits"
+# 			traits = {
+# 				trait = kancolle_trait_kanmusu2
+#				trait = kancolle_trait_tanatonium
+#				trait = kancolle_trait_namiyaojing
+#				trait = kancolle_trait_kukan
+# 			}
+# 			immortal = yes
+# 			effect = { save_global_event_target_as = fe_species_kc }
+# 		}
+# 		create_country = {
+# 			name = "NAME_kc_fallen_empire"
+# 			type = fallen_empire
+# 			ignore_initial_colony_error = yes
+# 			authority = auth_kc_fe
+# 			civics = {
+# 				civic = civic_kancolle_ywwuyi	
+# 				civic = civic_kancolle_chiosen
+# 			}
+# 			species = event_target:fe_species_kc
+# 			ethos = {
+# 				ethic = ethic_fanatic_militarist
+#				ethic = ethic_xenophobe
+# 			}			
+# 			flag = {
+#				icon = {
+#					category = "kan"
+#					file = "kc.dds"
+#				}
+#				background = {
+#					category = "backgrounds"
+#					file = "diagonal_stripe.dds"
+#				}
+#				colors = {
+#					"blue"
+#					"black"
+#					"null"
+#					"null"
+#				}
+#			}
+# 			name_list = "KanColle"
+# 			origin = "origin_kancolle_fallen_empire"
+# 			effect = {
+# 				set_country_flag = kc_fallen_empire
+# 				save_global_event_target_as = kc_fallen_empire
+# 				add_modifier = { modifier = kancolle_modifier_fe_cheat days = -1 }
+# 				add_resource = {
+# 					minerals = 50000
+# 					energy = 50000	
+# 					food = 50000
+# 					alloys = 50000
+# 					consumer_goods = 50000
+# 					influence = 500
+# 				}
+# 				create_leader = {
+# 					class = ruler
+# 					species = event_target:fe_species_kc
+# 					gender = female
+# 					name = PRESCRIPTED_ruler_name_kc_fe
+# 					skill = 10
+# 					immortal = yes
+# 				}
+# 				last_created_leader = {
+# 					set_age = 1945
+# 					change_leader_portrait = muteki
+# 					set_is_female = yes
+# 				}				
+# 				set_leader = last_created_leader
+# 				create_leader = {
+# 					class = governor
+# 					species = event_target:fe_species_kc
+# 					gender = female
+# 					name = random
+# 					skill = 10
+# 				}						
+# 				must initialize global designs here
+#				add_global_ship_design = "NAME_Hiei"
+#				add_global_ship_design = "NAME_musashi"
+#				add_global_ship_design = "NAME_colorado"
+#				add_global_ship_design = "NAME_sado"
+#				add_global_ship_design = "NAME_kokutai"
+#				add_global_ship_design = "NAME_kamoyi"
+# 				country_event = { id = kc_fe.4 days = 1}
+# 				# 主动联络所有舰娘/深海
+#				every_country = {
+#					limit = { OR = {
+#						has_authority = auth_kan
+#					}}
+#					if = {
+#						limit = { OR = { 
+#							has_civic = civic_kancolle_ywwuyi
+#							has_ascension_perk = ap_kancolle_ywwuyi_coming
+#						}}
+#						country_event = { id = kc_fe.0 days = 3600 random = 1800 }
+#					} else = {
+#						country_event = { id = kc_fe.0 days = 7200 random = 3600 }
+#					}
+# 			}
+# 		}
+# 	}
+# }

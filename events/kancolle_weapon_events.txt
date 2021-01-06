@@ -1,0 +1,262 @@
+namespace = kancolle_weapon
+
+country_event = {
+	id = kancolle_weapon.0
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_technology = tech_lasers_1
+		has_technology = tech_mass_drivers_1
+		NOT = {has_country_flag = first_navy_gun }
+		has_authority = auth_kan
+	}
+	immediate = {
+		country_event = { id = kancolle_weapon.1 days = 5  }
+		set_country_flag = first_navy_gun
+	}
+}
+
+
+country_event = {
+	id = kancolle_weapon.1
+	title = kancolle_weapon.1.name
+	desc = kancolle_weapon.1.desc
+	picture = GFX_evt_kancolle_technology
+	is_triggered_only = yes
+
+	immediate = {
+		random_country = {
+			limit = {		
+				is_ai = no
+				OR = {
+					has_authority = auth_kan
+				}		
+			}
+		}
+	}
+
+	option = {
+		name = "kancolle_weapon.1.a"
+		hidden_effect = {	
+			give_technology = { tech = tech_improved_first_navy_gun }		
+		}
+	}
+}
+
+
+country_event = {
+	id = kancolle_weapon.2
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_technology = tech_lasers_2
+		has_technology = tech_mass_drivers_2
+		NOT = {has_country_flag = second_navy_gun }
+		has_authority = auth_kan
+	}
+	immediate = {
+		country_event = { id = kancolle_weapon.21 days = 5  }
+		set_country_flag = second_navy_gun
+	}
+}
+
+
+country_event = {
+	id = kancolle_weapon.21
+	title = kancolle_weapon.21.name
+	desc = kancolle_weapon.21.desc
+	picture = GFX_evt_kancolle_technology
+	is_triggered_only = yes
+
+	immediate = {
+		random_country = {
+			limit = {		
+				is_ai = no
+				OR = {
+					has_authority = auth_kan
+				}		
+			}
+		}
+	}
+
+	option = {
+		name = "kancolle_weapon.21.a"
+		hidden_effect = {	
+			give_technology = { tech = tech_improved_second_navy_gun }		
+		}
+	}
+}
+
+country_event = {
+	id = kancolle_weapon.3
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_technology = tech_lasers_3
+		has_technology = tech_mass_drivers_3
+		NOT = {has_country_flag = third_navy_gun }
+		has_authority = auth_kan
+	}
+	immediate = {
+		country_event = { id = kancolle_weapon.31 days = 5  }
+		set_country_flag = third_navy_gun
+	}
+}
+
+
+country_event = {
+	id = kancolle_weapon.31
+	title = kancolle_weapon.31.name
+	desc = kancolle_weapon.31.desc
+	picture = GFX_evt_kancolle_technology
+	is_triggered_only = yes
+
+	immediate = {
+		random_country = {
+			limit = {		
+				is_ai = no
+				OR = {
+					has_authority = auth_kan
+				}		
+			}
+		}
+	}
+
+	option = {
+		name = "kancolle_weapon.31.a"
+		hidden_effect = {	
+			give_technology = { tech = tech_improved_third_navy_gun }		
+		}
+	}
+}
+
+country_event = {
+	id = kancolle_weapon.4
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_technology = tech_lasers_4
+		has_technology = tech_mass_drivers_4
+		NOT = {has_country_flag = fourth_navy_gun }
+		has_authority = auth_kan
+	}
+	immediate = {
+		country_event = { id = kancolle_weapon.41 days = 5  }
+		set_country_flag = fourth_navy_gun
+	}
+}
+
+
+country_event = {
+	id = kancolle_weapon.41
+	title = kancolle_weapon.41.name
+	desc = kancolle_weapon.41.desc
+	picture = GFX_evt_kancolle_technology
+	is_triggered_only = yes
+
+	immediate = {
+		random_country = {
+			limit = {		
+				is_ai = no
+				OR = {
+					has_authority = auth_kan
+				}		
+			}
+		}
+	}
+
+	option = {
+		name = "kancolle_weapon.41.a"
+		hidden_effect = {	
+			give_technology = { tech = tech_improved_fourth_navy_gun }		
+		}
+	}
+}
+
+country_event = {
+	id = kancolle_weapon.5
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_technology = tech_lasers_5
+		has_technology = tech_mass_drivers_5
+		has_technology = tech_kancolle_tanatonium
+		NOT = {has_country_flag = fifth_navy_gun }
+		has_authority = auth_kan
+	}
+	immediate = {
+		country_event = { id = kancolle_weapon.51 days = 5  }
+		set_country_flag = fifth_navy_gun
+	}
+}
+
+
+country_event = {
+	id = kancolle_weapon.51
+	title = kancolle_weapon.51.name
+	desc = kancolle_weapon.51.desc
+	picture = GFX_evt_kancolle_technology
+	is_triggered_only = yes
+
+	immediate = {
+		random_country = {
+			limit = {		
+				is_ai = no
+				OR = {
+					has_authority = auth_kan
+				}		
+			}
+		}
+	}
+
+	option = {
+		name = "kancolle_weapon.51.a"
+		hidden_effect = {	
+			give_technology = { tech = tech_improved_fifth_navy_gun }		
+		}
+	}
+}
+
+country_event = {
+	id = kancolle_weapon.6
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_technology = tech_autocannons_3
+		has_technology = tech_flak_batteries_3
+		has_technology = tech_kancolle_tanatonium
+		NOT = {has_country_flag = bofors_navy_gun }
+		has_authority = auth_kan
+	}
+	immediate = {
+		country_event = { id = kancolle_weapon.61 days = 5  }
+		set_country_flag = bofors_navy_gun
+	}
+}
+
+
+country_event = {
+	id = kancolle_weapon.61
+	title = kancolle_weapon.61.name
+	desc = kancolle_weapon.61.desc
+	picture = GFX_evt_kancolle_technology
+	is_triggered_only = yes
+
+	immediate = {
+		random_country = {
+			limit = {		
+				is_ai = no
+				OR = {
+					has_authority = auth_kan
+				}		
+			}
+		}
+	}
+
+	option = {
+		name = "kancolle_weapon.61.a"
+		hidden_effect = {	
+			give_technology = { tech = tech_bofors_navy_gun }		
+		}
+	}
+}

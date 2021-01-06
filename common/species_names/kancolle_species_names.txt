@@ -1,0 +1,18 @@
+
+"KAN" = {
+	warshipgirls = {
+		name = "Kanmusu"
+		plural = "Kanmusu"
+		home_planet = yokosuka
+		home_system = yokosuka
+		name_list = "KanColle"
+	}
+
+        warshipgirls = {
+		name = "Kanmusu"
+		plural = "Kanmusu"
+		home_planet = yokosuka
+		home_system = yokosuka
+		name_list = "KanColle"
+	}
+}

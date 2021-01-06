@@ -1,0 +1,918 @@
+kc_fallen_empire_capital_system = {
+	name = "NAME_kc_fallen_empire_capital"
+	class = "sc_g"
+	usage = fallen_empire_init
+	flags = { kc_fallen_empire_capital_system }
+
+	planet = {
+		name = "NAME_kc_fe_star"
+		class = star
+		orbit_distance = 0
+		orbit_angle = 0
+		init_effect = {		
+		}	
+	}
+
+	change_orbit = 45
+	
+	planet = {
+		name = "NAME_kc_fe_ring1"
+		class = "pc_ringworld_habitable"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		size = 5
+			
+		init_effect = {	
+			set_planet_flag = kc_fallen_empire_capital_flag
+			set_owner = event_target:kc_fallen_empire
+			set_controller = event_target:kc_fallen_empire
+			set_capital = yes
+			prevent_anomaly = yes
+			save_global_event_target_as = kc_fe_capital_location
+
+			add_building = building_kancolle_fallen_empire_NGA
+			add_building = building_kancolle_fallen_empire_nano
+			add_building = building_kancolle_fallen_empire_nano
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_arcade
+			add_building = building_kancolle_fallen_empire_fortress
+			add_building = building_kancolle_fallen_empire_fortress
+			add_building = building_kancolle_fallen_empire_fortress
+			add_building = building_kancolle_fallen_empire_zhonglizi
+			add_building = building_kancolle_fallen_empire_zhonglizi
+			add_building = building_kancolle_fallen_empire_zhonglizi
+			add_building = building_kancolle_fallen_empire_factory
+			add_building = building_kancolle_fallen_empire_factory
+			add_building = building_kancolle_fallen_empire_factory
+
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			while = {
+				count = 8
+				add_district = district_rw_city
+			}
+
+			while = {
+				count = 50
+				create_pop = {
+					species = event_target:fe_species_kc
+				}
+			}
+		}			
+	}
+
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "NAME_kc_fe_ring2"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "NAME_kc_fe_ring3"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "NAME_kc_fe_ring4"
+		orbit_angle = 30
+		orbit_distance = 0
+		size = 5
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+			set_owner = event_target:kc_fallen_empire
+			set_controller = event_target:kc_fallen_empire
+
+			add_building = building_kancolle_fallen_empire_NGA
+			add_building = building_kancolle_fallen_empire_CI
+			add_building = building_kancolle_fallen_empire_CI
+			add_building = building_kancolle_fallen_empire_CI
+			add_building = building_kancolle_fallen_empire_zhonglizi
+			add_building = building_kancolle_fallen_empire_zhonglizi
+			add_building = building_kancolle_fallen_empire_zhonglizi
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_data
+			add_building = building_kancolle_fallen_empire_data
+			add_building = building_kancolle_fallen_empire_nano
+			add_building = building_kancolle_fallen_empire_nano
+			add_building = building_kancolle_fallen_empire_factory
+			add_building = building_kancolle_fallen_empire_factory
+
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			while = {
+				count = 8
+				add_district = district_rw_city
+			}
+			while = {
+				count = 50
+				create_pop = {
+					species = event_target:fe_species_kc
+				}
+			}
+			create_kc_fe_construction_kcip = yes			
+		}				
+	}				
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "NAME_kc_fe_ring5"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "NAME_kc_fe_ring6"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "NAME_kc_fe_ring7"
+		orbit_angle = 30
+		orbit_distance = 0
+		size = 5
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+			set_owner = event_target:kc_fallen_empire
+			set_controller = event_target:kc_fallen_empire
+
+			add_building = building_kancolle_fallen_empire_NGA
+			add_building = building_kancolle_fallen_empire_CI
+			add_building = building_kancolle_fallen_empire_CI
+			add_building = building_kancolle_fallen_empire_CI
+			add_building = building_kancolle_fallen_empire_zhonglizi
+			add_building = building_kancolle_fallen_empire_zhonglizi
+			add_building = building_kancolle_fallen_empire_zhonglizi
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_data
+			add_building = building_kancolle_fallen_empire_data
+			add_building = building_kancolle_fallen_empire_nano
+			add_building = building_kancolle_fallen_empire_nano
+			add_building = building_kancolle_fallen_empire_factory
+			add_building = building_kancolle_fallen_empire_factory
+			
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			while = {
+				count = 8
+				add_district = district_rw_city
+			}
+			while = {
+				count = 50
+				create_pop = {
+					species = event_target:fe_species_kc
+				}
+			}
+			create_kc_fe_capital_fleet_and_admiral = yes
+			create_kc_fe_construction_ship = yes
+			}			
+		}	
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "NAME_kc_fe_ring8"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "NAME_kc_fe_ring9"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "NAME_kc_fe_ring10"
+		orbit_angle = 30
+		orbit_distance = 0
+		size = 5
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+			set_owner = event_target:kc_fallen_empire
+			set_controller = event_target:kc_fallen_empire
+			add_building = building_kancolle_fallen_empire_NGA
+			add_building = building_kancolle_fallen_empire_CI
+			add_building = building_kancolle_fallen_empire_CI
+			add_building = building_kancolle_fallen_empire_CI
+			add_building = building_kancolle_fallen_empire_zhonglizi
+			add_building = building_kancolle_fallen_empire_zhonglizi
+			add_building = building_kancolle_fallen_empire_zhonglizi
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_data
+			add_building = building_kancolle_fallen_empire_data
+			add_building = building_kancolle_fallen_empire_nano
+			add_building = building_kancolle_fallen_empire_nano
+			add_building = building_kancolle_fallen_empire_factory
+			add_building = building_kancolle_fallen_empire_factory
+			
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			while = {
+				count = 8
+				add_district = district_rw_city
+			}
+			while = {
+				count = 50
+				create_pop = {
+					species = event_target:fe_species_kc
+				}
+			}
+			create_kc_fe_platform = yes
+		}	
+	}				
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "NAME_kc_fe_ring11"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "NAME_kc_fe_ring12"
+		orbit_angle = 30
+		orbit_distance = 0
+		init_effect = {
+
+			trigger_megastructure_icon = yes
+			set_planet_flag = megastructure
+		}	
+	}
+
+	init_effect = {
+		save_global_event_target_as = kc_fe_home_system
+		create_kc_fe_home_citadel = yes
+	}
+
+	neighbor_system = {
+		distance = { min = 0 max = 100 }
+		initializer = "kc_fallen_empire_colony_1_system"
+	}
+	neighbor_system = {
+		distance = { min = 0 max = 100 }
+		initializer = "kc_fallen_empire_colony_2_system"
+	}
+	neighbor_system = {
+		distance = { min = 0 max = 100 }
+		initializer = "sg_fallen_empire_colony_3_system"
+	}
+	neighbor_system = {
+		distance = { min = 0 max = 100 }
+		initializer = "sg_fallen_empire_colony_4_system"
+	}
+}
+
+
+kc_fallen_empire_colony_1_system = {
+	name = "NAME_kc_fallen_empire_colony_1"
+	class = rl_standard_stars
+	
+	flags = { kc_fallen_empire_colony_1_system }
+
+	planet = {
+		name = "NAME_kc_fallen_empire_star_A"
+		count = 1
+		class = pc_b_star
+		orbit_distance = 90
+		orbit_angle = 1
+		size = 25
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_kc_fallen_empire_star_B"
+		count = 1
+		class = pc_g_star
+		orbit_distance = 0
+		orbit_angle = 85
+		size = 25
+		has_ring = no
+	}
+	
+	change_orbit = 45
+	
+	planet = {
+		count = 2
+		orbit_angle = { min = 90 max = 270 }
+		orbit_distance = 20
+	}
+	
+	planet = {
+		count = 1
+		orbit_distance = 25
+		class = rl_unhabitable_planets
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 14 max = 24 }
+		
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+	planet = {
+		name = "NAME_kc_fe_colony1"
+		class = pc_ocean
+		orbit_distance = 20
+		size = { min = 25 max = 30 }		
+		init_effect = {
+			set_planet_flag = fallen_empire_world
+			set_owner = event_target:kc_fallen_empire
+			set_controller = event_target:kc_fallen_empire
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_building = building_kancolle_fallen_empire_NGA
+			add_building = building_kancolle_fallen_empire_data
+			add_building = building_kancolle_fallen_empire_data
+			add_building = building_kancolle_fallen_empire_data
+			add_building = building_kancolle_fallen_empire_nano
+			add_building = building_kancolle_fallen_empire_nano
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_food
+			add_building = building_kancolle_fallen_empire_food
+			add_building = building_kancolle_fallen_empire_food
+			add_building = building_kancolle_fallen_empire_fortress
+			add_building = building_kancolle_fallen_empire_fortress
+			add_building = building_kancolle_fallen_empire_CI
+			add_building = building_kancolle_fallen_empire_CI
+			add_building = building_kancolle_fallen_empire_CI
+			
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			while = {
+				count = 30
+				add_district = district_city
+			}
+			while = {
+				count = 30
+				create_pop = {
+					species = event_target:fe_species_kc
+				}
+			}
+			create_kc_fe_platform = yes
+			create_kc_fe_platform = yes
+			create_kc_fe_platform = yes
+		}
+	}
+	planet = {
+		count = 2
+		orbit_angle = { min = 90 max = 270 }
+		class = rl_unhabitable_planets
+		orbit_distance = 20
+		
+		change_orbit = @base_moon_distance
+		
+		moon = {
+			count = { min = 0 max = 1 }
+			class = rl_unhabitable_planets
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+	
+	planet = {
+		count = { min = 0 max = 2 }
+		class = rl_unhabitable_planets
+		orbit_angle = { min = 90 max = 270 }
+		orbit_distance = 20
+	}
+	init_effect = {
+		save_global_event_target_as = kc_fe_colony_1_system
+		create_kc_fe_citadel = yes
+		spawn_megastructure = { 
+			type = "kancolle_elf_factory_3" 
+		}
+		every_system_planet = {
+			limit = {
+				has_deposit_for = shipclass_mining_station
+				has_mining_station = no
+			}
+			create_mining_station = {
+				owner = event_target:kc_fallen_empire
+			}
+		}
+		every_system_planet = {
+			limit = {
+				has_deposit_for = shipclass_research_station
+				has_research_station = no
+			}
+			create_research_station = {
+				owner = event_target:kc_fallen_empire
+			}
+		}
+	}
+}
+
+
+kc_fallen_empire_colony_2_system = {
+	name = "NAME_kc_fallen_empire_colony_2"
+	class = rl_standard_stars
+
+	flags = { kc_fallen_empire_colony_2_system }
+
+	prevent_anomalies = yes
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	
+	}
+	
+	change_orbit = 45
+	
+	planet = {
+		count = { min = 1 max = 3 }
+		class = rl_unhabitable_planets
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 200 }
+		
+		change_orbit = @base_moon_distance
+		
+	}
+	planet = {
+		name = "NAME_kc_fe_colony2"
+		class = pc_ocean
+		orbit_distance = 30
+		size = { min = 25 max = 25 }		
+		init_effect = {
+			set_owner = event_target:kc_fallen_empire
+			set_controller = event_target:kc_fallen_empire
+			prevent_anomaly = yes
+			clear_deposits = yes
+			set_planet_flag = fallen_empire_world
+			add_building = building_kancolle_fallen_empire_NGA
+			add_building = building_kancolle_fallen_empire_data
+			add_building = building_kancolle_fallen_empire_data
+			add_building = building_kancolle_fallen_empire_data
+			add_building = building_kancolle_fallen_empire_nano
+			add_building = building_kancolle_fallen_empire_nano
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_food
+			add_building = building_kancolle_fallen_empire_food
+			add_building = building_kancolle_fallen_empire_food
+			add_building = building_kancolle_fallen_empire_fortress
+			add_building = building_kancolle_fallen_empire_fortress
+			add_building = building_kancolle_fallen_empire_CI
+			add_building = building_kancolle_fallen_empire_CI
+			add_building = building_kancolle_fallen_empire_CI
+			
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			while = {
+				count = 20
+				add_district = district_city
+			}
+			while = {
+				count = 30
+				create_pop = {
+					species = event_target:fe_species_kc
+				}
+			}
+			create_kc_fe_citadel = yes	
+			create_kc_fe_platform = yes
+			create_kc_fe_colossus = yes			
+		}
+	}
+	planet = {
+		name = "NAME_kc_fe_colony3"
+		class = pc_kcenhai
+		orbit_distance = 30
+		size = { min = 20 max = 20 }		
+		init_effect = {
+			set_owner = event_target:kc_fallen_empire
+			set_controller = event_target:kc_fallen_empire
+			prevent_anomaly = yes
+			clear_deposits = yes
+			set_planet_flag = fallen_empire_world
+			add_building = building_kancolle_fallen_empire_NGA
+			add_building = building_kancolle_fallen_empire_data
+			add_building = building_kancolle_fallen_empire_data
+			add_building = building_kancolle_fallen_empire_data
+			add_building = building_kancolle_fallen_empire_nano
+			add_building = building_kancolle_fallen_empire_nano
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_energy
+			add_building = building_kancolle_fallen_empire_food
+			add_building = building_kancolle_fallen_empire_food
+			add_building = building_kancolle_fallen_empire_food
+			add_building = building_kancolle_fallen_empire_fortress
+			add_building = building_kancolle_fallen_empire_fortress
+			add_building = building_kancolle_fallen_empire_CI
+			add_building = building_kancolle_fallen_empire_CI
+			add_building = building_kancolle_fallen_empire_CI
+			
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			create_army = {
+				name = "sentinel_army"
+				owner = event_target:kc_fallen_empire
+				type = "kancolle_M4A1DD"
+			}
+			while = {
+				count = 20
+				add_district = district_city
+			}
+			while = {
+				count = 30
+				create_pop = {
+					species = event_target:fe_species_kc
+				}
+			}
+			create_kc_fe_citadel = yes	
+			create_kc_fe_platform = yes		
+		}
+	}
+	planet = {
+		count = { min = 1 max = 2 }
+		class = rl_unhabitable_planets
+		orbit_distance = 45
+		orbit_angle = { min = 100 max = 270 }
+		
+		change_orbit = @base_moon_distance
+		
+		moon = {
+			count = { min = 0 max = 3 }
+			orbit_angle = { min = 30 max = 270 }
+			orbit_distance = 5
+		}
+	}
+	init_effect = {
+		create_kc_fe_citadel = yes
+		every_system_planet = {
+			limit = {
+				has_deposit_for = shipclass_mining_station
+				has_mining_station = no
+			}
+			create_mining_station = {
+				owner = event_target:kc_fallen_empire
+			}
+		}
+		every_system_planet = {
+			limit = {
+				has_deposit_for = shipclass_research_station
+				has_research_station = no
+			}
+			create_research_station = {
+				owner = event_target:kc_fallen_empire
+			}
+		}
+	}
+}
+kc_fallen_empire_colony_3_system = {
+	name = "NAME_kc_fallen_empire_colony_3"
+	class = rl_standard_stars
+
+	flags = { kc_fallen_empire_colony_3_system }
+
+	prevent_anomalies = yes
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	
+	}
+	
+	change_orbit = 45
+	
+	planet = {
+		count = { min = 1 max = 1 }
+		class = rl_unhabitable_planets
+		orbit_distance = 25
+		orbit_angle = { min = 90 max = 200 }
+		
+		
+	}
+
+	planet = {
+		count = { min = 1 max = 2 }
+		class = rl_unhabitable_planets
+		orbit_distance = 35
+		orbit_angle = { min = 100 max = 270 }
+		
+		change_orbit = @base_moon_distance
+		
+		moon = {
+			count = { min = 0 max = 2 }
+			class = rl_unhabitable_planets
+			orbit_angle = { min = 30 max = 270 }
+			orbit_distance = 5
+		}
+		init_effect = {
+			create_kc_fe_platform = yes
+			create_kc_fe_platform = yes
+		}
+	}	
+	init_effect = {
+		spawn_megastructure = { 
+			type = "dyson_sphere_5" 
+			graphical_culture = "mammalian_01"
+		}
+		create_kc_fe_citadel = yes
+		every_system_planet = {
+			limit = {
+				has_deposit_for = shipclass_mining_station
+				has_mining_station = no
+			}
+			create_mining_station = {
+				owner = event_target:kc_fallen_empire
+			}
+		}
+		every_system_planet = {
+			limit = {
+				has_deposit_for = shipclass_research_station
+				has_research_station = no
+			}
+			create_research_station = {
+				owner = event_target:kc_fallen_empire
+			}
+		}
+	}
+}
+
+kc_fallen_empire_colony_4_system = {
+	name = "NAME_kc_fallen_empire_colony_4"
+	flags = { kc_fallen_empire_colony_4_system }
+	class = sc_black_hole
+	planet = {
+		class = star
+		orbit_distance = 0
+		size = { min = 25 max = 30 }	
+		init_effect = {
+			save_event_target_as = kc_fe_matter_decompressor_hole
+			clear_deposits = yes
+		}
+	}
+	change_orbit = 150
+	planet = {
+		count = 1
+		class = rl_unhabitable_planets
+		orbit_distance = 25
+		orbit_angle = { min = 90 max = 200 }
+		
+		init_effect = {
+			create_kc_fe_platform = yes
+			create_kc_fe_platform = yes
+		}
+		
+	}
+
+	init_effect = {
+		spawn_megastructure = { 
+			type = "matter_decompressor_4" 
+			graphical_culture = "mammalian_01"
+			location = event_target:kc_fe_matter_decompressor_hole
+
+		}
+		create_kc_fe_citadel = yes
+		every_system_planet = {
+			limit = {
+				has_deposit_for = shipclass_mining_station
+				has_mining_station = no
+			}
+			create_mining_station = {
+				owner = event_target:kc_fallen_empire
+			}
+		}
+		every_system_planet = {
+			limit = {
+				has_deposit_for = shipclass_research_station
+				has_research_station = no
+			}
+			create_research_station = {
+				owner = event_target:kc_fallen_empire
+			}
+		}
+	}
+}

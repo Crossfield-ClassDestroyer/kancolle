@@ -1,0 +1,8 @@
+### 开局说明
+part = {
+	location = 0
+	localization = "START_SCREEN_KANCOLLE"
+	trigger = {
+		has_country_flag = kancolle_flag
+	}	
+}

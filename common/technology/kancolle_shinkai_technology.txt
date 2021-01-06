@@ -1,0 +1,139 @@
+#深海炮
+tech_shinkaisekan_gun = {
+	cost = 20000  
+	area = physics
+	tier = 5
+	category = { field_manipulation }	
+	prerequisites = { "tech_shinkaisekan_gun" }
+	weight = 60
+	is_rare = yes
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_shinkai
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#怨念重力炮
+tech_resentment_gravity_gun = {
+	cost = 20000  
+	area = physics
+	tier = 5
+	category = { field_manipulation }	
+	prerequisites = { "tech_shinkaisekan_gun" }
+	weight = 60
+	is_rare = yes
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_shinkai
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#怨念护盾
+tech_resentment_shield = {
+	cost = 20000  
+	area = physics
+	tier = 5
+	category = { field_manipulation }	
+	prerequisites = { "tech_shinkaisekan_gun" }
+	weight = 60
+	is_rare = yes
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_shinkai
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#怨念反应堆
+tech_resentment_processor = {
+	cost = 20000  
+	area = physics
+	tier = 5
+	category = { field_manipulation }	
+	prerequisites = { "tech_shinkaisekan_gun" }
+	weight = 60
+	is_rare = yes
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_shinkai
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#怨念引擎
+tech_ftl_shinkaisekan = {
+	cost = 20000  
+	area = physics
+	tier = 5
+	category = { field_manipulation }	
+	prerequisites = { "tech_shinkaisekan_gun" }
+	weight = 60
+	is_rare = yes
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_shinkai
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#怨念推进器
+tech_resentment_thruster = {
+	cost = 20000  
+	area = physics
+	tier = 5
+	category = { field_manipulation }	
+	prerequisites = { "tech_shinkaisekan_gun" }
+	weight = 60
+	is_rare = yes
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_shinkai
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
+#深海电探
+tech_shinkai_radar = {
+	cost = 20000  
+	area = physics
+	tier = 5
+	category = { field_manipulation }	
+	prerequisites = { "tech_shinkaisekan_gun" }
+	weight = 60
+	is_rare = yes
+	ai_update_type = all
+	modifier = {
+	}
+	potential = {
+        has_authority = auth_shinkai
+	}
+	ai_weight = {
+		factor = 0
+	}
+}

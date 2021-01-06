@@ -1,0 +1,314 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_kancolle_nano"
+		texturefile = "gfx/event_pictures/kancolle_nano.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_kancolle_nano1"
+		texturefile = "gfx/event_pictures/kancolle_nano1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_origin_kancolle"
+		texturefile = "gfx/event_pictures/origins/origin_kancolle.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_Strike_witches"
+		texturefile = "gfx/event_pictures/strike_witches.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_witches_panzer"
+		texturefile = "gfx/event_pictures/witches_panzer.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_501_witches"
+		texturefile = "gfx/event_pictures/501_witches.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_neuroi_research"
+		texturefile = "gfx/event_pictures/neuroi_research.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_unit_neuroi"
+		texturefile = "gfx/event_pictures/unit_neuroi.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_panzer_neuroi"
+		texturefile = "gfx/event_pictures/panzer_neuroi.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_victory_arrow"
+		texturefile = "gfx/event_pictures/victory_arrow.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_witches_hongzha"
+		texturefile = "gfx/event_pictures/witches_hongzha.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_panzer_kongjiang"
+		texturefile = "gfx/event_pictures/panzer_kongjiang.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_witches_going"
+		texturefile = "gfx/event_pictures/witches_going.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_panzer_victory"
+		texturefile = "gfx/event_pictures/panzer_victory.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_panzerwitches_qingzhu"
+		texturefile = "gfx/event_pictures/panzer_witches_qingzhu.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_panzer_qingzhu"
+		texturefile = "gfx/event_pictures/panzer_qingzhu.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_witches_qingzhu"
+		texturefile = "gfx/event_pictures/witches_qingzhu.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_fuso_sea"
+		texturefile = "gfx/event_pictures/fuso_sea.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_operation_southwind"
+		texturefile = "gfx/event_pictures/operation_southwind.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_fail_southwind"
+		texturefile = "gfx/event_pictures/fail_southwind.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_witchespanzer_final"
+		texturefile = "gfx/event_pictures/witchespanzer_final.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_kantai_collection"
+		texturefile = "gfx/event_pictures/kantai_collection.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_ywwuyi_lighting"
+		texturefile = "gfx/event_pictures/ywwuyi_lighting.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_ywwuyi_coming"
+		texturefile = "gfx/event_pictures/ywwuyi_coming.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_kancolle_world"
+		texturefile = "gfx/event_pictures/kancolle_world.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_kancolle_technology"
+		texturefile = "gfx/event_pictures/kancolle_new_technology.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		allwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_kancolle_factory1"
+		texturefile = "gfx/event_pictures/kancolle_factory1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		allwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_kancolle_factory2"
+		texturefile = "gfx/event_pictures/kancolle_factory2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		allwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_kancolle_factory3"
+		texturefile = "gfx/event_pictures/kancolle_factory3.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		allwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_kancolle_factory4"
+		texturefile = "gfx/event_pictures/kancolle_factory4.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		allwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_kancolle_kari"
+		texturefile = "gfx/event_pictures/kancolle_kari.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		allwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_kancolle_yukikaze"
+		texturefile = "gfx/event_pictures/kancolle_yukikaze.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		allwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_yukikaze_ship"
+		texturefile = "gfx/event_pictures/yukikaze_ship.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		allwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_yukikaze_ship_remin"
+		texturefile = "gfx/event_pictures/yukikaze_ship_remin.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		allwaystransparent = yes		
+	}
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_finding_yukikaze"
+		texturefile = "gfx/event_pictures/kancolle_finding_yukikaze.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		allwaystransparent = yes		
+	}
+}

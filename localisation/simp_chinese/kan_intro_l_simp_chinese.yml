@@ -1,0 +1,111 @@
+﻿#开局介绍
+l_simp_chinese:
+kan.1.name:0 "欢迎游玩本mod"
+kan.1.desc:0 "欢迎游玩本人所制作的舰队collection Mod，该mod目前还处于完善中，如果有问题欢迎在评论区留言，如果想讨论Mod后续或者帮忙请加入QQ群：1078235038。提督已经回到了镇守府，现在将开始舰队指挥。在拂晓的水平线上刻下胜利吧！"
+kan.1.a:0 "开局初始舰：吹雪"
+kan.1.a.tooltip:0 "添加总督吹雪"
+kan.1.b:0 "开局初始舰：丛云"
+kan.1.b.tooltip:0 "添加总督丛云"
+kan.1.c:0 "开局初始舰：电"
+kan.1.c.tooltip:0 "添加总督电"
+kan.1.d:0 "开局初始舰：涟"
+kan.1.d.tooltip:0 "添加总督涟"
+kan.1.e:0 "开局初始舰：五月雨"
+kan.1.e.tooltip:0 "添加总督五月雨"
+kan.1.f:0 "开局初始舰：哥特兰（怪事，难道哥特兰不是初始舰吗？）"
+kan.1.f.tooltip:0 "添加总督哥特兰"
+
+#区划
+district_kancolle_kanmusu_city:0 "舰娘宿舍区"
+district_kancolle_kanmusu_city_desc:0 "高楼大厦此起彼伏，高档澡堂和温泉随处可见，建立在镇守府的天堂般的住宿区。"
+district_kancolle_kanmusu_city_plural:"舰娘宿舍区"
+mod_planet_district_kancolle_kanmusu_city_build_speed_mult:"舰娘宿舍区建造速度"
+
+district_kancolle_kanmusu_research:0 "镇守府科研区"
+district_kancolle_kanmusu_research_desc:0 "高耸入云的实验室到处都是，这里有满足一切科学研究所拥有的设施。"
+district_kancolle_kanmusu_research_plural:"镇守府科研区"
+mod_planet_district_kancolle_kanmusu_research_build_speed_mult:"镇守府科研区建造速度"
+
+district_kancolle_kanmusu_IndustrialArea:0 "镇守府工业区"
+district_kancolle_kanmusu_IndustrialArea_desc:0 "热火朝天的工厂在这里遍地都是，可以看见无数的妖精和舰娘在其中奔波忙碌。"
+district_kancolle_kanmusu_IndustrialArea_plural:"镇守府工业区"
+mod_planet_district_kancolle_kanmusu_IndustrialArea_build_speed_mult:"镇守府工业区建造速度"
+
+district_kancolle_kanmusu_resource:0 "镇守府资源区"
+district_kancolle_kanmusu_resource_desc:0 "无数的化工厂坐落于此，生产的废气将通过重力子反应堆净化，所以环境意外的好。"
+district_kancolle_kanmusu_resource_plural:"镇守府资源区"
+mod_planet_district_kancolle_kanmusu_resource_build_speed_mult:"镇守府资源区建造速度"
+
+district_kancolle_kanmusu_soldier:0 "镇守府行政军区"
+district_kancolle_kanmusu_soldier_desc:0 "镇守府的行政中枢地区，大量的行政人员在此地聚集，同时也是最重要的军事区域，军政合一。"
+district_kancolle_kanmusu_soldier_plural:"镇守府行政军区"
+mod_planet_district_kancolle_kanmusu_soldier_build_speed_mult:"镇守府行政军区建造速度"
+
+#地块
+r_navy_factory:0 "一期海军工厂遗址"
+r_navy_factory_desc:0 "自从二期开设以来一期的海军工厂就被遗弃了，我们似乎可以重新利用起来。"
+
+d_navy_factory:0 "一期海军工厂"
+d_navy_factory_desc:0 "一期的海军工厂已经全面上线，让我们生产舰娘吧。"
+
+r_united_fleet_dormitory:0 "海外舰宿舍装修"
+r_united_fleet_dormitory_desc:0 "崭新的海外舰宿舍正在装修中"
+
+d_united_fleet_dormitory:0 "海外舰宿舍"
+d_united_fleet_dormitory_desc:0 "精美的海外舰宿舍已经正式开放，舍长俾斯麦亲切的邀请大家来参观。"
+
+r_konishi:0 "田中山脉"
+r_konishi_desc:0 "以某个万恶让提督吃屎为乐的屑制作人的为名的山脉，怎么看都很碍眼。"
+
+d_konishi:0 "口尼西平原"
+d_konishi_desc:0 "为了纪念被田中关小黑屋的口尼西，这片被夷平的平原被称为口尼西平原。"
+
+d_shinkai_center:0 "深海中枢"
+d_shinkai_center_desc:0 "夏威夷群岛中唯一留下的中枢姬，似乎不能动弹了，绝佳的研究深海的素材。"
+
+d_iron_bottom_sound:0 "铁底海峡"
+d_iron_bottom_sound_desc:0 "对抗深海期间我们多次出入的海峡，永远大量的资源供我们使用去建造舰娘。"
+
+d_plant_sutsutsuki:0 "凉月南瓜田和zara菜园"
+d_plant_sutsutsuki_desc:0 "镇守府唯一的农业区，经过基因修正看似种的南瓜实际上里面可能是各种豪华料理（哆啦A梦并感）"
+
+d_elf_power_station:0 "妖精发电站"
+d_elf_power_station_desc:0 "看似高端的发电站实际上是无数个妖精充当涡轮发电机！实行三班倒制度。"
+
+d_oriur_sea:0 "奥廖尔海"
+d_oriur_sea_desc:0 "刻在DNA里面的地图，统一全球之后我们把东部奥廖尔海又找了出来。（不要停下来偷油啊，死库水们！）"
+
+d_tanatonium_core:0 "塔纳特妮姆星核"
+d_tanatonium_core_desc:0 "将塔纳特妮姆水晶植入星球核心之中，高度的压力会将大量的矿物与营养物质冲向地表，显著提升了资源产出。"
+
+d_big_therm:0 "巨型温泉"
+d_big_therm_desc:0 "镇守府的温泉，每天舰娘们都会来这里泡澡享受，缓解一天的疲劳。"
+
+#星球
+pc_kancolle:0 "镇守府星球"
+pc_kancolle_desc:0 "无尽的海洋所包裹的世界，不同的是整个镇守府都市已经覆盖了行星的表面，拥有无尽的可能性。"
+pc_kari:0 "咖喱星"
+pc_kari_desc:0 "由比睿咖喱包裹形成的星球，由于咖喱中材料和星球的谜之化学反应，经常能产出天然气，偶尔还会发现暗物质，也不知道为什么。"
+
+#决议
+decision_kancolle_world:0 "建设镇守府世界"
+decision_kancolle_world_desc:0 "随着塔纳特妮姆技术的应用，我们将改造我们的镇守府，整个星球将被我们的镇守府都市包围。"
+decision_kancolle_world_change:0 "改造星球"
+decision_kancolle_world_change_desc:0 "塔纳特妮姆能源的运用让我们扩张星球面积成为了可能，我们可以将整个星球改造成更高级的星球了。"
+decision_kancolle_world_change_effects:0 "将星球变成25格盖亚球，并添加特殊地块"
+
+#殖民地类型
+col_kancolle_kanmusu_ciry:0 "镇守府都市"
+col_kancolle_kanmusu_ciry_desc:0 "大厦高耸入云，无数的官僚机构军事机构都将坐落于此。"
+
+col_kancolle_kanmusu_industy:0 "工业镇守府"
+col_kancolle_kanmusu_industy_desc:0 "大厦高耸入云，无数的工厂都将坐落于此。"
+
+col_kancolle_kanmusu_research:0 "科研镇守府"
+col_kancolle_kanmusu_research_desc:0 "该星球将引领镇守府的科研进步，镇守府联合科学院旗下最重要的星球。"
+
+col_kancolle_kanmusu_resource:0 "资源镇守府"
+col_kancolle_kanmusu_resource_desc:0 "我们的稀有资源是如此缺乏，但现在不同了，无数的化工厂遍布镇守府，彻底解决我们的稀有资源缺乏问题。"
+
+col_kancolle_kanmusu_soldier:0 "行政军镇守府"
+col_kancolle_kanmusu_soldier_desc:0 "镇守府的行政大脑，这里是整个镇守府最重要的行政区和军区的所在地。"

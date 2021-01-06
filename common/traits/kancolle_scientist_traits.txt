@@ -1,0 +1,74 @@
+#科学家1
+leader_trait_scientist_kanmusu = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/kanmusu1.dds"
+	modifier = {
+		all_technology_research_speed = 0.05
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+	
+	ai_categories = {
+		survey
+		physics
+		society
+		engineering
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+#科学家2
+leader_trait_scientist_kanmusu1 = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/kanmusu2.dds"
+	modifier = {
+		all_technology_research_speed = 0.1
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+	
+	ai_categories = {
+		survey
+		physics
+		society
+		engineering
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+#奇迹之雪风
+leader_trait_scientist_yukikaze = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/yukikaze.dds"
+	modifier = {
+		all_technology_research_speed = 0.25
+	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+	
+	ai_categories = {
+		survey
+		physics
+		society
+		engineering
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}

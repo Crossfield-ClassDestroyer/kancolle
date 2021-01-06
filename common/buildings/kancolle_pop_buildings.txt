@@ -1,0 +1,239 @@
+##############################
+# 建筑·人口组建类
+##############################
+#一级明石工厂
+building_kancolle_akashi_factory1 = {
+	base_buildtime = 250
+	base_cap_amount = 1
+
+	category = pop_assembly
+	
+	potential = {
+		exists = owner
+		OR = {
+			owner = { is_ai = no }
+			free_building_slots > 0
+		}
+		owner = { 
+			is_regular_empire = yes
+			has_authority = auth_kan	
+			NOT = { has_policy_flag = robots_outlawed }
+		}
+		NOT = { has_modifier = slave_colony }
+	}
+	
+	convert_to = {
+		
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = {
+				OR = {
+					is_regular_empire = no 
+					has_policy_flag = robots_outlawed
+				}
+			}
+			has_modifier = slave_colony
+			AND = {
+				owner = { is_ai = yes }
+				free_jobs = 0
+				OR = {
+					num_buildings = {
+						type = any
+						value = 16
+					}
+					is_planet_class = pc_habitat
+				}
+			}
+		}
+	}
+	
+	planet_modifier = {
+		job_kancolle_guardian_add = 1
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 300
+		}
+		upkeep = {
+			minerals = 5
+			energy = 5
+		}
+	}	
+	
+	prerequisites = {
+		"tech_akashi_factory1"
+	}
+	
+	upgrades = {
+		building_kancolle_akashi_factory2
+	}
+		
+	ai_weight = {
+		weight = 100
+	}
+}
+
+#二级明石工厂
+building_kancolle_akashi_factory2 = {
+	base_buildtime = 500
+	can_build = no
+
+	category = pop_assembly
+	
+	potential = {
+		exists = owner
+		OR = {
+			owner = { is_ai = no }
+		}
+		owner = { 
+			is_regular_empire = yes
+			has_authority = auth_kan
+			NOT = { has_policy_flag = robots_outlawed }
+		}
+		NOT = { has_modifier = slave_colony }
+	}
+	allow = {
+		num_pops >= 15
+	}
+		
+	convert_to = {
+		
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = {
+				OR = {
+					is_regular_empire = no 
+					has_policy_flag = robots_outlawed
+				}
+			}
+			has_modifier = slave_colony
+			AND = {
+				owner = { is_ai = yes }
+				free_jobs = 0
+				OR = {
+					num_buildings = {
+						type = any
+						value = 16
+					}
+					is_planet_class = pc_habitat
+				}
+			}
+		}
+	}
+	
+	planet_modifier = {
+		job_kancolle_guardian_add = 2
+		planet_buildings_upkeep_mult = -0.05
+        planet_building_build_speed_mult = 0.05
+		planet_buildings_cost_mult = -0.05
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			minerals = 10
+			energy = 10
+		}
+	}	
+	upgrades = {
+		building_kancolle_akashi_factory3
+	}	
+	prerequisites = {
+		"tech_akashi_factory2"
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+#三级明石工厂
+building_kancolle_akashi_factory3 = {
+	base_buildtime = 640
+	can_build = no
+
+	category = pop_assembly
+	
+	potential = {
+		exists = owner
+		OR = {
+			owner = { is_ai = no }
+		}
+		owner = { 
+			is_regular_empire = yes
+			has_authority = auth_kan	
+			NOT = { has_policy_flag = robots_outlawed }
+		}
+		NOT = { has_modifier = slave_colony }
+	}
+	allow = {
+		num_pops >= 20
+	}
+		
+	convert_to = {
+		
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = {
+				OR = {
+					is_regular_empire = no 
+					has_policy_flag = robots_outlawed
+				}
+			}
+			has_modifier = slave_colony
+			AND = {
+				owner = { is_ai = yes }
+				free_jobs = 0
+				OR = {
+					num_buildings = {
+						type = any
+						value = 16
+					}
+					is_planet_class = pc_habitat
+				}
+			}
+		}
+	}
+	
+	planet_modifier = {
+		planet_buildings_upkeep_mult = -0.1
+        planet_building_build_speed_mult = 0.1
+		planet_buildings_cost_mult = -0.1
+		job_kancolle_guardian_add = 3
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+			sr_tanatonium = 50
+		}
+		upkeep = {
+			minerals = 15
+			energy = 15
+			sr_tanatonium = 0.5
+		}
+	}	
+	
+	prerequisites = {
+		"tech_akashi_factory3"
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}

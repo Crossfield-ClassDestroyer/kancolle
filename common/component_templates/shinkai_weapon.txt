@@ -1,0 +1,239 @@
+#深海5inch连装炮A型
+weapon_component_template = {
+	key = "small_shinkaisekan_gun"
+	size = small
+	entity = "large_space_cloud_weapon_entity"
+	type = instant
+	
+	icon = "GFX_8inch_gun"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+		}
+		upkeep = {
+			energy = 0.3
+			alloys = 0.3
+		}
+	}
+	
+	power = -100
+	damage = { min = 20.00 max = 35.00}
+	windup = { min = 20.00 max = 65.00}
+	total_fire_time = 30
+	tracking = 0.30
+	shield_damage = 1.3
+	armor_damage = 1.3
+	range = 130
+	accuracy = 0.8
+	
+	prerequisites = { "tech_shinkaisekan_gun" }
+	component_set = "shinkaisekan_gun"
+	projectile_gfx = "plasma_cannon_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+#深海5inch连装两用炮
+weapon_component_template = {
+	key = "medium_shinkaisekan_gun"
+	size = medium
+	entity = "large_space_cloud_weapon_entity"
+	type = instant
+	
+	icon = "GFX_100mm_gun"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+		}
+		upkeep = {
+			energy = 0.3
+			alloys = 0.3
+		}
+	}
+	
+	power = -100
+	damage = { min = 30.00 max = 45.00}
+	windup = { min = 20.00 max = 65.00}
+	total_fire_time = 30
+	tracking = 0.30
+	shield_damage = 1.5
+	armor_damage = 1.5
+	range = 130
+	accuracy = 0.8
+	
+	prerequisites = { "tech_shinkaisekan_gun" }
+	component_set = "shinkaisekan_gun"
+	projectile_gfx = "plasma_cannon_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+#深海6inch三连装新型速射炮
+weapon_component_template = {
+	key = "large_shinkaisekan_gun"
+	size = large
+	entity = "large_space_cloud_weapon_entity"
+	type = instant
+	
+	icon = "GFX_8inch_gun"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+		}
+		upkeep = {
+			energy = 0.3
+			alloys = 0.3
+		}
+	}
+	
+	power = -100
+	damage = { min = 150.00 max = 200.00}
+	windup = { min = 20.00 max = 65.00}
+	total_fire_time = 30
+	tracking = 0.30
+	shield_damage = 2
+	armor_damage = 2
+	range = 130
+	accuracy = 0.8
+	
+	prerequisites = { "tech_shinkaisekan_gun" }
+	component_set = "shinkaisekan_gun"
+	projectile_gfx = "plasma_cannon_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+
+#深海16inch三连装炮改二
+weapon_component_template = {
+	key = "senkai_16inch_gun"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_mk7_gfcs"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 300
+		}
+		upkeep = {
+			energy = 1.5
+			alloys = 1.5
+		}
+	}
+	
+	power = -350
+	damage = { min = 1500.00 max = 3000.00}
+	windup = { min = 30.00 max = 45.00}
+	total_fire_time = 150
+	tracking = 0.40
+	shield_damage = 3
+	armor_damage = 3
+	range = 180
+	accuracy = 0.8
+	firing_arc = 35.0
+	min_range = 10
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_shinkaisekan_gun" }
+	component_set = "senkai_16inch_gun"
+	projectile_gfx = "tachyon_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+
+#怨念重力炮
+weapon_component_template = {
+	key = "titanic_resentment_gravity_gun"
+	size = titanic
+	entity = "titanic_Hypergravity_gun_entity"
+	type = instant
+	
+	icon = "GFX_tech_Hypergravity_gun"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 300
+		}
+		upkeep = {
+			energy = 0.15
+			alloys = 0.15
+		}
+	}
+	
+	power = -400
+	damage = { min = 15000.00 max = 25000.00}
+	windup = { min = 30.00 max = 45.00}
+	total_fire_time = 200.0
+	shield_damage = 4
+	armor_damage = 4
+	range = 270
+	accuracy = 0.8
+	tracking = 0.2
+	firing_arc = 35.0
+	min_range = 10
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_resentment_gravity_gun" }
+	component_set = "resentment_gravity_gun"
+	projectile_gfx = "perdition_beam"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}

@@ -1,0 +1,688 @@
+#侵蚀鱼雷
+weapon_component_template = {
+	key = "torpedo_Erosion_torpedo"
+	size = torpedo
+	entity = "torpedo_Erosion_torpedo_entity"
+	type = instant
+	
+	icon = "GFX_tech_Erosion_torpedo"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_tanatonium = 1
+		}
+		upkeep = {
+			energy = 0.01
+			alloys = 0.01
+		}
+	}
+	
+	power = -20
+	damage = { min = 220.00 max = 400.00}
+	windup = { min = 100.00 max = 220.00}
+	total_fire_time = 2.0
+	hull_damage = 1
+	shield_damage = 1.5
+	shield_penetration = 1
+	armor_damage = 1.5
+	armor_penetration = 1
+	range = 150.00
+	accuracy = 0.95
+	tracking = 0
+	missile_speed = 25
+	missile_evasion = 0
+	missile_shield = 20
+	missile_armor = 20
+	missile_health = 100
+	missile_retarget_range = 100
+	
+	prerequisites = { "tech_Erosion_torpedo" }
+	component_set = "Erosion_torpedo"
+	projectile_gfx = "small_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+
+#10.5cm质量弹射连装炮
+weapon_component_template = {
+	key = "small_first_navy_gun"
+	size = small
+	entity = "small_event_laser_gun_entity"
+	type = instant
+	icon = "GFX_105mm_gun"
+	icon_frame = 1
+	prerequisites = { "tech_improved_first_navy_gun" }
+	component_set = "first_navy_gun"
+	projectile_gfx = "infrared_laser_s"
+	tags = { weapon_type_energy weapon_type_kinetic }
+	upgrades_to = "small_second_navy_gun"
+	ai_tags = { weapon_role_anti_armor }	#tags must be pre-registered in common/weapon_tags
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.02
+		}
+	}
+	
+	power = -5
+	damage = { min = 10.00 max = 20.00}
+	windup = { min = 20.00 max = 56.00}
+	total_fire_time = 2.0
+	shield_damage = 1.1
+	armor_damage = 1.1
+	range = 50.00
+	accuracy = 0.9
+	tracking = 0.2
+}
+
+#12cm质量弹射单装炮
+weapon_component_template = {
+	key = "medium_first_navy_gun"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = instant
+	icon = "GFX_120mm_gun"
+	icon_frame = 1
+	prerequisites = { "tech_improved_first_navy_gun" }
+	component_set = "first_navy_gun"
+	projectile_gfx = "infrared_laser_m"
+	tags = { weapon_type_energy weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "medium_second_navy_gun"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 12
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.02
+		}
+	}
+	
+	power = -10
+	damage = { min = 20.00 max = 50.00}
+	windup = { min = 20.00 max = 56.00}
+	total_fire_time = 2.0
+	shield_damage = 1.1
+	armor_damage = 1.1
+	range = 75.00
+	accuracy = 0.9
+	tracking = 0.2
+}
+
+#14cm质量弹射单装炮
+weapon_component_template = {
+	key = "large_first_navy_gun"
+	size = large
+	entity = "large_space_cloud_weapon_entity"
+	type = instant
+	icon = "GFX_140mm_gun"
+	icon_frame = 1
+	prerequisites = { "tech_improved_first_navy_gun" }
+	component_set = "first_navy_gun"
+	projectile_gfx = "infrared_laser_l"
+	tags = { weapon_type_energy weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "large_second_navy_gun"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 24
+		}
+		upkeep = {
+			energy = 0.1
+			alloys = 0.02
+		}
+	}
+	
+	power = -20
+	damage = { min = 40.00 max = 100.00}
+	windup = { min = 20.00 max = 56.00}
+	total_fire_time = 2.0
+	shield_damage = 1.1
+	armor_damage = 1.1
+	range = 90.00
+	accuracy = 0.9
+	tracking = 0.2
+}
+
+
+#8cm质量弹射高角炮
+weapon_component_template = {
+	key = "small_second_navy_gun"
+	size = small
+	entity = "small_event_laser_gun_entity"
+	type = instant
+	icon = "GFX_80mm_gun"
+	icon_frame = 1
+	prerequisites = { "tech_improved_second_navy_gun" }
+	component_set = "second_navy_gun"
+	projectile_gfx = "blue_laser_s"
+	tags = { weapon_type_energy weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "small_third_navy_gun"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 12
+		}
+		upkeep = {
+			energy = 0.2
+			alloys = 0.05
+		}
+	}
+	
+	power = -7
+	damage = { min = 15.00 max = 25.00}
+	windup = { min = 20.00 max = 56.00}
+	total_fire_time = 2.0
+	shield_damage = 1.2
+	armor_damage = 1.2
+	range = 50.00
+	accuracy = 0.9
+	tracking = 0.2
+}
+
+#12.7cm质量弹射连装炮
+weapon_component_template = {
+	key = "medium_second_navy_gun"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = instant
+	icon = "GFX_127mm_gun"
+	icon_frame = 1
+	prerequisites = { "tech_improved_second_navy_gun" }
+	component_set = "second_navy_gun"
+	projectile_gfx = "blue_laser_m"
+	tags = { weapon_type_energy weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "medium_third_navy_gun"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 24
+		}
+		upkeep = {
+			energy = 0.2
+			alloys = 0.05
+		}
+	}
+	
+	power = -15
+	damage = { min = 25.00 max = 60.00}
+	windup = { min = 20.00 max = 56.00}
+	total_fire_time = 2.0
+	shield_damage = 1.2
+	armor_damage = 1.2
+	range = 75.00
+	accuracy = 0.9
+	tracking = 0.2
+}
+
+#14cm质量弹射单装炮改
+weapon_component_template = {
+	key = "large_second_navy_gun"
+	size = large
+	entity = "large_space_cloud_weapon_entity"
+	type = instant
+	icon = "GFX_140mmkai_gun"
+	icon_frame = 1
+	prerequisites = { "tech_improved_second_navy_gun" }
+	component_set = "second_navy_gun"
+	projectile_gfx = "blue_laser_l"
+	tags = { weapon_type_energy weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "large_third_navy_gun"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 47
+		}
+		upkeep = {
+			energy = 0.2
+			alloys = 0.05
+		}
+	}
+	
+	power = -25
+	damage = { min = 50.00 max = 120.00}
+	windup = { min = 20.00 max = 56.00}
+	total_fire_time = 2.0
+	shield_damage = 1.2
+	armor_damage = 1.2
+	range = 90.00
+	accuracy = 0.9
+	tracking = 0.2
+}
+
+#8cm质量弹射高角炮+增设机枪
+weapon_component_template = {
+	key = "small_third_navy_gun"
+	size = small
+	entity = "small_event_laser_gun_entity"
+	type = instant
+	
+	icon = "GFX_80mmkai_gun"
+	icon_frame = 1
+	#color = { 1.0 0.1 1.0 1 }
+	
+	prerequisites = { "tech_improved_third_navy_gun" }
+	component_set = "third_navy_gun"
+	projectile_gfx = "uv_laser_s"
+	tags = { weapon_type_energy weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "small_fourth_navy_gun"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 16
+		}
+		upkeep = {
+			energy = 0.3
+			alloys = 0.1
+		}
+	}
+	
+	power = -10
+	damage = { min = 20.00 max = 35.00}
+	windup = { min = 20.00 max = 56.00}
+	total_fire_time = 2.0
+	shield_damage = 1.3
+	armor_damage = 1.3
+	range = 50.00
+	accuracy = 0.9
+	tracking = 0.2
+}
+
+#12.7cm质量弹射连装炮B型改二
+weapon_component_template = {
+	key = "medium_third_navy_gun"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = instant
+	
+	icon = "GFX_127mmB2_gun"
+	icon_frame = 1
+	#color = { 1.0 0.1 1.0 1 }
+	
+	prerequisites = { "tech_improved_third_navy_gun" }
+	component_set = "third_navy_gun"
+	projectile_gfx = "uv_laser_m"
+	tags = { weapon_type_energy  weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "medium_fourth_navy_gun"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 35
+		}
+		upkeep = {
+			energy = 0.3
+			alloys = 0.1
+		}
+	}
+	
+	power = -17
+	damage = { min = 25.00 max = 80.00}
+	windup = { min = 20.00 max = 56.00}
+	total_fire_time = 2.0
+	shield_damage = 1.3
+	armor_damage = 1.3
+	range = 75.00
+	accuracy = 0.9
+	tracking = 0.2
+}
+
+#15.2cm质量投射连装炮改
+weapon_component_template = {
+	key = "large_third_navy_gun"
+	size = large
+	entity = "large_space_cloud_weapon_entity"
+	accuracy = 1
+	type = instant
+	
+	icon = "GFX_152mm_gun"
+	icon_frame = 1
+	#color = { 1.0 0.1 1.0 1 }
+	
+	prerequisites = { "tech_improved_third_navy_gun" }
+	component_set = "third_navy_gun"
+	projectile_gfx = "uv_laser_l"
+	tags = { weapon_type_energy weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "large_fourth_navy_gun"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 65
+		}
+		upkeep = {
+			energy = 0.3
+			alloys = 0.1
+		}
+	}
+	
+	power = -34
+	damage = { min = 60.00 max = 180.00}
+	windup = { min = 20.00 max = 56.00}
+	total_fire_time = 2.0
+	shield_damage = 1.3
+	armor_damage = 1.3
+	range = 90.00
+	accuracy = 0.9
+	tracking = 0.2
+}
+
+#10cm质量连装高角炮+高射机枪
+weapon_component_template = {
+	key = "small_fourth_navy_gun"
+	size = small
+	entity = "small_event_laser_gun_entity"
+	type = instant
+	
+	icon = "GFX_100mm_gun"
+	icon_frame = 1
+	#color = { 1.0 1.0 1.0 1 }
+	
+	prerequisites = { "tech_improved_fourth_navy_gun" }
+	component_set = "fourth_navy_gun"
+	projectile_gfx = "xray_laser_s"
+	tags = { weapon_type_energy weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "small_fifth_navy_gun"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			volatile_motes = 0.5
+			exotic_gases = 0.5
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.2
+		}
+	}
+	
+	power = -13
+	damage = { min = 25.00 max = 40.00}
+	windup = { min = 20.00 max = 56.00}
+	total_fire_time = 2.0
+	shield_damage = 1.4
+	armor_damage = 1.4
+	range = 50.00
+	accuracy = 0.9
+	tracking = 0.2
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+
+#12.7cm质量连装炮C型改二
+weapon_component_template = {
+	key = "medium_fourth_navy_gun"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = instant
+	
+	icon = "GFX_127mmC2_gun"
+	icon_frame = 1
+	#color = { 1.0 1.0 1.0 1 }
+	
+	prerequisites = { "tech_improved_fourth_navy_gun" }
+	component_set = "fourth_navy_gun"
+	projectile_gfx = "xray_laser_m"
+	tags = { weapon_type_energy weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "medium_fifth_navy_gun"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+			volatile_motes = 0.5
+			exotic_gases = 0.5
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.2
+		}
+	}
+	
+	power = -25
+	damage = { min = 30.00 max = 100.00}
+	windup = { min = 20.00 max = 56.00}
+	total_fire_time = 2.0
+	shield_damage = 1.4
+	armor_damage = 1.4
+	range = 75.00
+	accuracy = 0.9
+	tracking = 0.2
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+
+#8inch质量三连装炮 Mk.9 mod.2
+weapon_component_template = {
+	key = "large_fourth_navy_gun"
+	size = large
+	entity = "large_space_cloud_weapon_entity"
+	type = instant
+	
+	icon = "GFX_8inch_gun"
+	icon_frame = 1
+	#color = { 1.0 1.0 1.0 1 }
+	
+	prerequisites = { "tech_improved_fourth_navy_gun" }
+	component_set = "fourth_navy_gun"
+	projectile_gfx = "xray_laser_l"
+	tags = { weapon_type_energy weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "large_fifth_navy_gun"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 70
+			volatile_motes = 0.5
+			exotic_gases = 0.5
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.2
+			volatile_motes = 0.02
+			exotic_gases = 0.02
+		}
+	}
+	
+	power = -50
+	damage = { min = 70.00 max = 250.00}
+	windup = { min = 20.00 max = 56.00}
+	total_fire_time = 2.0
+	shield_damage = 1.4
+	armor_damage = 1.4
+	range = 100.00
+	accuracy = 0.9
+	tracking = 0.2
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+
+#10cm重力子连装高角炮+增设机枪
+weapon_component_template = {
+	key = "small_fifth_navy_gun"
+	size = small
+	entity = "small_event_laser_gun_entity"
+	type = instant
+	
+	icon = "GFX_100mmkai_gun"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 9
+			sr_tanatonium = 0.1
+		}
+		upkeep = {
+			energy = 0.6
+			alloys = 0.2
+			sr_tanatonium = 0.05
+		}
+	}
+	
+	power = -20
+	damage = { min = 10.00 max = 20.00}
+	windup = { min = 2.00 max = 3.00}
+	total_fire_time = 12
+	shield_penetration = 0.4
+	armor_penetration = 0.4
+	tracking = 0.2
+	range = 70
+	accuracy = 0.9
+	
+	prerequisites = { "tech_improved_fifth_navy_gun" }
+	component_set = "fifth_navy_gun"
+	projectile_gfx = "plasma_cannon_s"
+	tags = { weapon_type_energy  weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+#127mm重力子连装炮D型改三
+weapon_component_template = {
+	key = "medium_fifth_navy_gun"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = instant
+	
+	icon = "GFX_127mmD3_gun"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			sr_tanatonium = 0.5
+		}
+		upkeep = {
+			energy = 0.6
+			alloys = 0.2
+			sr_tanatonium = 0.05
+		}
+	}
+	
+	power = -50
+	damage = { min = 50.00 max = 70.00}
+	windup = { min = 2.00 max = 3.00}
+	total_fire_time = 20
+	tracking = 0.40
+	shield_penetration = 0.65
+	armor_penetration = 0.65
+	range = 120
+	accuracy = 0.9
+	
+	prerequisites = { "tech_improved_fifth_navy_gun" }
+	component_set = "fifth_navy_gun"
+	projectile_gfx = "plasma_cannon_m"
+	tags = { weapon_type_energy  weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+#203mm(3号)物质泯灭连装炮
+weapon_component_template = {
+	key = "large_fifth_navy_gun"
+	size = large
+	entity = "large_space_cloud_weapon_entity"
+	type = instant
+	
+	icon = "GFX_203mm3_gun"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+			sr_tanatonium = 1.5
+		}
+		upkeep = {
+			energy = 0.3
+			alloys = 0.3
+			sr_tanatonium = 0.05
+		}
+	}
+	
+	power = -100
+	damage = { min = 120.00 max = 150.00}
+	windup = { min = 3.00 max = 4.00}
+	total_fire_time = 15
+	tracking = 0.40
+	shield_penetration = 0.8
+	armor_penetration = 0.8
+	range = 150
+	accuracy = 0.9
+	
+	prerequisites = { "tech_improved_fifth_navy_gun" }
+	component_set = "fifth_navy_gun"
+	projectile_gfx = "plasma_cannon_l"
+	tags = { weapon_type_energy weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}

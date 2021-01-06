@@ -1,0 +1,68 @@
+﻿l_default:
+####################################名字汉化
+Fubuki:"吹雪"
+Murakumo:"丛云"
+Sazanami:"涟"
+Inazuma:"电"
+Samidare:"五月雨"
+Gotland:"哥特兰"
+Yukikaze:"雪风"
+
+
+#舰船设计
+NAME_shinkai_Destroyer:0 "驱逐I级后期型 elite"
+NAME_shinkai_Cruiser:0 "轻巡TSU级 elite"
+NAME_shinkai_battleship:0 "战舰TA级 flagship"
+NAME_Hiei:0 "比叡"
+NAME_musashi:0 "武藏"
+NAME_colorado:0 "科罗拉多"
+NAME_sado:0 "佐渡"
+NAME_kokutai:0 "基地航空队"
+NAME_kamoyi:0 "神威"
+
+#舰队名称
+NAME_senkai_remnant_fleet1:0 "敌通商破坏侵入舰队"
+NAME_senkai_remnant_fleet2:0 "敌通商破坏侵入 高速机动部队"
+NAME_senkai_remnant_fleet3:0 "深海潜水舰队 Ⅱ群"
+NAME_senkai_remnant_fleet4:0 "深海潜水舰队 Ⅲ群"
+NAME_senkai_remnant_fleet5:0 "敌哨戒部队"
+NAME_senkai_remnant_fleet6:0 "深海潜水舰队 Ⅰ群"
+NAME_senkai_remnant_fleet7:0 "深海潜水舰队集团 旗舰战队"
+NAME_KC_FE_CAPITAL_FLEET:"联合舰队"
+NAME_KC_FE_COLONY_FLEET:"小泽机动部队"
+
+#国家
+NAME_senka_shop: "明石战果商店"
+NAME_yukikaze: "雪风改二"
+NAME_kc_fallen_empire:"月夜 水平线"
+
+#种族
+NAME_KC_FE_species_KC:"堕落舰娘"
+
+#星系名称
+NAME_kc_fallen_empire_capital:"拉尼亚凯亚"
+NAME_kc_fe_star:"拉尼亚凯亚"
+NAME_kc_fe_ring1:"muteki"
+NAME_kc_fe_ring2:""
+NAME_kc_fe_ring3:""
+NAME_kc_fe_ring4:"青蛙"
+NAME_kc_fe_ring5:"" 
+NAME_kc_fe_ring6:"" 
+NAME_kc_fe_ring7:"keynon"
+NAME_kc_fe_ring8:""
+NAME_kc_fe_ring9:""
+NAME_kc_fe_ring10:"咸鱼"
+NAME_kc_fe_ring11:""
+NAME_kc_fe_ring12:""
+NAME_kc_fallen_empire_colony_1:"永恒传说"
+NAME_kc_fe_colony1:"saka"
+NAME_kc_fallen_empire_colony_2:"梦美"
+NAME_kc_fe_colony2:"yuta"
+NAME_kc_fallen_empire_colony_3:"风焰"
+NAME_kc_fallen_empire_colony_4:"钢之魂"
+NAME_kc_fallen_empire_star_A:"Apate"
+NAME_kc_fallen_empire_star_B:"祥林嫂8cm"
+
+#领导人
+PRESCRIPTED_ruler_title_kc_fe:0 "世界手刹"
+PRESCRIPTED_ruler_name_kc_fe:"muteki"

@@ -1,0 +1,29 @@
+#旗舰1
+leader_trait_ruler_kanmusu = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/kanmusu1.dds"
+	modifier = {
+		planet_jobs_produces_mult = 0.05
+		country_base_influence_produces_add = 1
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = no
+	randomized = no
+}
+
+#旗舰2
+leader_trait_ruler_kanmusu1 = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/kanmusu2.dds"
+	modifier = {
+		planet_jobs_produces_mult = 0.1
+		country_base_influence_produces_add = 2
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	initial = no
+	randomized = no
+}

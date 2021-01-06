@@ -1,0 +1,15 @@
+objectTypes = {
+	pdxmesh = {
+		name = "kancolle_logo_mesh"
+		file = "gfx/models/ships/kancolle_logo/kancolle_logo.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "Cylinder001Shape"
+			index = 0
+			texture_diffuse = "kancolle_logo.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+		animation = { id = "idle"		type = "kancolle_logo_animation" }
+	}
+}

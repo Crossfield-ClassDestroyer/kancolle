@@ -1,0 +1,20 @@
+
+soundeffect = {
+	name = event_kancolle_Ceddin_Deden
+	sounds = {
+		sound = event_kancolle_Ceddin_Deden
+	}
+	volume = 1.5
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = event_kancolle_yukikaze_kiseki
+	sounds = {
+		sound = event_kancolle_yukikaze_kiseki
+	}
+	volume = 1.5
+	max_audible = 1
+	max_audible_behaviour = fail
+}

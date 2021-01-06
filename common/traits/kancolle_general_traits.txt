@@ -1,0 +1,41 @@
+#将军
+leader_trait_general_kanmusu = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/kanmusu1.dds"
+	modifier = {
+		army_damage_mult = 0.10
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	initial = no
+	randomized = no
+}
+
+#将军1
+leader_trait_general_kanmusu1 = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/kanmusu2.dds"
+	modifier = {
+		army_damage_mult = 0.20
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	initial = no
+	randomized = no
+}
+
+#奇迹之雪风
+leader_trait_general_yukikaze = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/yukikaze.dds"
+	modifier = {
+		army_disengage_chance_mult = 1
+	}
+	leader_trait = { general }
+	leader_class = { general }
+	initial = no
+	randomized = no
+}

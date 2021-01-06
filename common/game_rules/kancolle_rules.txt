@@ -1,0 +1,159 @@
+#人口组装判定
+can_species_be_assembled = {
+	is_sapient = yes
+	NOR = {
+		has_citizenship_type = { country = root.owner type = citizenship_assimilation }	#_teif
+		has_trait = trait_plentiful_traditions_cocoon	#_ptep
+	}
+	OR = {
+		#_+teif/wsg/swg/gsf/fq
+		AND = {
+			root.owner = {
+				NOR = {
+					has_policy_flag = no_robot_machine_pop		#_teif
+					AND = { # prevent this condition turns ture if wsg mod not installed
+						has_global_flag = has_wsg_mod
+						has_wg_special_authority = yes				#_wsg/swg
+					}
+					has_authority = auth_commonwealth			#_gsf
+					has_authority = auth_kan				#_kc
+					AND = {#_fq
+						has_global_flag = complex_hive
+						is_hive_empire = yes
+					}
+				}
+			}
+			has_trait = trait_machine_unit
+		}
+		#_+z/wsg/swg/gsf/fq
+		AND = {
+			root.owner = {
+				NOR = {
+					has_policy_flag = robots_outlawed			#_z/teif
+					AND = { # prevent this condition turns ture if wsg mod not installed
+						has_global_flag = has_wsg_mod
+						has_wg_special_authority = yes				#_wsg/swg
+					}
+					has_authority = auth_commonwealth			#_gsf
+					AND = {#_fq
+						has_global_flag = complex_hive
+						is_hive_empire = yes
+					}
+				}
+			}
+			has_trait = trait_mechanical
+		}
+		#_wsg	ս����Ů����
+		AND = {
+			OR={
+				has_trait = wsg_trait_warshipgirls
+				has_trait = wsg_trait_warshipgirls1
+			}
+			root.owner = { has_authority = auth_warshipgirls }
+		}
+		#_wsg	�����
+		AND = {
+			OR={
+				has_trait = sh_trait_shenhai
+				has_trait = sh_trait_shenhai1
+				has_trait = sh_trait_shenhai2
+				has_trait = sh_trait_shenhai3
+			}
+			root.owner = { has_authority = auth_shenhai }
+		}
+		#_swg	�ǽ���������
+		AND = {
+			has_trait = swg_trait_starshipgirls
+			root.owner = { has_authority = auth_starshipgirls }
+		}
+		#_gsf	��������
+		AND = {
+			has_trait = trait_doll
+			root.owner = { has_authority = auth_commonwealth }
+		}
+		#_fq
+		AND = {
+			is_same_species = root.owner
+			root.owner = {
+				has_ascension_perk = ap_life_assemblers
+				NOT = { has_ascension_perk = ap_life_masters }
+			}
+		}
+		#_fq
+		AND = {
+			root.owner = {
+				has_origin = origin_hive_overmind 
+				has_ascension_perk = ap_life_assemblers
+				NOT = { has_ascension_perk = ap_life_masters }			
+			}
+			has_species_flag = overminded_flag 				
+		}
+		#_fq				
+		AND = {
+			root.owner = { has_ascension_perk = ap_life_masters }	
+			NOR = {
+				has_trait = trait_machine_unit
+				has_trait = trait_mechanical				
+			}
+		}
+		#_kc
+		AND = {
+			OR={
+				has_trait = kancolle_trait_kanmusu
+				has_trait = kancolle_trait_kanmusu1
+				has_trait = kancolle_trait_kanmusu2
+			}
+			
+			ROOT = { owner = { has_authority = auth_kan } }
+		}
+	}
+}
+#犯罪设定
+pop_generates_crime = {
+	OR = {
+		AND = {
+			is_sapient = yes
+			is_non_sapient_robot = no
+			is_being_assimilated = no
+			NOR = {
+				#_wsg
+				has_trait = wsg_trait_warshipgirls
+				has_trait = wsg_trait_warshipgirls1
+				has_trait = sh_trait_shenhai
+				has_trait = sh_trait_shenhai1
+				has_trait = sh_trait_shenhai2
+				has_trait = sh_trait_shenhai3
+				has_trait = sh_trait_silent
+				has_trait = trait_intelligent_galo
+				#_swg
+				has_trait = swg_trait_starshipgirls
+				#_kc
+				has_trait = kancolle_trait_kanmusu
+				has_trait = kancolle_trait_kanmusu1
+				has_trait = kancolle_trait_kanmusu2
+			}
+		}
+		AND = {#_teif
+			exists = owner
+			has_trait = trait_machine_unit
+			owner = {
+				NOR = {
+					has_country_flag = machine_computer_repressed_completed
+					has_country_flag = machine_computer_release_completed
+				}
+			}
+		}
+		AND = {#_teif
+			exists = owner
+			has_trait = trait_hive_mind
+			owner = {
+				NOR = {
+					has_country_flag = hive_mind_repressed_completed
+					has_country_flag = hive_mind_release_completed
+				}
+			}
+		}
+	}
+	#_ptep
+	NOT = { has_trait = trait_plentiful_traditions_cocoon }
+}

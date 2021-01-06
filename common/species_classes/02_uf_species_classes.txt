@@ -1,0 +1,12 @@
+"United_fleet" = {
+	archetype = BIOLOGICAL
+	randomized = no
+	gender = no
+	portraits = {
+		"Warship_girls"
+		"NeoForce"
+		"shenhai"
+	}
+	graphical_culture = wsg_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+}

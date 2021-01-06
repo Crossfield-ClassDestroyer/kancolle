@@ -1,0 +1,38 @@
+KAN = {
+	archetype = KANMUSU
+	gender = no
+	possible = {}
+	
+	portraits = {
+		"KanColle_portraits"
+	}
+	possible = {
+	uthority = {
+		value = auth_kan
+		}
+		civics = { NOT = { value = civic_synthetic_evolution } }
+		origin = { NOT = { value = origin_machine_world } }
+	}
+	possible_secondary = {
+		civics = {
+			NOR = {
+				value = civic_synthetic_evolution
+			}
+		}
+		origin = {
+			NOR = {
+				value = origin_mechanists
+				value = origin_the_last_of_us
+			}
+		}
+	}
+
+	# These should not be used for randomly generated species
+	non_randomized_portraits = {
+		"KanColle_portraits"
+	}
+	
+	graphical_culture = mammalian_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+	resources = {}
+} 

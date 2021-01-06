@@ -1,0 +1,18 @@
+###############################
+# 战略资源
+###############################
+#塔纳特尼姆
+sr_tanatonium = {
+	tradable = no
+	max = 10000
+	
+	prerequisites = { "tech_kancolle_tanatonium" }
+	
+	visibility_prerequisite = { always = yes }
+	
+	#deficit_modifier = deficit_sr_tanatnim
+	
+	ai_weight = {
+		weight = 10
+	}
+}

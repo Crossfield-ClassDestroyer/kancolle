@@ -1,0 +1,128 @@
+#殖民扩张
+kancolle_colony = {
+	length = -1
+	edict_cap_usage = 1
+	resources = {
+		category = edicts
+		cost = {
+			influence = 50
+		}
+	}
+
+	modifier = {
+		colony_start_num_pops_add = 1
+	}
+	potential = {
+		NOT = { has_ethic = ethic_gestalt_consciousness }
+		has_authority = auth_kan
+	}
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictLowPrio
+			has_monthly_income = {
+				resource = consumer_goods
+				value < 0
+			}
+		}
+	}	
+}
+
+#反物质一式彻甲弹改
+kancolle_ship_damage = {
+	length = 3600
+	edict_cap_usage = 1
+	resources = {
+		category = edicts
+		cost = {
+			sr_tanatonium = 500
+		}
+	}
+
+	modifier = {
+	    ship_weapon_damage = 0.15
+		ship_fire_rate_mult = 0.15
+	}
+	potential = {
+		NOT = { has_ethic = ethic_gestalt_consciousness }
+		has_authority = auth_kan
+		has_technology = tech_kancolle_tanatonium
+	}
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictLowPrio
+			has_monthly_income = {
+				resource = consumer_goods
+				value < 0
+			}
+		}
+	}	
+}
+
+#能源优化
+kancolle_resource = {
+	length = 3600
+	edict_cap_usage = 1
+	resources = {
+		category = edicts
+		cost = {
+			sr_tanatonium = 300
+		}
+	}
+
+	modifier = {
+		country_energy_produces_mult = 0.10
+		country_minerals_produces_mult = 0.10
+		country_food_produces_mult = 0.10
+	}
+	potential = {
+		NOT = { has_ethic = ethic_gestalt_consciousness }
+		has_authority = auth_kan
+		has_technology = tech_kancolle_tanatonium
+	}
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictLowPrio
+			has_monthly_income = {
+				resource = consumer_goods
+				value < 0
+			}
+		}
+	}	
+}
+
+#加速驱逐
+kancolle_remove_alien = {
+	length = -1
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 1
+	resources = {
+		category = edicts
+		cost = {
+			energy = 50
+		}
+	}
+
+	modifier = {
+		pop_decline_speed = 12
+	}
+	potential = {
+		has_authority = auth_kan
+	}
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictLowPrio
+			has_monthly_income = {
+				resource = consumer_goods
+				value < 0
+			}
+		}
+	}	
+}

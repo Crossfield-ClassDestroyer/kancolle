@@ -1,0 +1,817 @@
+namespace = kancolle_shopping
+#战果商店触发
+country_event = {
+	id = kancolle_shopping.1000
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_technology = tech_senka_shopping
+		NOT = {has_country_flag = senka_shopping_open }
+		has_authority = auth_kan
+	}
+	immediate = {
+		country_event = { id = kancolle_shopping.0 days = 5  }
+		set_country_flag = senka_shopping_open
+	}
+}
+#战果商店通讯
+country_event = {
+	id = kancolle_shopping.0
+	title = "kancolle_shopping.0.name"
+	desc = "kancolle_shopping.0.desc"
+
+	diplomatic = yes
+
+	picture_event_data = {
+		room = "senka_room"
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = kancolle_shopping.0.a
+		response_text = kancolle_shopping.0.a.response
+		default_hide_option = yes
+		hidden_effect = {
+			country_event = { id = kancolle_shopping.1 }
+		}
+	}
+}
+
+#创造战果商店
+country_event = {
+	id = kancolle_shopping.1
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		create_country = {
+			name = "NAME_senka_shop"
+			type = kancolle_senka_shopping
+			flag = {
+				icon= {
+					category = "yukikaze"
+					file = "akashi.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "sinus.dds"
+				}
+				colors={
+					"red"
+					"red"
+					"null"
+					"null"
+				}
+			}
+		}
+		last_created_country = {
+			establish_communications_no_message = root
+		}
+		save_global_event_target_as = kancolle_senka_shopping_owner
+	}
+}
+
+# 打开商店的主界面
+country_event = {
+	id = kancolle_shopping.2
+	title = "kancolle_shopping.2.name"
+    custom_gui = "enclave_caravaneer_window"
+    trigger = {
+        OR = {
+            has_authority = auth_kan
+        }
+        exists = event_target:kancolle_senka_shopping_owner
+        event_target:kancolle_senka_shopping_owner = {
+            NOT = { is_hostile = root }
+        }
+        NOT = { has_country_flag = kancolle_senka_shop_cooldown }
+        OR = { 
+            #防止视窗多开
+            NOT = { has_country_flag = engaged_with_kancolle_senka_shop }
+			kancolle_senka_shopping_active_diplo = no 
+			from = { is_same_value = root } # returning from open sub-menu
+		}
+        from = { OR = {
+            is_country_type = kancolle_senka_shopping
+            is_same_value = root # returned from menu
+        }}
+        is_ai = no
+        NOT = { has_global_flag = kancolle_senka_shopping_disabled }
+    }
+
+    # 介绍1
+	desc = { text = kancolle_senka_shopping_hello1 }
+
+    # 介绍2
+	desc = { text = kancolle_senka_shopping_hello2 }
+
+    # 介绍3
+	desc = { text = kancolle_senka_shopping_hello3 }
+
+    diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		room = senka_room
+    }
+    
+    immediate = {
+        set_country_flag = engaged_with_kancolle_senka_shop
+    }
+
+    # 询问战果。
+    option = { 
+        custom_gui = "enclave_caravaneer_option"
+        name = kancolle_shopping.2.a
+        response_text = kancolle_shopping.2.a.response
+        is_dialog_only = yes
+    }
+
+    # 进入战果抽奖
+    option = { 
+        custom_gui = "enclave_caravaneer_option"
+        name = kancolle_shopping.2.b
+        hidden_effect = {
+            country_event = { id = kancolle_shopping.3 }
+        }
+    }
+
+    # 退出
+    option = { 
+    custom_gui = "enclave_caravaneer_option"
+        name = kancolle_senka_shopping_exit
+        default_hide_option = yes
+        remove_country_flag = engaged_with_kancolle_senka_shop
+    }
+}
+
+#战果抽奖界面
+country_event = {
+	id = kancolle_shopping.3
+	title = kancolle_shopping.2.name
+	desc = kancolle_shopping.3.desc
+    custom_gui = "enclave_caravaneer_window"
+    diplomatic = yes
+	is_triggered_only = yes
+
+    trigger = {
+        OR = { 
+            #防止视窗多开
+			kancolle_senka_shopping_active_diplo = no 
+			from = { is_same_value = root } # returning from open sub-menu
+        }
+        NOT = { has_global_flag = kancolle_senka_shopping_disabled }
+    }
+
+	picture_event_data = {
+		room = senka2_room
+	}
+
+    option = { 
+        custom_gui = "enclave_caravaneer_option"
+        # 三群抽奖
+        name = kancolle_shopping.3.a
+        trigger = {
+            has_authority = auth_kan
+        }
+        allow = {
+            custom_tooltip = {
+				check_variable = { which = senka value > 3700 }
+			}
+		}
+		subtract_variable = { which = senka value = 3600 }
+        add_resource = {
+			influence = 50
+        }
+			random_list = {
+				18 = { add_resource = { energy = 5000 } }
+				18 = { add_resource = { minerals = 5000 } }
+				18 = { add_resource = { food = 5000 } }
+				18 = { add_resource = { alloys = 5000 } }
+				18 = { add_resource = { consumer_goods = 5000 } }
+				10 = { subtract_variable = { which = senka value = 5 } }	
+			}
+			random_list = {
+				25 = { add_resource = { volatile_motes = 100 } }
+				25 = { add_resource = { exotic_gases = 100 } }
+				25 = { add_resource = { rare_crystals = 100 } }
+				25 = { subtract_variable = { which = senka value = 5 } }	
+			}
+			random_list = {
+				18 = { add_resource = { sr_living_metal = 50 } }
+				18 = { add_resource = { sr_zro = 50 } }
+				18 = { add_resource = { sr_dark_matter = 50 } }
+				18 = { add_resource = { nanites = 50 } }
+				18 = { add_resource = { sr_tanatonium = 50 } }
+				10 = { subtract_variable = { which = senka value = 5 } }	
+			}
+			random_list = {
+				2 = { add_research_option = tech_356mm_navy_gun }
+				2 = { add_research_option = tech_410mm_navy_gun }
+				2 = { add_research_option = tech_460mm_navy_gun }
+				2 = { add_research_option = tech_406mm_navy_gun }
+				2 = { add_research_option = tech_senshia11 }
+				2 = { add_research_option = tech_tonishiki }
+				2 = { add_research_option = tech_M4A1DD }
+				2 = { add_research_option = tech_kancolle_tanatonium }
+				84 = { subtract_variable = { which = senka value = 5 } }
+
+			}
+		    remove_country_flag = engaged_with_kancolle_senka_shop
+    }
+
+    option = { 
+        custom_gui = "enclave_caravaneer_option"
+        # 二群抽奖
+        name = kancolle_shopping.3.b
+        trigger = {
+            has_authority = auth_kan
+        }
+        allow = {
+             custom_tooltip = {
+				check_variable = { which = senka value > 4600 }
+			}
+        }
+		subtract_variable = { which = senka value = 4500 }
+        add_resource = {
+			influence = 100
+        }
+			random_list = {
+				15 = { add_resource = { energy = 8000 } }
+				15 = { add_resource = { minerals = 8000 } }
+				15 = { add_resource = { food = 8000 } }
+				15 = { add_resource = { alloys = 8000 } }
+				15 = { add_resource = { consumer_goods = 8000 } }
+				25 = { subtract_variable = { which = senka value = 5 } }	
+			}
+			random_list = {
+				25 = { add_resource = { volatile_motes = 200 } }
+				25 = { add_resource = { exotic_gases = 200 } }
+				25 = { add_resource = { rare_crystals = 200 } }
+				25 = { subtract_variable = { which = senka value = 5 } }	
+			}
+			random_list = {
+				15 = { add_resource = { sr_living_metal = 80 } }
+				15 = { add_resource = { sr_zro = 80 } }
+				15 = { add_resource = { sr_dark_matter = 80 } }
+				15 = { add_resource = { nanites = 80 } }
+				20 = { add_resource = { sr_tanatonium = 80 } }
+				20 = { subtract_variable = { which = senka value = 5 } }	
+			}
+			random_list = {
+				5 = { add_research_option = tech_356mm_navy_gun }
+				5 = { add_research_option = tech_410mm_navy_gun }
+				5 = { add_research_option = tech_460mm_navy_gun }
+				5 = { add_research_option = tech_406mm_navy_gun }
+				5 = { add_research_option = tech_senshia11 }
+				5 = { add_research_option = tech_tonishiki }
+				5 = { add_research_option = tech_M4A1DD }
+				5 = { add_research_option = tech_kancolle_tanatonium }
+				60 = { subtract_variable = { which = senka value = 5 } }
+
+			}
+		    remove_country_flag = engaged_with_kancolle_senka_shop
+    }
+
+    option = { 
+        custom_gui = "enclave_caravaneer_option"
+        # 一群抽奖
+        name = kancolle_shopping.3.c
+        trigger = {
+            has_authority = auth_kan
+        }
+        allow = {
+             custom_tooltip = {
+				check_variable = { which = senka value > 7100 }
+			}
+        }
+		subtract_variable = { which = senka value = 7000 }
+        add_resource = {
+			influence = 200
+        }
+			random_list = {
+				15 = { add_resource = { energy = 10000 } }
+				15 = { add_resource = { minerals = 10000 } }
+				15 = { add_resource = { food = 10000 } }
+				20 = { add_resource = { alloys = 10000 } }
+				15 = { add_resource = { consumer_goods = 10000 } }
+				20 = { subtract_variable = { which = senka value = 5 } }	
+			}
+			random_list = {
+				25 = { add_resource = { volatile_motes = 300 } }
+				25 = { add_resource = { exotic_gases = 300 } }
+				25 = { add_resource = { rare_crystals = 300 } }
+				25 = { subtract_variable = { which = senka value = 5 } }	
+			}
+			random_list = {
+				15 = { add_resource = { sr_living_metal = 100 } }
+				15 = { add_resource = { sr_zro = 100 } }
+				15 = { add_resource = { sr_dark_matter = 100 } }
+				15 = { add_resource = { nanites = 100 } }
+				20 = { add_resource = { sr_tanatonium = 100 } }
+				20 = { subtract_variable = { which = senka value = 5 } }	
+			}
+			random_list = {
+				10 = { add_research_option = tech_356mm_navy_gun }
+				10 = { add_research_option = tech_410mm_navy_gun }
+				10 = { add_research_option = tech_460mm_navy_gun }
+				10 = { add_research_option = tech_406mm_navy_gun }
+				10 = { add_research_option = tech_senshia11 }
+				10 = { add_research_option = tech_tonishiki }
+				10 = { add_research_option = tech_M4A1DD }
+				10 = { add_research_option = tech_kancolle_tanatonium }
+				20 = { subtract_variable = { which = senka value = 5 } }
+
+			}
+		    remove_country_flag = engaged_with_kancolle_senka_shop
+    }
+
+    option = { 
+        custom_gui = "enclave_caravaneer_option"
+        # 联合抽奖
+        name = kancolle_shopping.3.d
+       trigger = {
+            has_authority = auth_kan
+        }
+        allow = {
+            custom_tooltip = {
+				check_variable = { which = senka value > 10100 }
+			}
+        }
+		subtract_variable = { which = senka value = 10000 }
+        add_resource = {
+			influence = 500
+        }
+ 			random_list = {
+				15 = { add_resource = { energy = 20000 } }
+				15 = { add_resource = { minerals = 20000 } }
+				15 = { add_resource = { food = 20000 } }
+				20 = { add_resource = { alloys = 20000 } }
+				15 = { add_resource = { consumer_goods = 20000 } }
+				20 = { subtract_variable = { which = senka value = 5 } }	
+			}
+			random_list = {
+				25 = { add_resource = { volatile_motes = 500 } }
+				25 = { add_resource = { exotic_gases = 500 } }
+				25 = { add_resource = { rare_crystals = 500 } }
+				25 = { subtract_variable = { which = senka value = 5 } }	
+			}
+			random_list = {
+				15 = { add_resource = { sr_living_metal = 200 } }
+				15 = { add_resource = { sr_zro = 200 } }
+				15 = { add_resource = { sr_dark_matter = 200 } }
+				15 = { add_resource = { nanites = 200 } }
+				20 = { add_resource = { sr_tanatonium = 200 } }
+				20 = { subtract_variable = { which = senka value = 5 } }	
+			}
+			random_list = {
+				10 = { add_research_option = tech_356mm_navy_gun }
+				10 = { add_research_option = tech_410mm_navy_gun }
+				10 = { add_research_option = tech_460mm_navy_gun }
+				20 = { add_research_option = tech_406mm_navy_gun }
+				10 = { add_research_option = tech_senshia11 }
+				10 = { add_research_option = tech_tonishiki }
+				10 = { add_research_option = tech_M4A1DD }
+				15 = { add_research_option = tech_kancolle_tanatonium }
+				5 = { subtract_variable = { which = senka value = 5 } }
+
+			}
+		    remove_country_flag = engaged_with_kancolle_senka_shop
+    }
+
+    # 返回主选单
+    option = { 
+        custom_gui = "enclave_caravaneer_option"
+        name = kancolle_senka_shopping_return_to_main
+        hidden_effect = {
+            country_event = { id = kancolle_shopping.2 }
+        }
+    }
+
+    # 退出
+    option = { 
+    custom_gui = "enclave_caravaneer_option"
+        name = kancolle_senka_shopping_exit
+        default_hide_option = yes
+        remove_country_flag = engaged_with_kancolle_senka_shop
+    }
+}
+
+#战果商店触发
+country_event = {
+	id = kancolle_shopping.2000
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_technology = tech_senka_shopping
+		NOT = {has_country_flag = senka_star_open }
+		has_authority = auth_kan
+	}
+	immediate = {
+		country_event = { id = kancolle_shopping.4 days = 10  }
+		set_country_flag = senka_star_open
+	}
+}
+
+#创造7-1星系
+country_event = {
+	id = kancolle_shopping.4
+	title = kancolle_shopping.4.name
+	desc = kancolle_shopping.4.desc
+	picture = GFX_evt_ruined_system
+	is_triggered_only = yes
+
+	immediate = {
+		random_country = {
+			limit = {		
+				is_ai = no
+				OR = {
+					has_authority = auth_kan
+				}		
+			}
+		}
+	}
+
+	option = {
+		name = "kancolle_shopping.4.a"
+		hidden_effect = {	
+			capital_scope = {
+				spawn_system = {
+					min_distance = 10
+					max_distance = 30
+					max_jumps = 0
+					hyperlane = yes
+					is_discovered = no
+					initializer = "wenlaijinhai_system"
+				}
+			}
+			owner = {
+				country_event = { id = kancolle_shopping.6 days = 15 }	
+			}	
+		}
+	}
+}	
+
+#每年检测深海舰队存活
+country_event = {
+	id = kancolle_shopping.5
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = { 
+			exists = event_target:senkai_remnant_fleet
+			has_global_flag = senkai_remnant_fleet_zaishengcheng
+		}
+		has_technology = tech_senka_shopping
+	}
+	immediate = {
+		country_event = { id = kancolle_shopping.6 days = 5  }
+		set_timed_global_flag = { flag = senkai_remnant_fleet_zaishengcheng days = 30 }
+	}
+}
+
+#再生成舰队
+country_event = {
+	id = kancolle_shopping.6
+	hide_window = yes	
+	is_triggered_only = yes
+	
+	immediate = {
+		create_country = {
+			name = "NAME_senkai_remnant_fleet"
+			type = faction
+			flag = {
+                icon = {
+                    category = "special"
+                    file = "gray_goo.dds"
+                }
+                background= {
+                    category = "backgrounds"
+                    file = "circle.dds"
+                }
+                colors={
+                    "black"
+                    "black"
+                    "null"
+                    "null"
+                }
+            }			
+			effect = {
+				establish_communications_no_message = root.owner
+				save_global_event_target_as = senkai_remnant_fleet
+				set_country_flag = senkai_remnant_fleet_country_flag
+			}
+		}	
+		set_country_flag = senkai_remnant_fleet_destory		
+		create_fleet = {
+			name = "NAME_senkai_remnant_fleet1"
+			settings = {
+				spawn_debris = no
+			}				
+			effect = {
+				set_owner = event_target:senkai_remnant_fleet
+				save_global_event_target_as = senkai_remnant_fleet1
+				while = {
+					count = 1
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_battleship"
+						graphical_culture = "necroid_01"
+					}
+				}
+				while = {
+					count = 1
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_Cruiser"
+						graphical_culture = "necroid_01"
+					}
+				}	
+				while = {
+					count = 1
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_Destroyer"
+						graphical_culture = "necroid_01"
+					}
+				}				
+				set_location = {
+					target = event_target:senka_stark_target
+					distance = 0
+					angle = 0
+				}
+			}
+		}
+		create_fleet = {
+			name = "NAME_senkai_remnant_fleet2"
+			settings = {
+				spawn_debris = no
+			}				
+			effect = {
+				set_owner = event_target:senkai_remnant_fleet
+				save_global_event_target_as = senkai_remnant_fleet2
+				while = {
+					count = 1
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_battleship"
+						graphical_culture = "necroid_01"
+					}
+				}
+				while = {
+					count = 1
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_Cruiser"
+						graphical_culture = "necroid_01"
+					}
+				}	
+				while = {
+					count = 2
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_Destroyer"
+						graphical_culture = "necroid_01"
+					}
+				}				
+				set_location = {
+					target = event_target:senka_starh_target
+					distance = 0
+					angle = 0
+				}
+			}
+		}
+		create_fleet = {
+			name = "NAME_senkai_remnant_fleet3"
+			settings = {
+				spawn_debris = no
+			}				
+			effect = {
+				set_owner = event_target:senkai_remnant_fleet
+				save_global_event_target_as = senkai_remnant_fleet3
+				while = {
+					count = 1
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_battleship"
+						graphical_culture = "necroid_01"
+					}
+				}
+				while = {
+					count = 1
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_Cruiser"
+						graphical_culture = "necroid_01"
+					}
+				}	
+				while = {
+					count = 3
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_Destroyer"
+						graphical_culture = "necroid_01"
+					}
+				}				
+				set_location = {
+					target = event_target:senka_starg_target
+					distance = 0
+					angle = 0
+				}
+			}
+		}
+		create_fleet = {
+			name = "NAME_senkai_remnant_fleet4"
+			settings = {
+				spawn_debris = no
+			}				
+			effect = {
+				set_owner = event_target:senkai_remnant_fleet
+				save_global_event_target_as = senkai_remnant_fleet4
+				while = {
+					count = 1
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_battleship"
+						graphical_culture = "necroid_01"
+					}
+				}
+				while = {
+					count = 2
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_Cruiser"
+						graphical_culture = "necroid_01"
+					}
+				}	
+				while = {
+					count = 1
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_Destroyer"
+						graphical_culture = "necroid_01"
+					}
+				}				
+				set_location = {
+					target = event_target:senka_starf_target
+					distance = 0
+					angle = 0
+				}
+			}
+		}
+		create_fleet = {
+			name = "NAME_senkai_remnant_fleet5"
+			settings = {
+				spawn_debris = no
+			}				
+			effect = {
+				set_owner = event_target:senkai_remnant_fleet
+				save_global_event_target_as = senkai_remnant_fleet5
+				while = {
+					count = 1
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_battleship"
+						graphical_culture = "necroid_01"
+					}
+				}
+				while = {
+					count = 2
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_Cruiser"
+						graphical_culture = "necroid_01"
+					}
+				}	
+				while = {
+					count = 2
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_Destroyer"
+						graphical_culture = "necroid_01"
+					}
+				}				
+				set_location = {
+					target = event_target:senka_stard_target
+					distance = 0
+					angle = 0
+				}
+			}
+		}
+		create_fleet = {
+			name = "NAME_senkai_remnant_fleet6"
+			settings = {
+				spawn_debris = no
+			}				
+			effect = {
+				set_owner = event_target:senkai_remnant_fleet
+				save_global_event_target_as = senkai_remnant_fleet6
+				while = {
+					count = 2
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_battleship"
+						graphical_culture = "necroid_01"
+					}
+				}
+				while = {
+					count = 2
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_Cruiser"
+						graphical_culture = "necroid_01"
+					}
+				}	
+				while = {
+					count = 2
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_Destroyer"
+						graphical_culture = "necroid_01"
+					}
+				}				
+				set_location = {
+					target = event_target:senka_starc_target
+					distance = 0
+					angle = 0
+				}
+			}
+		}
+		create_fleet = {
+			name = "NAME_senkai_remnant_fleet7"
+			settings = {
+				spawn_debris = no
+			}				
+			effect = {
+				set_owner = event_target:senkai_remnant_fleet
+				save_global_event_target_as = senkai_remnant_fleet7
+				while = {
+					count = 1
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_battleship"
+						graphical_culture = "necroid_01"
+					}
+				}
+				while = {
+					count = 3
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_Cruiser"
+						graphical_culture = "necroid_01"
+					}
+				}	
+				while = {
+					count = 2
+					create_ship = {
+						name = random
+						design = "NAME_shinkai_Destroyer"
+						graphical_culture = "necroid_01"
+					}
+				}				
+				set_location = {
+					target = event_target:senka_starb_target
+					distance = 0
+					angle = 0
+				}
+			}
+		}		
+	}
+}
+
+#击破深海舰队获得战果
+country_event = {
+	id = kancolle_shopping.7
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_authority = auth_kan
+		has_country_flag = senkai_remnant_fleet_destory
+		}
+	immediate = {
+		remove_country_flag = senkai_remnant_fleet_destory
+		country_event = {
+			id = kancolle_shopping.8
+		}
+	}
+}	
+
+#获得战果事件
+country_event = {
+	id = kancolle_shopping.8
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_authority = auth_kan
+		}
+	immediate = {
+		change_variable = {
+			which = senka
+			value = 1000
+					}
+	}
+}

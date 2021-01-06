@@ -1,0 +1,295 @@
+#小型克莱因力场护盾
+utility_component_template = {
+	key = "small_tech_klein"
+	size = small
+	icon = "GFX_tech_klein"
+	icon_frame = 1
+	power = -30
+	modifier = {
+		ship_armor_add = 300
+		ship_shield_add = 300
+		ship_hull_add = 300
+		ship_shield_regen_add_static = 1
+		ship_armor_regen_add_static = 1
+	}
+
+resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_tanatonium = 1
+		}
+	upkeep = {
+		energy = 0.3
+		alloys = 0.3
+		}
+
+	}
+
+prerequisites = { "tech_klein" }
+component_set = "KLEIN_FIELD_SHIELD"
+}
+#中型克莱因力场护盾
+utility_component_template = {
+	key = "medium_tech_klein"
+	size = medium
+	icon = "GFX_tech_klein"
+	icon_frame = 1
+	power = -60
+	modifier = {
+		ship_armor_add = 500
+		ship_shield_add = 500
+		ship_hull_add = 500
+		ship_shield_regen_add_static = 1
+		ship_armor_regen_add_static = 1
+	}
+
+resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			sr_tanatonium = 2
+		}
+	upkeep = {
+		energy = 0.4
+		alloys = 0.4
+		}
+
+	}
+
+prerequisites = { "tech_klein" }
+component_set = "KLEIN_FIELD_SHIELD"
+}
+#大型克莱因力场护盾
+utility_component_template = {
+	key = "large_tech_klein"
+	size = large
+	icon = "GFX_tech_klein"
+	icon_frame = 1
+	power = -100
+	modifier = {
+		ship_armor_add = 1000
+		ship_shield_add = 1000
+		ship_hull_add = 1000
+		ship_shield_regen_add_static = 1
+		ship_armor_regen_add_static = 1
+	}
+
+resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			sr_tanatonium = 3
+		}
+	upkeep = {
+		energy = 0.5
+		alloys = 0.5
+		}
+
+	}
+
+prerequisites = { "tech_klein" }
+component_set = "KLEIN_FIELD_SHIELD"
+}
+#海雾反应堆
+utility_component_template = {
+	key = "tech_shinkai_processor_1"
+	hidden = no
+	size = small
+	icon = "GFX_tech_shinkai_processor"
+	icon_frame = 1
+	power = 500
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+			sr_tanatonium = 0.5
+		}
+	}
+	prerequisites = { "tech_shinkai_processor" }
+	component_set = "power_core"
+	size_restriction = { corvette colonizer sponsored_colonizer constructor science transport } 
+	ai_weight = {
+		weight = 99
+	}
+}
+
+#海雾反应堆
+utility_component_template = {
+	key = "tech_shinkai_processor_2"
+	hidden = no
+	size = small
+	icon = "GFX_tech_shinkai_processor"
+	icon_frame = 1
+	power = 600
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			sr_tanatonium = 0,5
+		}
+	}
+	prerequisites = { "tech_shinkai_processor" }
+	component_set = "power_core"
+	size_restriction = { destroyer } 
+	
+	ai_weight = {
+		weight = 99
+	}
+}
+
+#海雾反应堆
+utility_component_template = {
+	key = "tech_shinkai_processor_3"
+	hidden = no
+	size = small
+	icon = "GFX_tech_shinkai_processor"
+	icon_frame = 1
+	power = 1200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 150
+			sr_tanatonium = 1
+		}
+	}
+	prerequisites = { "tech_shinkai_processor" }
+	component_set = "power_core"
+	size_restriction = { cruiser ion_cannon }
+	
+	ai_weight = {
+		weight = 99
+	}
+}
+
+#海雾反应堆
+utility_component_template = {
+	key = "tech_shinkai_processor_4"
+	hidden = no
+	size = small
+	icon = "GFX_tech_shinkai_processor"
+	icon_frame = 1
+	power = 3000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 350
+			sr_tanatonium = 2
+		}
+	}
+	prerequisites = { "tech_shinkai_processor" }
+	component_set = "power_core"
+	size_restriction = { battleship } 
+	
+	ai_weight = {
+		weight = 99
+	}
+}
+
+#海雾反应堆
+utility_component_template = {
+	key = "tech_shinkai_processor_5"
+	hidden = no
+	size = small
+	icon = "GFX_tech_shinkai_processor"
+	icon_frame = 1
+	power = 4000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 800
+			sr_tanatonium = 3
+		}
+	}
+	prerequisites = { "tech_shinkai_processor" }
+	component_set = "power_core"
+	size_restriction = { titan } 
+	
+	ai_weight = {
+		weight = 99
+	}
+}
+
+#海雾反应堆
+utility_component_template = {
+	key = "tech_shinkai_processor_6"
+	hidden = no
+	size = small
+	icon = "GFX_tech_shinkai_processor"
+	icon_frame = 1
+	power = 900
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			sr_tanatonium = 1
+		}
+	}
+	prerequisites = { "tech_shinkai_processor" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = { 
+		military_station_small
+		military_station_medium
+		military_station_large } 
+	
+	ai_weight = {
+		weight = 99
+	}
+}
+
+#海雾反应堆
+utility_component_template = {
+	key = "tech_shinkai_processor_7"
+	hidden = no
+	size = small
+	icon = "GFX_tech_shinkai_processor"
+	icon_frame = 1
+	power = 8000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 40
+			sr_tanatonium = 1
+		}
+	}
+	prerequisites = { "tech_shinkai_processor" }
+	component_set = "power_core"
+	class_restriction = { shipclass_starbase }
+	size_restriction = { 
+		juggernaut
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel 
+		} 
+	
+	ai_weight = {
+		weight = 99
+	}
+}
+
+#海雾反应堆
+utility_component_template = {
+	key = "tech_shinkai_processor_8"
+	hidden = no
+	size = small
+	icon = "GFX_tech_shinkai_processor"
+	icon_frame = 1
+	power = 12000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			sr_tanatonium = 4
+		}
+	}
+	prerequisites = { "tech_shinkai_processor" }
+	component_set = "power_core"
+	size_restriction = { colossus } 
+	
+	ai_weight = {
+		weight = 99
+	}
+}

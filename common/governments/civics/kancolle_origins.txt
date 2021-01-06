@@ -1,0 +1,41 @@
+origin_kancolle = {
+	is_origin = yes
+	icon = "gfx/event_pictures/origins/origin_kancolle_small.dds"
+	picture = GFX_origin_kancolle
+
+	potential = {always = yes}
+
+	possible = {
+		civics = { 
+			OR = {value = civic_bis }
+			OR = {value = civic_gangute }
+			}
+		authority = { 
+			OR = {
+			value = auth_kan
+			}
+		}
+	}
+	random_weight = {base = 100}
+	description = "civic_tooltip_kancolle_effects"
+	advanced_start = yes
+}
+
+
+origin_kancolle_fallen_empire = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_elder_race.dds"
+
+	playable = {
+		always = no # Non-player origin
+	}
+
+	possible = {
+	}
+
+	description = origin_kancolle_fallen_effect
+
+	random_weight = {
+		base = 0
+	}
+}

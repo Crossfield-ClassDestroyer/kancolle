@@ -1,0 +1,74 @@
+on_press_begin = {
+	events = {
+		kan.1
+		kan.2
+		kan.3
+		Strike_Witches_precursor.0
+	}
+}
+
+on_leader_spawned = {
+	events = {
+		kancolle_project.3
+		kancolle_project.4
+	}
+}
+
+on_modification_complete = {
+	events = {
+		kanmusu_traits.1
+		kanmusu_traits.2	
+	}
+}
+
+# A country has increased the level of a tech, use last_increased_tech trigger to check tech and level.
+# This = Country
+on_tech_increased = {
+	events = {
+		kancolle_weapon.0
+		kancolle_weapon.2
+		kancolle_weapon.3
+		kancolle_weapon.4
+		kancolle_weapon.5
+		kancolle_weapon.6
+		kancolle_shopping.1000
+		kancolle_shopping.2000
+		kc_fe.11
+	}
+}
+
+on_custom_diplomacy = {
+	events = {
+		kancolle_shopping.2
+		kantaicollection.15
+	}
+}
+
+on_yearly_pulse = {
+	events = {
+		kantaicollection.10
+	}
+}
+
+on_yearly_pulse_country = {
+	events = {
+		kancolle_shopping.5
+		ywwuyi.4
+	}
+}
+
+# This = owner of fleet 1 (combatant)
+# From = owner of fleet 2 (destroyed)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+ on_fleet_destroyed_perp = {
+ 	events = {
+		kancolle_shopping.7
+ 	}
+ }
+ 
+ on_game_start_country = {
+	events = {
+		kc_fe.3
+	}
+}

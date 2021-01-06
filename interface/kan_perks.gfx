@@ -1,0 +1,62 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_tech_klein"
+		texturefile = "gfx/interface/icons/ship_parts/tech_klein.dds"
+	}
+
+}
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_tech_vector_thruster"
+		texturefile = "gfx/interface/icons/ship_parts/tech_vector_thruster.dds"
+	}
+
+}
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_tech_shinkai_processor"
+		texturefile = "gfx/interface/icons/ship_parts/tech_shinkai_processor.dds"
+	}
+
+}
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_tech_Hypergravity_gun"
+		texturefile = "gfx/interface/icons/ship_parts/tech_Hypergravity_gun.dds"
+	}
+
+}
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_tech_Erosion_torpedo"
+		texturefile = "gfx/interface/icons/ship_parts/tech_Erosion_torpedo.dds"
+	}
+
+}
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_tech_ftl_kancolle"
+		texturefile = "gfx/interface/icons/ship_parts/tech_ftl_kancolle.dds"
+	}
+
+}
+
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_tech_mental_model"
+		texturefile = "gfx/interface/icons/ship_parts/tech_mental_model.dds"
+	}
+
+}

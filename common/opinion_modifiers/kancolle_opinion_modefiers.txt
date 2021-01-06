@@ -1,0 +1,37 @@
+opinion_kari_my_world = {
+	opinion = -1000
+
+	accumulative = yes
+	
+	min = -2000
+
+	decay = {
+		base = 1
+	}
+}
+
+opinion_transmission_kc_fallen_empire = {
+	trigger = {
+		has_authority = auth_kan			
+	}
+
+	opinion = {
+		modifier = {
+			add = 200
+			from = { has_authority = "auth_kc_fe" }		
+		}	
+	}
+}
+
+opinion_transmission_kanmusu = {
+	trigger = {
+		has_authority = auth_kc_fe			
+	}
+
+	opinion = {
+		modifier = {
+			add = 200
+			from = { has_authority = "auth_kan" }		
+		}	
+	}
+}

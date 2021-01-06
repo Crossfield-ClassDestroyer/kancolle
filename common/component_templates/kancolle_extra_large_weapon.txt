@@ -1,0 +1,260 @@
+#35.6cm波动连装炮改二
+weapon_component_template = {
+	key = "extra_large_356_gun"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_356mm_kaini"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			sr_tanatonium = 1
+		}
+		upkeep = {
+			energy = 1
+			alloys = 1
+		}
+	}
+	
+	power = -250
+	damage = { min = 1000.00 max = 2500.00}
+	windup = { min = 30.00 max = 45.00}
+	total_fire_time = 110
+	accuracy = 0.8
+	range = 160.0
+	shield_penetration = 0.3
+	armor_damage = 1.9
+	hull_damage = 1.4
+	tracking = 0.1
+	firing_arc = 35.0
+	min_range = 10
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_356mm_navy_gun" }
+	component_set = "356_gun"
+	projectile_gfx = "tachyon_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+
+#41cm波动连装炮改二
+weapon_component_template = {
+	key = "extra_large_410_gun"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_410_kaini"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 70
+			sr_tanatonium = 2
+		}
+		upkeep = {
+			energy = 1
+			alloys = 1
+		}
+	}
+	
+	power = -300
+	damage = { min = 1500.00 max = 3200.00}
+	windup = { min = 30.00 max = 45.00}
+	total_fire_time = 130
+	range = 170.0
+	accuracy = 0.9
+	shield_penetration = 0.4
+	armor_damage = 2.0
+	hull_damage = 1.95
+	tracking = 0.2
+	firing_arc = 35.0
+	min_range = 10
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_410mm_navy_gun" }
+	component_set = "410_gun"
+	projectile_gfx = "tachyon_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+
+#46cm波动连装炮改
+weapon_component_template = {
+	key = "extra_large_460_gun"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_460_kai"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 300
+			sr_tanatonium = 3
+		}
+		upkeep = {
+			energy = 2
+			alloys = 2
+		}
+	}
+	
+	power = -500
+	damage = { min = 5000.00 max = 8000.00}
+	windup = { min = 30.00 max = 45.00}
+	total_fire_time = 200
+	range = 180.0
+	shield_penetration = 0.5
+	armor_penetration = 0.5
+	accuracy = 0.90
+	shield_damage = 2
+	armor_damage = 2
+	hull_damage = 1.4	
+	tracking = 0.15
+	firing_arc = 35.0
+	min_range = 10
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_460mm_navy_gun" }
+	component_set = "460_gun"
+	projectile_gfx = "tachyon_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+
+#16inch三连装空间碎裂炮mk.7+GFCS
+weapon_component_template = {
+	key = "406_gun"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_mk7_gfcs"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 260
+			sr_tanatonium = 2
+		}
+		upkeep = {
+			energy = 1.5
+			alloys = 1.5
+		}
+	}
+	
+	power = -350
+	damage = { min = 1200.00 max = 2700.00}
+	windup = { min = 30.00 max = 45.00}
+	total_fire_time = 110
+	tracking = 0.40
+	shield_penetration = 1
+	armor_penetration = 1
+	range = 170
+	accuracy = 0.8
+	firing_arc = 35.0
+	min_range = 10
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_406mm_navy_gun" }
+	component_set = "406_gun"
+	projectile_gfx = "tachyon_lance"
+	tags = { weapon_type_energy weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}
+
+#超重力炮
+weapon_component_template = {
+	key = "titanic_Hypergravity_gun"
+	size = titanic
+	entity = "titanic_Hypergravity_gun_entity"
+	type = instant
+	
+	icon = "GFX_tech_Hypergravity_gun"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 300
+			sr_tanatonium = 3
+		}
+		upkeep = {
+			energy = 0.15
+			alloys = 0.15
+		}
+	}
+	
+	power = -300
+	damage = { min = 10000.00 max = 20000.00}
+	windup = { min = 30.00 max = 45.00}
+	total_fire_time = 180.0
+	shield_damage = 2
+	armor_penetration = 1
+	range = 250
+	accuracy = 0.8
+	tracking = 0.2
+	firing_arc = 35.0
+	min_range = 10
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_Hypergravity_gun" }
+	component_set = "Hypergravity_gun"
+	projectile_gfx = "perdition_beam"
+	tags = { weapon_type_energy weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor }
+	ai_tag_weight = 5
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = rare_crystals value <= 0 }
+		}
+	}
+}

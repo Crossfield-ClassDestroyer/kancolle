@@ -1,0 +1,7 @@
+advisor_shigure = {
+	name = "advisor_shigure"
+	icon = "gfx/interface/icons/governments/shigure.dds"
+	playable = { always = yes }
+
+	weight = {}
+ }

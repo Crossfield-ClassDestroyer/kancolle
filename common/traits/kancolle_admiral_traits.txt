@@ -1,0 +1,44 @@
+#舰队司令1
+leader_trait_admiral_kanmusu = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/kanmusu1.dds"
+	modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+	}
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	initial = no
+	randomized = no
+}
+
+#舰队司令1
+leader_trait_admiral_kanmusu1 = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/kanmusu2.dds"
+	modifier = {
+		ship_fire_rate_mult = 0.20
+		ship_weapon_range_mult = 0.20
+	}
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	initial = no
+	randomized = no
+}
+
+#奇迹之雪风
+leader_trait_admiral_yukikaze = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/yukikaze.dds"
+	modifier = {
+		ship_disengage_chance_mult = 1
+		ship_evasion_mult = 1
+	}
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	initial = no
+	randomized = no
+}

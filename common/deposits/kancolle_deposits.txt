@@ -1,0 +1,218 @@
+#舰C开局地块
+#一期海军工厂废墟
+r_navy_factory = {
+	icon = d_factoryruins
+	time = 360
+	
+	is_for_colonizeable = yes
+	category = deposit_cat_blockers	
+	
+	potential = { always = no }
+	
+	planet_modifier = { 
+		planet_max_districts_add = -1
+	}
+		use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		d_navy_factory
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			alloys = 200
+		}
+	}
+}
+
+d_navy_factory = {
+	is_for_colonizeable = yes
+	icon = d_navy_factory
+	
+	planet_modifier = { 
+		job_kancolle_guardian_add = 2
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+#海外舰宿舍装修
+r_united_fleet_dormitory = {
+	icon = d_zhuangxiu
+	time = 360
+	
+	is_for_colonizeable = yes
+	category = deposit_cat_blockers	
+	
+	potential = { always = no }
+	
+	planet_modifier = { 
+		planet_max_districts_add = -1
+	}
+	    use_weights_for_blocker_swap_types = no
+		
+	blocker_swap_types = {
+		d_united_fleet_dormitory
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			minerals = 1000
+		}
+	}
+}
+
+d_united_fleet_dormitory = {
+	is_for_colonizeable = yes
+	icon = d_united_fleet_dormitory
+	
+	planet_modifier = { 
+		planet_housing_add = 43
+		planet_amenities_add = 30
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+#田中山脉
+r_konishi = {
+	icon = d_konishi1
+	time = 360
+	
+	is_for_colonizeable = yes
+	category = deposit_cat_blockers	
+	
+	potential = { always = no }
+	
+	planet_modifier = { 
+		planet_max_districts_add = -1
+	}
+		use_weights_for_blocker_swap_types = no
+
+	blocker_swap_types = {
+		d_konishi
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 300
+		}
+	}
+	
+}
+
+d_konishi = {
+	is_for_colonizeable = yes
+	icon = d_konishi
+	
+	planet_modifier = { 
+		planet_max_districts_add = 1
+		planet_unity_add = 30
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+#深海中枢
+d_shinkai_center = {
+	is_for_colonizeable = yes
+	icon = d_shinkai_center
+	
+	planet_modifier = { 
+		planet_jobs_society_research_produces_mult = 0.2
+		planet_jobs_engineering_research_produces_mult = 0.2
+		planet_jobs_physics_research_produces_mult = 0.2
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+#铁底海峡
+d_iron_bottom_sound = {
+	is_for_colonizeable = yes
+	icon = d_iron_bottom_sound
+	
+	planet_modifier = { 
+    pop_growth_speed = 0.2
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+#凉月南瓜田和zara菜园
+d_plant_sutsutsuki = {
+	is_for_colonizeable = yes
+	icon = d_plant_sutsutsuki
+	
+	planet_modifier = { 
+		district_farming_max = 15
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+#妖精发电站
+d_elf_power_station = {
+	is_for_colonizeable = yes
+	icon = d_elf_power_station
+	
+	planet_modifier = { 
+		district_generator_max = 15
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+#奥廖尔海
+d_oriur_sea = {
+	is_for_colonizeable = yes
+	icon = d_oriur_sea
+	
+	planet_modifier = { 
+		district_mining_max = 15
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+#塔纳特妮姆核心
+d_tanatonium_core = {
+	is_for_colonizeable = yes
+	icon = d_tanatonium_core
+	
+	planet_modifier = { 
+		planet_jobs_produces_mult = 0.1
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+#巨型温泉
+d_big_therm = {
+	is_for_colonizeable = yes
+	icon = d_big_therm
+	
+	planet_modifier = { 
+		pop_happiness = 0.2
+}
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}

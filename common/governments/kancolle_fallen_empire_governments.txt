@@ -1,0 +1,10 @@
+gov_kancolle_fallen_empire = {
+	ruler_title = PRESCRIPTED_ruler_title_kc_fe
+	ruler_title_female = PRESCRIPTED_ruler_title_kc_fe
+	possible = {
+		has_authority = auth_kc_fe
+	}
+	weight = {
+		base = 9999
+	}
+}

@@ -1,0 +1,221 @@
+#重力子引擎
+utility_component_template = {
+	key = "tech_ftl_kancolle"
+	size = small
+	icon = "GFX_tech_ftl_kancolle"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			sr_tanatonium = 1
+		}
+	}
+	ftl = yes
+	jumpdrive = yes
+	ship_modifier = {
+		ship_windup_mult = -0.8
+		ship_ftl_jumpdrive_range_mult = 2
+	}
+	
+	ai_weight = {
+		weight = 4
+	}
+
+	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
+	prerequisites = { "tech_ftl_kancolle" }
+	component_set = "ftl_components"
+}
+#矢量推进器
+utility_component_template = {
+	key = "small_vector_thruster"
+	size = small
+	icon = "GFX_tech_vector_thruster"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			sr_tanatonium = 1
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 30
+	}
+
+	prerequisites = { "tech_vector_thruster" }
+	component_set = "thruster_components"
+	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science transport }
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+#矢量推进器
+utility_component_template = {
+	key = "destroyer_vector_thruster"
+	size = small
+	icon = "GFX_tech_vector_thruster"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			sr_tanatonium = 1
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.25
+		ship_evasion_add = 25
+	}
+
+	prerequisites = { "tech_vector_thruster" }
+	component_set = "thruster_components"
+	size_restriction = { destroyer }
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+#矢量推进器
+utility_component_template = {
+	key = "cruiser_vector_thruster"
+	size = small
+	icon = "GFX_tech_vector_thruster"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			sr_tanatonium = 1
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.25
+		ship_evasion_add = 20
+	}
+
+	prerequisites = { "tech_vector_thruster" }
+	component_set = "thruster_components"
+	size_restriction = { cruiser }
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+#矢量推进器
+utility_component_template = {
+	key = "battleship_vector_thruster"
+	size = small
+	icon = "GFX_tech_vector_thruster"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			sr_tanatonium = 1
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.25
+		ship_evasion_add = 15
+	}
+
+	prerequisites = { "tech_vector_thruster" }
+	component_set = "thruster_components"
+	size_restriction = { battleship }
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+#矢量推进器
+utility_component_template = {
+	key = "titan_vector_thruster"
+	size = small
+	icon = "GFX_tech_vector_thruster"
+	icon_frame = 1
+	power = -100
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			sr_tanatonium = 2
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 15
+	}
+
+	prerequisites = { "tech_vector_thruster" }
+	component_set = "thruster_components"
+	size_restriction = { titan }
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}
+#矢量推进器
+utility_component_template = {
+	key = "colossus_vector_thruster"
+	size = small
+	icon = "GFX_tech_vector_thruster"
+	icon_frame = 1
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 200
+			sr_tanatonium = 3
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+	}
+
+	prerequisites = { "tech_vector_thruster" }
+	component_set = "thruster_components"
+	size_restriction = { colossus juggernaut }
+	
+	ai_weight = {
+		weight = 5
+
+		modifier = {
+			factor = 0.0
+			is_country_type = default
+			has_monthly_income = { resource = sr_dark_matter value <= 0 }
+		}
+	}
+}

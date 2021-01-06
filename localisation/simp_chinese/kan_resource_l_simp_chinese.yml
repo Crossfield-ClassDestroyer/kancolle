@@ -1,0 +1,29 @@
+﻿#资源
+l_simp_chinese:
+sr_tanatonium:"塔纳特妮姆水晶"
+sr_tanatonium_desc:0"海雾舰队装备制作的核心材料，可以制作各种先进的海雾武器，同时可以生产大量稀有资源。"
+
+senka:"战果"
+
+#明石商店战果相关事宜
+kancolle_shopping.0.name:0 "战果商店重新开通"
+kancolle_shopping.0.desc:0 "啊提督你终于来了，战果商店已经重新开通了，如果有了战果请立即来更换奖励哦。"
+kancolle_shopping.0.a.response:0 "那我明石就在商店等提督您来了。"
+kancolle_shopping.0.a:0 "让我们来看看战果又会发什么奇怪的东西。"
+kancolle_senka_shopping_hello1:0 "在港口的应急修理就请交给我吧！我会支援身在前线的舰娘的！"
+kancolle_senka_shopping_hello2:0 "欢迎来到明石的战果商店！"
+kancolle_senka_shopping_hello3:0 "提督，请多指教！"
+kancolle_shopping.2.name:0 "明石的战果商店"
+kancolle_shopping.2.a:0 "查询战果"
+kancolle_shopping.2.a.response:0 "据我们的查询，您目前有§Y[Root.senka]§! $senka$ 游戏中只有一种方式可以获得战果，在联系我们的商店之后会在您首都附近开放一个名叫文莱泊地近海的特殊星系，这个星系内每年都会刷新深海舰队，击溃这些深海舰队，就可以获得战果！"
+kancolle_shopping.2.b:0 "进入战果兑换界面"
+kancolle_senka_shopping_exit:0 "离开明石商店"
+kancolle_shopping.3.desc:0 "欢迎来到明石战果商店的战果兑换区！这里有四种战果兑换的方式，如果不去文莱泊地近海击溃深海舰队的话是无法获得战果兑换的机会的哦~顺便一提即便您获得了足够的战果抽奖也不会一定有东西，甚至有几率倒扣您的战果。"
+kancolle_shopping.3.a:0 "三群（获得科技概率小）"
+kancolle_shopping.3.b:0 "二群（获得科技概率中）"
+kancolle_shopping.3.c:0 "一群（获得科技概率高）"
+kancolle_shopping.3.d:0 "联合（获得科技概率极高）"
+kancolle_senka_shopping_return_to_main:0 "返回明石商店主菜单"
+kancolle_shopping.4.name:0 "文莱泊地近海开通"
+kancolle_shopping.4.desc:0 "随着战果商店的开启我们需要一个地方来获得战果，在我们母星附近发现了一个和文莱泊地近海相似的星系，根据观测这里似乎聚集了大量的怨念，说不定能遇见深海舰队？"
+kancolle_shopping.4.a:0 "那让我们去那个星系看看吧。"

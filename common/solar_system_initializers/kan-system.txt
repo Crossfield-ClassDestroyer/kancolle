@@ -1,0 +1,218 @@
+### 横须贺星系
+yokosuka_system_initializer = {
+	name = "横须贺"
+	class = "sc_a"
+	asteroid_belt = {
+	type = rocky_asteroid_belt
+	radius = 200
+	}
+	flags = { Yokosuka_system }
+	usage = custom_empire
+	max_instances = 1
+	planet = {
+	name = "横须贺"
+	class= "pc_a_star"
+	orbit_distance = 0
+		}
+planet = {
+	#横须贺
+	name = "横须贺"
+	class = "pc_ocean"
+		orbit_distance = 80
+		orbit_angle = 90
+		size = { min = 30 max = 35 }
+		home_planet = yes
+		starting_planet = yes
+		has_ring = yes
+		deposit_blockers = none
+		flags = { f_Yokosuka}
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		init_effect = {
+			set_planet_flag = kanmusu_home
+			prevent_anomaly = yes
+			clear_deposits = yes
+			add_deposit = r_navy_factory	
+			add_deposit = r_united_fleet_dormitory
+			add_deposit = r_konishi
+			add_deposit = d_shinkai_center
+			add_deposit = d_iron_bottom_sound
+			add_deposit = d_plant_sutsutsuki
+			add_deposit = d_elf_power_station
+			add_deposit = d_oriur_sea			
+		}
+		moon = {
+			name = "舰娘"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 15
+			orbit_angle = 60
+			has_ring = no
+		}
+	}
+	planet = {
+		name = "大越香里"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = -210
+		size = 12
+		has_ring = no
+	}
+	
+	planet = {
+		name = "雨宫千瑶"
+		class = "pc_molten"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 12
+		has_ring = no
+	}
+	
+	planet = {
+		name = "彩树"
+		class = "pc_toxic"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 12
+		has_ring = no
+	}
+	
+	planet = {
+		name = "UGUME"
+		class = "pc_frozen"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 12
+		has_ring = no
+	}
+	
+	planet = {
+		name = "田中飞妈"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = -160
+		size = 35
+		has_ring = no
+		entity = "gas_giant_jupiter_entity"
+		change_orbit = 6
+		
+		moon = {
+			name = "赤坂柚"
+			class = "pc_molten"
+			size = 6
+			orbit_distance = 10
+			orbit_angle = 110
+			has_ring = no
+		}
+		moon = {
+			name = "akira"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 2.5
+			orbit_angle = 10
+			has_ring = no
+		}
+		moon = {
+			name = "conishi"
+			class = "pc_frozen"
+			size = 9
+			orbit_distance = 2.5
+			orbit_angle = 80
+			has_ring = no
+		}
+		moon = {
+			name = "沙良"
+			class = "pc_frozen"
+			size = 7
+			orbit_distance = 2.5
+			orbit_angle = -155
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "shibafu"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 170
+		size = 30
+		has_ring = yes
+		entity = "gas_giant_05_entity"
+		change_orbit = 7
+		
+		moon = {
+			name = "drew"
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 12
+			orbit_angle = 320
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "藤川"
+		class = "pc_asteroid"
+		orbit_distance = 25
+		orbit_angle = 125
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "六花"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = -195
+		size = 20
+		has_ring = yes
+		entity = "gas_giant_02_entity"
+		change_orbit = 4
+		
+		moon = {
+			name = "zeco"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 7
+			orbit_angle = 115
+			has_ring = no
+		}
+	}
+
+	planet = {
+		name = "岛田文金"
+		class = "pc_frozen"
+		orbit_distance = 30
+		orbit_angle = -210
+		size = 13
+		has_ring = no
+	}
+	
+	planet = {
+		name = "shizuma"
+		class = "pc_toxic"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "玖条"
+		class = "pc_frozen"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 14
+		has_ring = no
+	}
+	
+	planet = {
+		name = "bob"
+		class = "pc_toxic"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 16
+		has_ring = no
+	}

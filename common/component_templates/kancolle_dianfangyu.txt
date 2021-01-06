@@ -1,0 +1,36 @@
+#Bofors40mm4连装波动机关枪
+weapon_component_template = {
+	key = "kancolle_point_defence"
+	size = point_defence
+	entity = "turret_point_defence_entity"
+	
+	icon = "GFX_bofors_gun"
+	icon_frame = 1
+	
+	damage = { min = 4 max = 9 }
+	windup = { min = 1 max = 2 }
+	total_fire_time = 4
+	range = 60
+	armor_damage = 0.8
+	accuracy = 1.0
+	tracking = 0.8
+	power = -20
+	
+	prerequisites = { "tech_bofors_navy_gun" }
+	component_set = "kancolle_point_defence"
+	type = point_defence
+	projectile_gfx = "white_laser_pd"
+	tags = { weapon_type_point_defense weapon_type_energy }
+	ai_tags = { weapon_role_point_defense }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 15
+			sr_tanatonium = 0.5
+		}
+		upkeep = {
+			energy = 0.2
+			alloys = 0.08
+		}
+	}
+}

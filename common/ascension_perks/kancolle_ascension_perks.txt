@@ -1,0 +1,236 @@
+#######################################
+### Utopia Expanded Ascension Perks ###
+#######################################
+#爽哥归来！
+ap_kancolle_ywwuyi_coming = {
+	on_enabled = {
+		custom_tooltip = "kancolle_ywwuyi_coming"
+		hidden_effect = {
+			country_event = { id = ywwuyi.0 }
+		}	
+	}
+	potential = {
+		has_authority="auth_kan"
+		NOT = {
+			has_ascension_perk = ap_kancolle_ywwuyi_coming
+			has_authority = "auth_machine_intelligence"
+		}
+		is_mechanical_empire = no
+	}
+	modifier = {
+		country_unity_produces_mult = 0.15
+		pop_amenities_usage_mult = -0.05
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+}
+
+#新捷号作战
+ap_kancolle_new_project = {
+	on_enabled = {
+		custom_tooltip = "kancolle_new_project"
+		hidden_effect = {
+			country_event = { id = kancolle_project.1 }
+		}
+		add_research_option = tech_zhenshoufu_revolution	
+	}
+	modifier = {
+		all_technology_research_speed=0.10
+		KANMUSU_species_trait_points_add = 5
+		modify_species_cost_mult = -0.50
+	}		
+	possible = {
+		custom_tooltip = {
+			fail_text = "synthetic_empire_synthetic_ascension"
+			NOT = { has_trait = trait_mechanical }
+		}
+		custom_tooltip = {
+			fail_text = "requires_technology_tech_akashi_factory"
+			has_technology = tech_akashi_factory2
+		}		
+		custom_tooltip = {
+			fail_text = "hive_mind_biological_ascension_only1"
+			NOT = { has_authority = auth_hive_mind }
+		}
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_1"
+			num_ascension_perks > 0
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_the_flesh_is_weak"
+			NOT = { has_ascension_perk = ap_the_flesh_is_weak }
+		}
+	}
+
+	potential = {
+		has_authority="auth_kan"
+		NOT = {
+			has_ascension_perk = ap_kancolle_new_project
+		}
+		is_mechanical_empire = no
+	}
+
+	ai_weight = {
+		factor = 100
+	}
+}
+
+#塔纳特妮姆应用
+ap_kancolle_tanatonium = {
+	on_enabled = {
+		custom_tooltip = "kancolle_tanatonium_tooltip"
+		hidden_effect = {
+			country_event = { id = kancolle_project.2 }
+		}
+		add_research_option = tech_kancolle_tanatonium
+		add_research_option = tech_kancolle_zhonglizi
+		add_research_option = tech_kancolle_high_DNA
+	}
+	modifier = {
+		KANMUSU_species_trait_points_add = 10
+	}	
+	possible = {
+		custom_tooltip = {
+			fail_text = "synthetic_empire_psionic_ascension"
+			NOT = { has_trait = trait_mechanical }
+		}
+		custom_tooltip = {
+			fail_text = "hive_mind_biological_ascension_only1"
+			NOT = { has_authority = auth_hive_mind }
+		}
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+		custom_tooltip = {
+			fail_text = "requires_ap_kancolle_new_project"
+			has_ascension_perk = ap_kancolle_new_project
+		}
+	}
+
+	potential = {
+		has_authority="auth_kan"
+		NOT = {
+			has_ascension_perk = ap_kancolle_tanatonium
+			has_authority = "auth_machine_intelligence"
+		}
+		is_mechanical_empire = no
+		is_cyborg_empire = no
+		has_authority="auth_kan"
+	}
+
+	ai_weight = {
+		factor = 100
+	}
+}
+
+#舰队扩张
+ap_fleet_expansion = {
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+	}
+	modifier = {
+		starbase_shipyard_build_cost_mult = -0.1
+		starbase_shipyard_build_speed_mult = 0.1
+		country_naval_cap_add = 300
+	}
+	
+	potential = {
+	    has_authority="auth_kan"
+		NOT = {
+			has_ascension_perk = ap_fleet_expansion
+		}
+		is_mechanical_empire = no
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+}
+
+#镇守府世界
+ap_kancolle_world = {
+	potential = {
+		has_authority="auth_kan"
+		is_regular_empire = yes
+		NOT = {
+			has_ascension_perk = ap_kancolle_world
+		}
+	}
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_tech_kancolle_tanatonium"
+			has_technology = tech_kancolle_tanatonium
+		}
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}		
+	}
+	
+	on_enabled = {
+		custom_tooltip = "decision_kancolle_world_effects"
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_militarist
+		}
+	}
+}
+
+#镇守府巨构
+ap_kancolle_megastructures = {
+	potential = {
+		has_authority="auth_kan"
+		is_regular_empire = yes
+		NOT = {
+			has_ascension_perk = ap_kancolle_megastructures
+		}
+	}
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_mega_engineering"
+			has_technology = tech_mega_engineering
+		}
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}		
+	}
+	modifier = {
+		megastructure_build_speed_mult = 0.50
+		country_megastructure_build_cap_add = 2
+		megastructures_produces_mult = 0.5	
+	}	
+	on_enabled = {
+		custom_tooltip = "kancolle_elf_factory_desc"
+		add_research_option = tech_kancolle_elf_factory
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_militarist
+		}
+	}
+}
+

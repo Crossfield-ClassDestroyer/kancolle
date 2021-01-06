@@ -1,0 +1,169 @@
+#雪风
+
+create_yukikaze_governor = {
+	if = {
+		limit = { has_country_flag = yukikaze_scientist_active }
+		remove_country_flag = yukikaze_scientist_active
+		event_target:leader_yukikaze = {
+			kill_leader = { show_notification = no } 
+		}
+	}
+	if = {
+		limit = { has_country_flag = yukikaze_admiral_active }
+		remove_country_flag = yukikaze_admiral_active
+		event_target:leader_yukikaze = {
+			kill_leader = { show_notification = no } 
+		}
+	}
+	if = {
+		limit = { has_country_flag = yukikaze_general_active }
+		remove_country_flag = yukikaze_general_active
+		event_target:leader_yukikaze = {
+			kill_leader = { show_notification = no } 
+		}
+	}
+	set_country_flag = yukikaze_governor_active
+	create_leader = {
+		class = governor
+		species = event_target:kc_species
+		name = Yukikaze
+		event_leader = yes
+		skill = 10
+		set_age = 32
+		traits = {
+			trait = leader_trait_governor_yukikaze
+			trait = leader_trait_governor_kanmusu1
+		}
+	}
+	last_created_leader = { 
+		save_global_event_target_as = leader_yukikaze
+		set_leader_flag = has_gained_level_trait
+		change_leader_portrait = Yukikaze
+	}
+}
+
+create_yukikaze_scientist = {
+	if = {
+		limit = { has_country_flag = yukikaze_governor_active }
+		remove_country_flag = yukikaze_governor_active
+		event_target:leader_yukikaze = {
+			kill_leader = { show_notification = no } 
+		}
+	}
+	if = {
+		limit = { has_country_flag = yukikaze_admiral_active }
+		remove_country_flag = yukikaze_admiral_active
+		event_target:leader_yukikaze = {
+			kill_leader = { show_notification = no } 
+		}
+	}
+	if = {
+		limit = { has_country_flag = yukikaze_general_active }
+		remove_country_flag = yukikaze_general_active
+		event_target:leader_yukikaze = {
+			kill_leader = { show_notification = no } 
+		}
+	}
+	set_country_flag = yukikaze_scientist_active
+	create_leader = {
+		class = scientist
+		species = event_target:kc_species
+		name = Yukikaze
+		event_leader = yes
+		skill = 10
+		set_age = 32
+		traits = {
+			trait = leader_trait_scientist_yukikaze
+			trait = leader_trait_scientist_kanmusu1
+		}
+	}
+	last_created_leader = { 
+		save_global_event_target_as = leader_yukikaze
+		set_leader_flag = has_gained_level_trait
+		change_leader_portrait = Yukikaze
+	}
+}
+
+create_yukikaze_admiral = {
+	if = {
+		limit = { has_country_flag = yukikaze_governor_active }
+		remove_country_flag = yukikaze_governor_active
+		event_target:leader_yukikaze = {
+			kill_leader = { show_notification = no } 
+		}
+	}
+	if = {
+		limit = { has_country_flag = yukikaze_scientist_active }
+		remove_country_flag = yukikaze_scientist_active
+		event_target:leader_yukikaze = {
+			kill_leader = { show_notification = no } 
+		}
+	}
+	if = {
+		limit = { has_country_flag = yukikaze_general_active }
+		remove_country_flag = yukikaze_general_active
+		event_target:leader_yukikaze = {
+			kill_leader = { show_notification = no } 
+		}
+	}
+	set_country_flag = yukikaze_admiral_active
+	create_leader = {
+		class = admiral
+		species = event_target:kc_species
+		name = Yukikaze
+		event_leader = yes
+		skill = 10
+		set_age = 32
+		traits = {
+			trait = leader_trait_admiral_yukikaze
+			trait = leader_trait_admiral_kanmusu1
+		}
+	}
+	last_created_leader = { 
+		save_global_event_target_as = leader_yukikaze
+		set_leader_flag = has_gained_level_trait
+		change_leader_portrait = Yukikaze
+	}
+}
+
+create_yukikaze_general = {
+	if = {
+		limit = { has_country_flag = yukikaze_governor_active }
+		remove_country_flag = yukikaze_governor_active
+		event_target:leader_yukikaze = {
+			kill_leader = { show_notification = no } 
+		}
+	}
+	if = {
+		limit = { has_country_flag = yukikaze_scientist_active }
+		remove_country_flag = yukikaze_scientist_active
+		event_target:leader_yukikaze = {
+			kill_leader = { show_notification = no } 
+		}
+	}
+	if = {
+		limit = { has_country_flag = yukikaze_admiral_active }
+		remove_country_flag = yukikaze_admiral_active
+		event_target:leader_yukikaze = {
+			kill_leader = { show_notification = no } 
+		}
+	}
+	set_country_flag = yukikaze_general_active
+	create_leader = {
+		class = general
+		species = event_target:kc_species
+		name = Yukikaze
+		event_leader = yes
+		skill = 10
+		set_age = 32
+		traits = {
+			trait = leader_trait_general_yukikaze
+			trait = leader_trait_general_kanmusu1
+		}
+	}
+	last_created_leader = { 
+		save_global_event_target_as = leader_yukikaze
+		set_leader_flag = has_gained_level_trait
+		change_leader_portrait = Yukikaze
+	}
+}

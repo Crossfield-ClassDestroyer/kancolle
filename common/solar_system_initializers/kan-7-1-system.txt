@@ -1,0 +1,130 @@
+### 文莱泊地近海
+wenlaijinhai_system = {
+	name = "文莱泊地近海"
+	class = "sc_k"
+	usage = misc_system_init
+	
+	usage_odds = 0
+	
+	flags = { wenlaijinhai_system }
+
+	prevent_anomalies = yes
+
+	planet = {
+	name = "K"
+	class= "pc_k_star"
+	orbit_distance = 0
+		init_effect = {
+		    save_global_event_target_as = senka_stark_target
+		}	
+	}
+	planet = {
+		name = "H"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 230
+		size = 15
+		has_ring = no
+		init_effect = {
+		    save_global_event_target_as = senka_starh_target
+		}	
+	}
+	planet = {
+		name = "G"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 270
+		size = 15
+		has_ring = no
+		init_effect = {
+		    save_global_event_target_as = senka_starg_target
+		}	
+	}
+	planet = {
+		name = "F"
+		class = "pc_molten"
+		orbit_distance = 20
+		orbit_angle = 276
+		size = 15
+		has_ring = no
+		init_effect = {
+		    save_global_event_target_as = senka_starf_target
+		}	
+	}
+	planet = {
+		name = "D"
+		class = "pc_molten"
+		orbit_distance = 20
+		orbit_angle = 270
+		size = 15
+		has_ring = no
+		init_effect = {
+		    save_global_event_target_as = senka_stard_target
+		}	
+	}
+	planet = {
+		name = "E"
+		class = "pc_broken"
+		orbit_distance = 20
+		orbit_angle = 265
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "C"
+		class = "pc_molten"
+		orbit_distance = 20
+		orbit_angle = 280
+		size = 15
+		has_ring = no
+		init_effect = {
+		    save_global_event_target_as = senka_starc_target
+		}	
+	}
+	planet = {
+		name = "A"
+		class = "pc_kari"
+		orbit_distance = 20
+		orbit_angle = 280
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "J"
+		class = "pc_gas_giant"
+		orbit_distance = 20
+		orbit_angle = 170
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "I"
+		class = "pc_broken"
+		orbit_distance = 20
+		orbit_angle = 190
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "B"
+		class = "pc_molten"
+		orbit_distance = 20
+		orbit_angle = 250
+		size = 15
+		has_ring = no
+		init_effect = {
+		    save_global_event_target_as = senka_starb_target
+		}	
+	}
+	planet = {
+		name = "起始点"
+		class = "pc_frozen"
+		orbit_distance = 20
+		orbit_angle = 230
+		size = 25
+		has_ring = no
+	}
+	init_effect = {
+		save_global_event_target_as = wenlaijinhai_system
+	}
+}

@@ -1,0 +1,199 @@
+#魔女与战车
+site_Strike_Witches_1 = {
+	desc = "site_Strike_Witches_1_intro"
+	picture = GFX_evt_witches_panzer
+	stages = 2
+	weight = 0
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		default_site_visible_trigger = yes
+	}
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_F1
+		event = Strike_Witches_precursor.11
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_F1
+		event = Strike_Witches_precursor.12
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+#涅洛伊研究室遗址
+site_Strike_Witches_2 = {
+	desc = "site_Strike_Witches_2_intro"
+	picture = GFX_evt_neuroi_research
+	stages = 2
+	weight = 0
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		default_site_visible_trigger = yes
+	}
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_F1
+		event = Strike_Witches_precursor.21
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_F1
+		event = Strike_Witches_precursor.22
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+#胜利之剑军事行动遗址
+site_girls_panzer_1 = {
+	desc = "site_girls_panzer_1_intro"
+	picture = GFX_evt_victory_arrow
+	stages = 2
+	weight = 0
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		default_site_visible_trigger = yes
+	}
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_F1
+		event = Strike_Witches_precursor.31
+	}
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_F1
+		event = Strike_Witches_precursor.32
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_F1
+		event = Strike_Witches_precursor.33
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_F1
+		event = Strike_Witches_precursor.34
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+#庆祝之地
+site_girls_panzer_2 = {
+	desc = "site_girls_panzer_2_intro"
+	picture = GFX_evt_panzerwitches_qingzhu
+	stages = 2
+	weight = 0
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		default_site_visible_trigger = yes
+	}
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_F1
+		event = Strike_Witches_precursor.41
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_F1
+		event = Strike_Witches_precursor.42
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+#最终之战
+site_final_war = {
+	desc = "site_final_war_intro"
+	picture = GFX_evt_overgrown_city
+	stages = 2
+	weight = 0
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		default_site_visible_trigger = yes
+	}
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_F1
+		event = Strike_Witches_precursor.51
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_F1
+		event = Strike_Witches_precursor.52
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_F1
+		event = Strike_Witches_precursor.53
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_F1
+		event = Strike_Witches_precursor.54
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+#秘密之地
+site_witches_secret = {
+	desc = "site_witches_secret_intro"
+	picture = GFX_evt_neuroi_research
+	stages = 2
+	weight = 0
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		default_site_visible_trigger = yes
+	}
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_F1
+		event = Strike_Witches_precursor.61
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_F1
+		event = Strike_Witches_precursor.62
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}

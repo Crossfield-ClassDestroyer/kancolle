@@ -1,0 +1,25 @@
+#咖喱炮
+weapon_component_template = {
+	key = "PLANET_KILLER_KARI"
+	size = planet_killer
+	type = planet_killer
+	static_rotation = yes
+	use_ship_kill_target = no
+
+	prerequisites = { "tech_kari_gun" }
+
+	icon = GFX_kari_gun
+	icon_frame = 1
+	
+	power = -7500
+    windup = 60
+    total_fire_time = 30
+    accuracy = 1
+    damage = 0
+    range = 0
+    cost = 0
+
+	component_set = "kancolle_kari_gun"
+
+	planet_destruction_gfx = "shatter_planet_gfx"
+}

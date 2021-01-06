@@ -1,0 +1,512 @@
+ship_design = {
+	name = "NAME_sado"
+	ship_size = small_ship_fallen_empire
+	section = {
+		template = "fallen_empire_warship_small_key"
+		slot = "mid"
+		
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "large_fifth_navy_gun"
+		}	
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "small_fifth_navy_gun"
+		}		
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "small_fifth_navy_gun"
+		}
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "small_fifth_navy_gun"
+		}	
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "small_fifth_navy_gun"
+		}			
+		component = {
+			slot = "PD_01"
+			template = "kancolle_point_defence"
+		}	
+		component = {
+			slot = "PD_02"
+			template = "kancolle_point_defence"
+		}	
+		component = {
+			slot = "PD_03"
+			template = "kancolle_point_defence"
+		}	
+		component = {
+			slot = "PD_04"
+			template = "kancolle_point_defence"
+		}			
+		component = {
+			slot = "MEDIUM_UTILITY_1"
+			template = "medium_tech_klein"
+		}
+		component = {
+			slot = "MEDIUM_UTILITY_2"
+			template = "medium_tech_klein"
+		}
+		component = {
+			slot = "MEDIUM_UTILITY_3"
+			template = "medium_tech_klein"
+		}	
+		component = {
+			slot = "MEDIUM_UTILITY_4"
+			template = "medium_tech_klein"
+		}
+		component = {
+			slot = "MEDIUM_UTILITY_5"
+			template = "medium_tech_klein"
+		}
+		component = {
+			slot = "MEDIUM_UTILITY_6"
+			template = "medium_tech_klein"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "SHIELD_BOOSTER"
+		}		
+	}
+	required_component="SENSOR_4"
+	required_component="tech_ftl_kancolle"
+	required_component="mental_model_3"
+	required_component="tech_shinkai_processor_8"
+	required_component="titan_vector_thruster"
+	
+	# For special buildable
+	is_special_buildable = yes
+	allow_buildable_trigger = is_kc_fallen_empire
+}
+
+ship_design = {
+	name = "NAME_colorado"
+	ship_size = large_ship_fallen_empire
+	section = {
+		template = "fallen_empire_large_warship_key"
+		slot = "mid"
+	
+		component = {
+			slot = "STRIKE_CRAFT_01"
+			template = "STRIKE_CRAFT_HANGAR_3"	
+		}		
+		component = {
+			slot = "STRIKE_CRAFT_02"
+			template = "STRIKE_CRAFT_HANGAR_3"	
+		}	
+		component = {
+			slot = "EXTRA_LARGE_01"
+			template = "406_gun"
+		}		
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "large_fifth_navy_gun"
+		}		
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "large_fifth_navy_gun"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "medium_fifth_navy_gun"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "medium_fifth_navy_gun"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "medium_fifth_navy_gun"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "medium_fifth_navy_gun"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "large_tech_klein"
+		}		
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "SHIELD_BOOSTER"
+		}		
+	}
+	required_component="SENSOR_4"
+	required_component="tech_ftl_kancolle"
+	required_component="mental_model_3"
+	required_component="tech_shinkai_processor_8"
+	required_component="titan_vector_thruster"
+
+	# For special buildable
+	is_special_buildable = yes
+	allow_buildable_trigger = is_kc_fallen_empire
+}
+
+ship_design = {
+	name = "NAME_musashi"
+	ship_size = massive_ship_fallen_empire
+	section = {
+		template = "fallen_empire_massive_warship_key"
+		slot = "mid"
+		
+		component = {
+			slot = "TITANIC_01"
+			template = "titanic_Hypergravity_gun"
+		}
+		component = {
+			slot = "STRIKE_CRAFT_01"
+			template = "STRIKE_CRAFT_HANGAR_3"	
+		}
+		component = {
+			slot = "STRIKE_CRAFT_02"
+			template = "STRIKE_CRAFT_HANGAR_3"	
+		}	
+		component = {
+			slot = "STRIKE_CRAFT_03"
+			template = "STRIKE_CRAFT_HANGAR_3"	
+		}	
+		component = {
+			slot = "STRIKE_CRAFT_04"
+			template = "STRIKE_CRAFT_HANGAR_3"	
+		}			
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "large_fifth_navy_gun"
+		}		
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "large_fifth_navy_gun"
+		}		
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "large_fifth_navy_gun"
+		}		
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "large_fifth_navy_gun"
+		}	
+		component = {
+			slot = "LARGE_GUN_05"
+			template = "large_fifth_navy_gun"
+		}		
+		component = {
+			slot = "LARGE_GUN_06"
+			template = "large_fifth_navy_gun"
+		}	
+		component = {
+			slot = "LARGE_GUN_07"
+			template = "large_fifth_navy_gun"
+		}	
+		component = {
+			slot = "LARGE_GUN_08"
+			template = "large_fifth_navy_gun"
+		}			
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "medium_fifth_navy_gun"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "medium_fifth_navy_gun"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "medium_fifth_navy_gun"
+		}		
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "medium_fifth_navy_gun"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "large_tech_klein"
+		}		
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_10"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_11"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_12"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_13"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_14"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_15"
+			template = "large_tech_klein"
+		}		
+		component = {
+			slot = "LARGE_UTILITY_16"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_17"
+			template = "large_tech_klein"
+		}		
+		component = {
+			slot = "LARGE_UTILITY_18"
+			template = "large_tech_klein"
+		}		
+		component = {
+			slot = "LARGE_UTILITY_19"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_20"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "SHIELD_BOOSTER"
+		}	
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "SHIELD_BOOSTER"
+		}		
+	}
+	required_component="SENSOR_4"
+	required_component="tech_ftl_kancolle"
+	required_component="mental_model_3"
+	required_component="tech_shinkai_processor_8"
+	required_component="titan_vector_thruster"
+	
+	# For special buildable
+	is_special_buildable = yes
+	allow_buildable_trigger = is_kc_fallen_empire
+}
+
+# Defense Platform
+ship_design = {
+ship_design = {
+	name = "NAME_kokutai"
+	ship_size = military_station_small_fallen_empire
+	section = {
+		template = "fallen_empire_station_small_key"
+		slot = "mid"
+		
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "large_fifth_navy_gun"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "large_fifth_navy_gun"
+		}	
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "medium_fifth_navy_gun"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "medium_fifth_navy_gun"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "medium_fifth_navy_gun"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "medium_fifth_navy_gun"
+		}
+		component = {
+			slot = "MEDIUM_GUN_05"
+			template = "medium_fifth_navy_gun"
+		}		
+		component = {
+			slot = "PD_01"
+			template = "kancolle_point_defence"
+		}
+		component = {
+			slot = "PD_02"
+			template = "kancolle_point_defence"
+		}	
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "large_tech_klein"
+		}	
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "large_tech_klein"
+		}	
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "SHIELD_BOOSTER"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "SHIELD_BOOSTER"
+		}			
+	}
+	required_component="SENSOR_4"
+	required_component="mental_model_6"	
+	required_component="tech_shinkai_processor_8"
+
+	# For special buildable
+	is_special_buildable = yes
+	allow_buildable_trigger = is_kc_fallen_empire
+
+}
+
+ship_design = {
+	name = "NAME_kamoyi"
+	ship_size = constructor
+	section = {
+		template = "DEFAULT_CONSTRUCTION_SECTION"
+		slot = "mid"
+	
+		component = {
+			slot = "SMALL_UTILITY_1"
+			template = "small_tech_klein"
+		}	
+		component = {
+			slot = "SMALL_UTILITY_2"
+			template = "small_tech_klein"
+		}		
+	}
+	required_component="tech_ftl_kancolle"
+	required_component="titan_vector_thruster"
+	required_component="SENSOR_4"
+	required_component="tech_shinkai_processor_8"
+	
+	# For special buildable
+	is_special_buildable = yes
+	allow_buildable_trigger = is_kc_fallen_empire
+}
+
+ship_design = {
+	name = "NAME_Hiei"
+	ship_size = colossus
+	section = {
+		template = "SHIP_COLOSSUS_SECTION"
+		slot = "ship"
+		
+		component = {
+			slot = "PLANET_KILLER_GUN_01"
+			template = "PLANET_KILLER_KARI"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "large_tech_klein"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "large_tech_klein"
+		}		
+	}
+	required_component="tech_shinkai_processor_7"
+	required_component="tech_ftl_kancolle"
+	required_component="SENSOR_4"
+	required_component="colossus_vector_thruster"	
+}

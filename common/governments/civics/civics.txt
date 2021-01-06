@@ -1,0 +1,131 @@
+civic_oyodo = {
+	icon = "gfx/interface/icons/governments/civics/oyodo.dds"
+	potential = { ethics = { NOT = { value = ethic_gestalt_consciousness } } }
+	possible = { authority = {value = auth_kan } }
+	random_weight = { base = 0 }
+	modifier = {
+		country_admin_cap_add = 50
+		country_command_limit_add = 20
+	}
+}
+civic_yaojing = {
+	icon = "gfx/interface/icons/governments/civics/yaojing.dds"
+	potential = { ethics = { NOT = { value = ethic_gestalt_consciousness } } }
+	possible = { authority = {value = auth_kan } }
+	random_weight = { base = 0 }
+	modifier = {
+		starbase_shipyard_build_cost_mult = -0.1
+		starbase_shipyard_build_speed_mult = 0.1
+		planet_jobs_produces_mult = 0.2
+	}
+}
+civic_soviet = {
+	icon = "gfx/interface/icons/governments/civics/soviet.dds"
+	potential = { ethics = { NOT = { value = ethic_gestalt_consciousness } } }
+	possible = { authority = {value = auth_kan } }
+	random_weight = { base = 0 }
+	modifier = {
+		army_damage_mult = 0.2
+		ship_weapon_damage = 0.1
+	}
+}
+civic_yubari = {
+	icon = "gfx/interface/icons/governments/civics/yubari.dds"
+	potential = { ethics = { NOT = { value = ethic_gestalt_consciousness } } }
+	possible = { authority = {value = auth_kan } }
+	random_weight = { base = 0 }
+	modifier = {
+		num_tech_alternatives_add = 2
+		all_technology_research_speed = 0.2
+	}
+}
+
+###################
+#fallen empire
+
+civic_kancolle_ywwuyi={
+	icon="gfx/interface/icons/governments/civics/ywwuyi.dds"
+	potential={
+		country_type = { value = fallen_empire }
+		authority = { value = auth_kancolle_fallen_empire}
+	}
+	possible={}
+	
+	modifier={
+		ships_upkeep_mult = -0.3
+		armies_upkeep_mult= -0.3
+		country_war_exhaustion_mult = 0.5
+		pop_growth_speed_reduction = 0.5
+		planet_max_buildings_add = 16
+	}
+	random_weight = {
+		base = 999999
+	}
+}
+
+civic_kancolle_chiosen={
+	icon="gfx/interface/icons/governments/civics/chiosen.dds"
+	potential={
+		country_type = { value = fallen_empire }
+		authority = { value = auth_kancolle_fallen_empire}
+	}
+	possible={}
+	
+	modifier={
+		all_technology_research_speed = -0.2
+		country_admin_cap_add = 2000
+		country_command_limit_add = 200
+		country_naval_cap_add = 2000
+		planet_max_buildings_add = 16
+	}
+	random_weight = {
+		base = 999999
+	}
+}
+
+civic_kancolle_awakened_muteki = {
+	icon="gfx/interface/icons/governments/civics/muteki.dds"
+	potential = {
+		country_type = { value = awakened_fallen_empire }
+		authority = { value = auth_kancolle_fallen_empire }
+	}
+
+	modifier = {
+		ships_upkeep_mult = -0.4
+		country_naval_cap_add = 3000
+		ship_disengage_chance_mult = 0.5
+		all_technology_research_speed = 0.5
+		planet_jobs_produces_mult = 0.5
+		planet_max_buildings_add = 16
+	}
+
+	random_weight = {
+		base = 99999
+	}
+}
+
+civic_kancolle_awakened_xianyu = {
+	icon="gfx/interface/icons/governments/civics/wg_fe2.dds"
+	potential = {
+		country_type = { value = awakened_fallen_empire }
+		authority = { value = auth_kancolle_fallen_empire }
+	}
+
+	modifier = {
+		ships_upkeep_mult = -0.5
+		ship_hull_mult = 0.2
+		ship_shield_mult = 0.2
+		ship_shield_damage_mult = 0.2
+		ship_armor_mult = 0.2
+		ship_armor_damage_mult = 0.2
+		country_command_limit_add = 300
+		ship_starting_experience_add = 10000
+		country_naval_cap_add = 10000
+		country_resource_max_add = 1000000
+		planet_max_buildings_add = 16
+	}
+
+	random_weight = {
+		base = 99999
+	}
+}

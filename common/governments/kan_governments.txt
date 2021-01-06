@@ -1,0 +1,11 @@
+
+gov_kan_empire = {
+	possible = {
+			has_authority = auth_kan
+	}
+
+	weight = {
+		base = 1000
+	}
+}
+

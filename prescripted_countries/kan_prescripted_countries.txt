@@ -1,0 +1,78 @@
+﻿kancolle = {
+	name = "kancolle"
+	spawn_enabled = yes # yes / no / always
+	spawn_as_fallen = yes
+	#ignore_portrait_duplication=yes
+	
+	ship_prefix = "IJN"
+	
+	species={
+		class="KAN"
+		portrait="KanColle_portraits"
+		name=舰娘
+		plural=舰娘们
+		adjective=舰娘的
+		#species_bio="公元2199年，随着星球上最后一个中枢栖姬被摧毁，过去舰娘们因为沉没的怨念而形成的深海栖舰彻底从这颗星球上失去了踪迹，根据多年对深海栖舰技术的研究，镇守府在多年的对抗深海中逐渐成为了一个超越国家的组织的存在，随着对太空技术的研发，镇守府掌控了这颗星球的实权，现在，镇守府将向太空进发。在拂晓的水平线上刻下胜利吧！"
+		name_list="KanColle"
+		
+		trait="kancolle_trait_kanmusu"
+		trait="kancolle_trait_kaisaki"
+	}
+
+	adjective = "镇守府的"
+	
+	authority="auth_kan"
+	government="gov_kan_empire"
+	origin="origin_kancolle"
+	advisor_voice_type="advisor_shigure"
+	ethic="ethic_militarist"
+	ethic="ethic_xenophobe"
+	ethic="ethic_materialist"
+	civics={
+		"civic_oyodo"
+		"civic_yaojing"
+	}
+
+	flags = { kancolle_flag custom_start_screen }
+	
+	weapon = "tech_mass_drivers_1"
+	
+	planet_name = "横须贺"
+	planet_class="pc_ocean"
+	initializer = "yokosuka_system_initializer"
+	system_name = "横须贺"
+	
+	graphical_culture="wsg_01"
+	city_graphical_culture="wsg_01"
+	
+	empire_flag={
+		icon={
+			category="kan"
+			file="kc.dds"
+		}
+		background={
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors={
+			"blue"
+			"blue"
+			"null"
+			"null"
+		}
+	}
+	
+	ruler={
+		gender=female
+		name="大和改"
+		portrait="Yamato"
+		texture=0
+		hair=0
+		clothes=0
+		ruler_title="秘书舰"
+		ruler_title_female="秘书舰"
+	}
+	
+	room="c_room"
+	
+}

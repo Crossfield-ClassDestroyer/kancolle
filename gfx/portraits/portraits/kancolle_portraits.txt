@@ -1,0 +1,1249 @@
+portraits = {
+	SamuelB.Roberts = {texturefile = gfx/models/portraits/KanColle/US/SamuelB.Roberts.dds }
+	Fletcher = {texturefile = gfx/models/portraits/KanColle/US/Fletcher.dds }
+	Johnston = {texturefile = gfx/models/portraits/KanColle/US/Johnston.dds }
+	Atlanta = {texturefile = gfx/models/portraits/KanColle/US/Atlanta.dds }
+	Houston = {texturefile = gfx/models/portraits/KanColle/US/Houston.dds }
+	Colorado = {texturefile = gfx/models/portraits/KanColle/US/Colorado.dds }
+	Iowa = {texturefile = gfx/models/portraits/KanColle/US/Iowa.dds }
+	GambierBay = {texturefile = gfx/models/portraits/KanColle/US/GambierBay.dds }
+	Saratoga = {texturefile = gfx/models/portraits/KanColle/US/Saratoga.dds }
+	Intrepid = {texturefile = gfx/models/portraits/KanColle/US/Intrepid.dds }
+	Hornet = {texturefile = gfx/models/portraits/KanColle/US/Hornet.dds }
+	SouthDakota = {texturefile = gfx/models/portraits/KanColle/US/SouthDakota.dds }
+	Jervis = {texturefile = gfx/models/portraits/KanColle/UK/Jervis.dds }
+	Janus = {texturefile = gfx/models/portraits/KanColle/UK/Janus.dds }
+	Warsprite = {texturefile = gfx/models/portraits/KanColle/UK/Warspite.dds }
+	Nelson = {texturefile = gfx/models/portraits/KanColle/UK/Nelson.dds }
+	ArkRoyal = {texturefile = gfx/models/portraits/KanColle/UK/ArkRoyal.dds }
+	Tashkent = {texturefile = gfx/models/portraits/KanColle/RU/Tashkent.dds }
+	Verniy = {texturefile = gfx/models/portraits/KanColle/RU/Verniy.dds }
+	Gangut = {texturefile = gfx/models/portraits/KanColle/RU/Gangut.dds }
+	Richelieu = {texturefile = gfx/models/portraits/KanColle/FR/Richelieu.dds }
+	CommandantTeste = {texturefile = gfx/models/portraits/KanColle/FR/CommandantTeste.dds }
+	Shimushu = {texturefile = gfx/models/portraits/KanColle/JP/Shimushu.dds }
+	Kunashiri = {texturefile = gfx/models/portraits/KanColle/JP/Kunashiri.dds }
+	Hachijou = {texturefile = gfx/models/portraits/KanColle/JP/Hachijou.dds }
+	Ishigaki = {texturefile = gfx/models/portraits/KanColle/JP/Ishigaki.dds }
+	Etorofu = {texturefile = gfx/models/portraits/KanColle/JP/Etorofu.dds }
+	Matsuwa = {texturefile = gfx/models/portraits/KanColle/JP/Matsuwa.dds }
+	Sado = {texturefile = gfx/models/portraits/KanColle/JP/Sado.dds }
+	Tsushima = {texturefile = gfx/models/portraits/KanColle/JP/Tsushima.dds }
+	Hirato = {texturefile = gfx/models/portraits/KanColle/JP/Hirato.dds }
+	Fukae = {texturefile = gfx/models/portraits/KanColle/JP/Fukae.dds }
+	Hiburi = {texturefile = gfx/models/portraits/KanColle/JP/Hiburi.dds }
+	Daitou = {texturefile = gfx/models/portraits/KanColle/JP/Daitou.dds }
+	I-8 = {texturefile = gfx/models/portraits/KanColle/JP/I-8.dds }
+	I-13 = {texturefile = gfx/models/portraits/KanColle/JP/I-13.dds }
+	I-14 = {texturefile = gfx/models/portraits/KanColle/JP/I-14.dds }
+	I-19 = {texturefile = gfx/models/portraits/KanColle/JP/I-19.dds }
+	I-26 = {texturefile = gfx/models/portraits/KanColle/JP/I-26.dds }
+	I-58 = {texturefile = gfx/models/portraits/KanColle/JP/I-58.dds }
+	I-168 = {texturefile = gfx/models/portraits/KanColle/JP/I-168.dds }
+	I-400 = {texturefile = gfx/models/portraits/KanColle/JP/I-400.dds }
+	I-401 = {texturefile = gfx/models/portraits/KanColle/JP/I-401.dds }
+	Ro-500 = {texturefile = gfx/models/portraits/KanColle/JP/Ro-500.dds }
+	Akashi = {texturefile = gfx/models/portraits/KanColle/JP/Akashi.dds }
+	AkitsuMaru = {texturefile = gfx/models/portraits/KanColle/JP/AkitsuMaru.dds }
+	Akitsushima = {texturefile = gfx/models/portraits/KanColle/JP/Akitsushima.dds }
+	Hayasui = {texturefile = gfx/models/portraits/KanColle/JP/Hayasui.dds }
+	Kamoi = {texturefile = gfx/models/portraits/KanColle/JP/Kamoi.dds }
+	Mizuho = {texturefile = gfx/models/portraits/KanColle/JP/Mizuho.dds }
+	Nisshin = {texturefile = gfx/models/portraits/KanColle/JP/Nisshin.dds }
+	ShinshuuMaru = {texturefile = gfx/models/portraits/KanColle/JP/ShinshuuMaru.dds }
+	Abukuma = {texturefile = gfx/models/portraits/KanColle/JP/Abukuma.dds }
+	Agano = {texturefile = gfx/models/portraits/KanColle/JP/Agano.dds }
+	Isuzu = {texturefile = gfx/models/portraits/KanColle/JP/Isuzu.dds }
+	Jintsu = {texturefile = gfx/models/portraits/KanColle/JP/Jintsuu.dds }
+	Kashima = {texturefile = gfx/models/portraits/KanColle/JP/Kashima.dds }
+	Katori = {texturefile = gfx/models/portraits/KanColle/JP/Katori.dds }
+	Kinu = {texturefile = gfx/models/portraits/KanColle/JP/Kinu.dds }
+	Kiso = {texturefile = gfx/models/portraits/KanColle/JP/Kiso.dds }
+	Kitakami = {texturefile = gfx/models/portraits/KanColle/JP/Kitakami.dds }
+	Kuma = {texturefile = gfx/models/portraits/KanColle/JP/Kuma.dds }
+	Nagara = {texturefile = gfx/models/portraits/KanColle/JP/Nagara.dds }
+	Naka = {texturefile = gfx/models/portraits/KanColle/JP/Naka.dds }
+	Natori = {texturefile = gfx/models/portraits/KanColle/JP/Natori.dds }
+	Noshiro = {texturefile = gfx/models/portraits/KanColle/JP/Noshiro.dds }
+	Ooi = {texturefile = gfx/models/portraits/KanColle/JP/Ooi.dds }
+	Ooyodo = {texturefile = gfx/models/portraits/KanColle/JP/Ooyodo.dds }
+	Sakawa = {texturefile = gfx/models/portraits/KanColle/JP/Sakawa.dds }
+	Sendai = {texturefile = gfx/models/portraits/KanColle/JP/Sendai.dds }
+	Tama = {texturefile = gfx/models/portraits/KanColle/JP/Tama.dds }
+	Tatsuta = {texturefile = gfx/models/portraits/KanColle/JP/Tatsuta.dds }
+	Tenryuu = {texturefile = gfx/models/portraits/KanColle/JP/Tenryuu.dds }
+	Yahagi = {texturefile = gfx/models/portraits/KanColle/JP/Yahagi.dds }
+	Yura = {texturefile = gfx/models/portraits/KanColle/JP/Yura.dds }
+	Yuubari = {texturefile = gfx/models/portraits/KanColle/JP/Yuubari.dds }
+	Akatsuki = {texturefile = gfx/models/portraits/KanColle/JP/Akatsuki.dds }
+	Akebono = {texturefile = gfx/models/portraits/KanColle/JP/Akebono.dds }
+	Akigumo = {texturefile = gfx/models/portraits/KanColle/JP/Akigumo.dds }
+	Akishimo = {texturefile = gfx/models/portraits/KanColle/JP/Akishimo.dds }
+	Akizuki = {texturefile = gfx/models/portraits/KanColle/JP/Akizuki.dds }
+	Amagiri = {texturefile = gfx/models/portraits/KanColle/JP/Amagiri.dds }
+	Amatsukaze = {texturefile = gfx/models/portraits/KanColle/JP/Amatsukaze.dds }
+	Arare = {texturefile = gfx/models/portraits/KanColle/JP/Arare.dds }
+	Arashi = {texturefile = gfx/models/portraits/KanColle/JP/Arashi.dds }
+	Arashio = {texturefile = gfx/models/portraits/KanColle/JP/Arashio.dds }
+	Asagumo = {texturefile = gfx/models/portraits/KanColle/JP/Asagumo.dds }
+	Asakaze = {texturefile = gfx/models/portraits/KanColle/JP/Asakaze.dds }
+	Asashimo = {texturefile = gfx/models/portraits/KanColle/JP/Asashimo.dds }
+	Asashio = {texturefile = gfx/models/portraits/KanColle/JP/Asashio.dds }
+	Ayanami = {texturefile = gfx/models/portraits/KanColle/JP/Ayanami.dds }
+	Fubuki = {texturefile = gfx/models/portraits/KanColle/JP/Fubuki.dds }
+	Fujinami = {texturefile = gfx/models/portraits/KanColle/JP/Fujinami.dds }
+	Fumizuki = {texturefile = gfx/models/portraits/KanColle/JP/Fumizuki.dds }
+	Hagikaze = {texturefile = gfx/models/portraits/KanColle/JP/Hagikaze.dds }
+	Hamakaze = {texturefile = gfx/models/portraits/KanColle/JP/Hamakaze.dds }
+	Hamanami = {texturefile = gfx/models/portraits/KanColle/JP/Hamanami.dds }
+	Harukaze = {texturefile = gfx/models/portraits/KanColle/JP/Harukaze.dds }
+	Harusame = {texturefile = gfx/models/portraits/KanColle/JP/Harusame.dds }
+	Hatakaze = {texturefile = gfx/models/portraits/KanColle/JP/Hatakaze.dds }
+	Hatsuharu = {texturefile = gfx/models/portraits/KanColle/JP/Hatsuharu.dds }
+	Hatsukaze = {texturefile = gfx/models/portraits/KanColle/JP/Hatsukaze.dds }
+	Hatsushimo = {texturefile = gfx/models/portraits/KanColle/JP/Hatsushimo.dds }
+	Hatsuyuki = {texturefile = gfx/models/portraits/KanColle/JP/Hatsuyuki.dds }
+	Hatsuzuki = {texturefile = gfx/models/portraits/KanColle/JP/Hatsuzuki.dds }
+	Hayanami = {texturefile = gfx/models/portraits/KanColle/JP/Hayanami.dds }
+	Hayashimo = {texturefile = gfx/models/portraits/KanColle/JP/Hayashimo.dds }
+	Ikazuchi = {texturefile = gfx/models/portraits/KanColle/JP/Ikazuchi.dds }
+	Inazuma = {texturefile = gfx/models/portraits/KanColle/JP/Inazuma.dds }
+	Isokaze = {texturefile = gfx/models/portraits/KanColle/JP/Isokaze.dds }
+	Isonami = {texturefile = gfx/models/portraits/KanColle/JP/Isonami.dds }
+	Kagerou = {texturefile = gfx/models/portraits/KanColle/JP/Kagerou.dds }
+	Kamikaze = {texturefile = gfx/models/portraits/KanColle/JP/Kamikaze.dds }
+	Kasumi = {texturefile = gfx/models/portraits/KanColle/JP/Kasumi.dds }
+	Kawakaze = {texturefile = gfx/models/portraits/KanColle/JP/Kawakaze.dds }
+	Kazagumo = {texturefile = gfx/models/portraits/KanColle/JP/Kazagumo.dds }
+	Kikuzuki = {texturefile = gfx/models/portraits/KanColle/JP/Kikuzuki.dds }
+	Kisaragi = {texturefile = gfx/models/portraits/KanColle/JP/Kisaragi.dds }
+	Kishinami = {texturefile = gfx/models/portraits/KanColle/JP/Kishinami.dds }
+	Kiyoshimo = {texturefile = gfx/models/portraits/KanColle/JP/Kiyoshimo.dds }
+	Kuroshio = {texturefile = gfx/models/portraits/KanColle/JP/Kuroshio.dds }
+	Maikaze = {texturefile = gfx/models/portraits/KanColle/JP/Maikaze.dds }
+	Makigumo = {texturefile = gfx/models/portraits/KanColle/JP/Makigumo.dds }
+	Matsukaze = {texturefile = gfx/models/portraits/KanColle/JP/Matsukaze.dds }
+	Michishio = {texturefile = gfx/models/portraits/KanColle/JP/Michishio.dds }
+	Mikazuki = {texturefile = gfx/models/portraits/KanColle/JP/Mikazuki.dds }
+	Minazuki = {texturefile = gfx/models/portraits/KanColle/JP/Minazuki.dds }
+	Minegumo = {texturefile = gfx/models/portraits/KanColle/JP/Minegumo.dds }
+	Miyuki = {texturefile = gfx/models/portraits/KanColle/JP/Miyuki.dds }
+	Mochizuki = {texturefile = gfx/models/portraits/KanColle/JP/Mochizuki.dds }
+	Murakumo = {texturefile = gfx/models/portraits/KanColle/JP/Murakumo.dds }
+	Murasame = {texturefile = gfx/models/portraits/KanColle/JP/Murasame.dds }
+	Mutsuki = {texturefile = gfx/models/portraits/KanColle/JP/Mutsuki.dds }
+	Naganami = {texturefile = gfx/models/portraits/KanColle/JP/Naganami.dds }
+	Nagatsuki = {texturefile = gfx/models/portraits/KanColle/JP/Nagatsuki.dds }
+	Nenohi = {texturefile = gfx/models/portraits/KanColle/JP/Nenohi.dds }
+	Nowaki = {texturefile = gfx/models/portraits/KanColle/JP/Nowaki.dds }
+	Oboro = {texturefile = gfx/models/portraits/KanColle/JP/Oboro.dds }
+	Okinami = {texturefile = gfx/models/portraits/KanColle/JP/Okinami.dds }
+	Ooshio = {texturefile = gfx/models/portraits/KanColle/JP/Ooshio.dds }
+	Oyashio = {texturefile = gfx/models/portraits/KanColle/JP/Oyashio.dds }
+	Sagiri = {texturefile = gfx/models/portraits/KanColle/JP/Sagiri.dds }
+	Samidare = {texturefile = gfx/models/portraits/KanColle/JP/Samidare.dds }
+	Satsuki = {texturefile = gfx/models/portraits/KanColle/JP/Satsuki.dds }
+	Sazanami = {texturefile = gfx/models/portraits/KanColle/JP/Sazanami.dds }
+	Shigure = {texturefile = gfx/models/portraits/KanColle/JP/Shigure.dds }
+	Shikinami = {texturefile = gfx/models/portraits/KanColle/JP/Shikinami.dds }
+	Shimakaze = {texturefile = gfx/models/portraits/KanColle/JP/Shimakaze.dds }
+	Shiranui = {texturefile = gfx/models/portraits/KanColle/JP/Shiranui.dds }
+	Shiratsuyu = {texturefile = gfx/models/portraits/KanColle/JP/Shiratsuyu.dds }
+	Shirayuki = {texturefile = gfx/models/portraits/KanColle/JP/Shirayuki.dds }
+	Suzukaze = {texturefile = gfx/models/portraits/KanColle/JP/Suzukaze.dds }
+	Suzutsuki = {texturefile = gfx/models/portraits/KanColle/JP/Suzutsuki.dds }
+	Takanami = {texturefile = gfx/models/portraits/KanColle/JP/Takanami.dds }
+	Tanikaze = {texturefile = gfx/models/portraits/KanColle/JP/Tanikaze.dds }
+	Teruzuki = {texturefile = gfx/models/portraits/KanColle/JP/Teruzuki.dds }
+	Tokitsukaze = {texturefile = gfx/models/portraits/KanColle/JP/Tokitsukaze.dds }
+	Umikaze = {texturefile = gfx/models/portraits/KanColle/JP/Umikaze.dds }
+	Urakaze = {texturefile = gfx/models/portraits/KanColle/JP/Urakaze.dds }
+	Uranami = {texturefile = gfx/models/portraits/KanColle/JP/Uranami.dds }
+	Ushio = {texturefile = gfx/models/portraits/KanColle/JP/Ushio.dds }
+	Uzuki = {texturefile = gfx/models/portraits/KanColle/JP/Uzuki.dds }
+	Wakaba = {texturefile = gfx/models/portraits/KanColle/JP/Wakaba.dds }
+	Yamagumo = {texturefile = gfx/models/portraits/KanColle/JP/Yamagumo.dds }
+	Yamakaze = {texturefile = gfx/models/portraits/KanColle/JP/Yamakaze.dds }
+	Yayoi = {texturefile = gfx/models/portraits/KanColle/JP/Yayoi.dds }
+	Yukikaze = {texturefile = gfx/models/portraits/KanColle/JP/Yukikaze.dds }
+	Yuudachi = {texturefile = gfx/models/portraits/KanColle/JP/Yuudachi.dds }
+	Yuugumo = {texturefile = gfx/models/portraits/KanColle/JP/Yuugumo.dds }
+	Aoba = {texturefile = gfx/models/portraits/KanColle/JP/Aoba.dds }
+	Ashigara = {texturefile = gfx/models/portraits/KanColle/JP/Ashigara.dds }
+	Atago = {texturefile = gfx/models/portraits/KanColle/JP/Atago.dds }
+	Chikuma = {texturefile = gfx/models/portraits/KanColle/JP/Chikuma.dds }
+	Choukai = {texturefile = gfx/models/portraits/KanColle/JP/Choukai.dds }
+	Furutaka = {texturefile = gfx/models/portraits/KanColle/JP/Furutaka.dds }
+	Haguro = {texturefile = gfx/models/portraits/KanColle/JP/Haguro.dds }
+	Kako = {texturefile = gfx/models/portraits/KanColle/JP/Kako.dds }
+	Kinugasa = {texturefile = gfx/models/portraits/KanColle/JP/Kinugasa.dds }
+	Kumano = {texturefile = gfx/models/portraits/KanColle/JP/Kumano.dds }
+	Maya = {texturefile = gfx/models/portraits/KanColle/JP/Maya.dds }
+	Mikuma = {texturefile = gfx/models/portraits/KanColle/JP/Mikuma.dds }
+	Mogami = {texturefile = gfx/models/portraits/KanColle/JP/Mogami.dds }
+	Myoko = {texturefile = gfx/models/portraits/KanColle/JP/Myoukou.dds }
+	Nachi = {texturefile = gfx/models/portraits/KanColle/JP/Nachi.dds }
+	Suzuya = {texturefile = gfx/models/portraits/KanColle/JP/Suzuya.dds }
+	Takao = {texturefile = gfx/models/portraits/KanColle/JP/Takao.dds }
+	Tone = {texturefile = gfx/models/portraits/KanColle/JP/Tone.dds }
+	Akagi = {texturefile = gfx/models/portraits/KanColle/JP/Akagi.dds }
+	Amagi = {texturefile = gfx/models/portraits/KanColle/JP/Amagi.dds }
+	Chitose = {texturefile = gfx/models/portraits/KanColle/JP/Chitose.dds }
+	Chiyoda = {texturefile = gfx/models/portraits/KanColle/JP/Chiyoda.dds }
+	Hiryuu = {texturefile = gfx/models/portraits/KanColle/JP/Hiryuu.dds }
+	Hiyou = {texturefile = gfx/models/portraits/KanColle/JP/Hiyou.dds }
+	Houshou = {texturefile = gfx/models/portraits/KanColle/JP/Houshou.dds }
+	Junyou = {texturefile = gfx/models/portraits/KanColle/JP/Junyou.dds }
+	Kaga = {texturefile = gfx/models/portraits/KanColle/JP/Kaga.dds }
+	Ariyake = {texturefile = gfx/models/portraits/KanColle/JP/Ariyake.dds }
+	Katsuragi = {texturefile = gfx/models/portraits/KanColle/JP/Katsuragi.dds }
+	Ryuuhou = {texturefile = gfx/models/portraits/KanColle/JP/Ryuuhou.dds }
+	RJ = {texturefile = gfx/models/portraits/KanColle/JP/Ryuujou.dds }
+	Shinyou = {texturefile = gfx/models/portraits/KanColle/JP/Shinyou.dds }
+	Shouhou = {texturefile = gfx/models/portraits/KanColle/JP/Shouhou.dds }
+	Shokaku = {texturefile = gfx/models/portraits/KanColle/JP/Shoukaku.dds }
+	Souryuu = {texturefile = gfx/models/portraits/KanColle/JP/Souryuu.dds }
+	Taiho = {texturefile = gfx/models/portraits/KanColle/JP/Taihou.dds }
+	Taiyou = {texturefile = gfx/models/portraits/KanColle/JP/Taiyou.dds }
+	Unryuu = {texturefile = gfx/models/portraits/KanColle/JP/Unryuu.dds }
+	Zuihou = {texturefile = gfx/models/portraits/KanColle/JP/Zuihou.dds }
+	Zuikaku = {texturefile = gfx/models/portraits/KanColle/JP/Zuikaku.dds }
+	Fusou = {texturefile = gfx/models/portraits/KanColle/JP/Fusou.dds }
+	Haruna = {texturefile = gfx/models/portraits/KanColle/JP/Haruna.dds }
+	Hiei = {texturefile = gfx/models/portraits/KanColle/JP/Hiei.dds }
+	Hyuuga = {texturefile = gfx/models/portraits/KanColle/JP/Hyuuga.dds }
+	Ise = {texturefile = gfx/models/portraits/KanColle/JP/Ise.dds }
+	Kongo = {texturefile = gfx/models/portraits/KanColle/JP/Kongou.dds }
+	Musashi = {texturefile = gfx/models/portraits/KanColle/JP/Musashi.dds }
+	Kirishima = {texturefile = gfx/models/portraits/KanColle/JP/Kirishima.dds }
+	Mutsu = {texturefile = gfx/models/portraits/KanColle/JP/Mutsu.dds }
+	Nagato = {texturefile = gfx/models/portraits/KanColle/JP/Nagato.dds }
+	Yamashiro = {texturefile = gfx/models/portraits/KanColle/JP/Yamashiro.dds }
+	Yamato = {texturefile = gfx/models/portraits/KanColle/JP/Yamato.dds }
+	Z1 = {texturefile = gfx/models/portraits/KanColle/DE/Z1.dds }
+	Z3 = {texturefile = gfx/models/portraits/KanColle/DE/Z3.dds }
+	Eugen = {texturefile = gfx/models/portraits/KanColle/DE/PrinzEugen.dds }
+	Bismarck = {texturefile = gfx/models/portraits/KanColle/DE/Bismarck.dds }
+	Graf = {texturefile = gfx/models/portraits/KanColle/DE/GrafZeppelin.dds }
+	U-511 = {texturefile = gfx/models/portraits/KanColle/DE/U-511.dds }
+	Maestrale = {texturefile = gfx/models/portraits/KanColle/IT/Maestrale.dds }
+	Grecale = {texturefile = gfx/models/portraits/KanColle/IT/Grecale.dds }
+	Libeccio = {texturefile = gfx/models/portraits/KanColle/IT/Libeccio.dds }
+	DucadegliAbruzzi = {texturefile = gfx/models/portraits/KanColle/IT/DucadegliAbruzzi.dds }
+	GiuseppeGaribaldi = {texturefile = gfx/models/portraits/KanColle/IT/GiuseppeGaribaldi.dds }
+	Pola = {texturefile = gfx/models/portraits/KanColle/IT/Pola.dds }
+	Zara = {texturefile = gfx/models/portraits/KanColle/IT/Zara.dds }
+	Italia = {texturefile = gfx/models/portraits/KanColle/IT/Littorio.dds }
+	Roma = {texturefile = gfx/models/portraits/KanColle/IT/Roma.dds }
+	Aquila = {texturefile = gfx/models/portraits/KanColle/IT/Aquila.dds }
+	LuigiTorelli = {texturefile = gfx/models/portraits/KanColle/IT/LuigiTorelli.dds }
+	ywwuyi = {texturefile = gfx/models/portraits/KanColle/other/ywwuyi.dds }
+	perth = {texturefile = gfx/models/portraits/KanColle/other/perth.dds }
+	DeR = {texturefile = gfx/models/portraits/KanColle/other/Der.dds }
+	Gotland = {texturefile = gfx/models/portraits/KanColle/other/Gotland.dds }
+	Take = {texturefile = gfx/models/portraits/KanColle/JP/Take.dds }
+	Scirocco = {texturefile = gfx/models/portraits/KanColle/IT/Scirocco.dds }
+	Sheffield = {texturefile = gfx/models/portraits/KanColle/UK/Sheffield.dds }
+	Washington = {texturefile = gfx/models/portraits/KanColle/US/Washington.dds }
+	muteki = {texturefile = gfx/models/portraits/KanColle/other/muteki.dds }
+}
+
+
+   
+portrait_groups = {
+    KanColle_portraits = {
+		default = Yamato
+        game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+       		add = {
+                portraits = {
+	SamuelB.Roberts
+    Fletcher
+    Johnston
+	Atlanta
+	Houston
+	Colorado
+	Iowa
+	GambierBay
+	Saratoga
+	Intrepid
+	Jervis
+	Janus
+	Warsprite
+	Nelson
+	ArkRoyal
+	Tashkent
+	Verniy
+	Gangut
+	Richelieu
+	CommandantTeste
+	Shimushu
+	Kunashiri
+	Hachijou
+	Ishigaki
+	Etorofu
+	Matsuwa
+	Sado
+	Tsushima
+	Hirato
+	Fukae
+	Hiburi
+	Daitou
+	I-8
+	I-13
+	I-14
+	I-19
+	I-26
+	I-58
+	I-168
+	I-400
+	I-401
+	Ro-500
+	Akashi
+	AkitsuMaru
+	Akitsushima
+	Hayasui
+	Kamoi
+	Mizuho
+	Nisshin
+	ShinshuuMaru
+	Abukuma
+	Agano
+	Isuzu
+	Jintsu
+	Kashima
+	Katori
+	Kinu
+	Kiso
+	Kitakami
+	Kuma
+	Nagara
+	Naka
+	Natori
+	Noshiro
+	Ooi
+	Ooyodo
+	Sakawa
+	Sendai
+	Tama
+	Tatsuta
+	Tenryuu
+	Yahagi
+	Yura
+	Yuubari
+	Akatsuki
+	Akebono
+	Akigumo
+	Akishimo
+	Akizuki
+	Amagiri
+	Amatsukaze
+	Arare
+	Arashi
+	Arashio
+	Asagumo
+	Asakaze
+	Asashimo
+	Asashio
+	Ayanami
+	Fubuki
+	Fujinami
+	Fumizuki
+	Hagikaze
+	Hamakaze
+	Hamanami
+	Harukaze
+	Harusame
+	Hatakaze
+	Hatsuharu
+	Hatsukaze
+	Hatsushimo
+	Hatsuyuki
+	Hatsuzuki
+	Hayanami
+	Hayashimo
+	Ikazuchi
+	Inazuma
+	Isokaze
+	Isonami
+	Kagerou
+	Kamikaze
+	Kasumi
+	Kawakaze
+	Kazagumo
+	Kikuzuki
+	Kisaragi
+	Kishinami
+	Kiyoshimo
+	Kuroshio
+	Maikaze
+	Makigumo
+	Matsukaze
+	Michishio
+	Mikazuki
+	Minazuki
+	Minegumo
+	Miyuki
+	Mochizuki
+	Murakumo
+	Murasame
+	Mutsuki
+	Naganami
+	Nagatsuki
+	Nowaki
+	Oboro
+	Okinami
+	Ooshio
+	Oyashio
+	Sagiri
+	Samidare
+	Satsuki
+	Sazanami
+	Shigure
+	Shikinami
+	Shimakaze
+	Shiranui
+	Shiratsuyu
+	Shirayuki
+	Suzukaze
+	Suzutsuki
+	Takanami
+	Tanikaze
+	Teruzuki
+	Tokitsukaze
+	Umikaze
+	Urakaze
+	Uranami
+	Ushio
+	Uzuki
+	Wakaba
+	Yamagumo
+	Yamakaze
+	Yayoi
+	Yukikaze
+	Yuudachi
+	Yuugumo
+	Aoba
+	Ashigara
+	Atago
+	Chikuma
+	Choukai
+	Furutaka
+	Haguro
+	Kako
+	Kinugasa
+	Kumano
+	Maya
+	Mikuma
+	Mogami
+	Myoko
+	Nachi
+	Suzuya
+	Takao
+	Tone
+	Akagi
+	Amagi
+	Chitose
+	Chiyoda
+	Hiryuu
+	Hiyou
+	Houshou
+	Junyou
+	Kaga
+	Katsuragi
+	Ryuuhou
+	RJ
+	Shinyou
+	Shouhou
+	Shokaku
+	Souryuu
+	Taiho
+	Taiyou
+	Unryuu
+	Zuihou
+	Zuikaku
+	Fusou
+	Haruna
+	Hiei
+	Hyuuga
+	Ise
+	Kongo
+	Musashi
+	Mutsu
+	Nagato
+	Yamashiro
+	Yamato
+	Z1
+	Z3
+	Eugen
+	Bismarck
+	GrafGraf
+	U-511
+	Maestrale
+	Grecale
+	Libeccio
+	DucadegliAbruzzi
+	GiuseppeGaribaldi
+	Pola
+	Zara
+	Italia
+	Roma
+	Aquila
+	LuigiTorelli
+				}
+			}
+
+		}
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+	SamuelB.Roberts
+    Fletcher
+    Johnston
+	Atlanta
+	Houston
+	Colorado
+	Iowa
+	GambierBay
+	Saratoga
+	Intrepid
+	Jervis
+	Janus
+	Warsprite
+	Nelson
+	ArkRoyal
+	Tashkent
+	Verniy
+	Gangut
+	Richelieu
+	CommandantTeste
+	Shimushu
+	Kunashiri
+	Hachijou
+	Ishigaki
+	Etorofu
+	Matsuwa
+	Sado
+	Tsushima
+	Hirato
+	Fukae
+	Hiburi
+	Daitou
+	I-8
+	I-13
+	I-14
+	I-19
+	I-26
+	I-58
+	I-168
+	I-400
+	I-401
+	Ro-500
+	Akashi
+	AkitsuMaru
+	Akitsushima
+	Hayasui
+	Kamoi
+	Mizuho
+	Nisshin
+	ShinshuuMaru
+	Abukuma
+	Agano
+	Isuzu
+	Jintsu
+	Kashima
+	Katori
+	Kinu
+	Kiso
+	Kitakami
+	Kuma
+	Nagara
+	Naka
+	Natori
+	Noshiro
+	Ooi
+	Ooyodo
+	Sakawa
+	Sendai
+	Tama
+	Tatsuta
+	Tenryuu
+	Yahagi
+	Yura
+	Yuubari
+	Akatsuki
+	Akebono
+	Akigumo
+	Akishimo
+	Akizuki
+	Amagiri
+	Amatsukaze
+	Arare
+	Arashi
+	Arashio
+	Asagumo
+	Asakaze
+	Asashimo
+	Asashio
+	Ayanami
+	Fubuki
+	Fujinami
+	Fumizuki
+	Hagikaze
+	Hamakaze
+	Hamanami
+	Harukaze
+	Harusame
+	Hatakaze
+	Hatsuharu
+	Hatsukaze
+	Hatsushimo
+	Hatsuyuki
+	Hatsuzuki
+	Hayanami
+	Hayashimo
+	Ikazuchi
+	Inazuma
+	Isokaze
+	Isonami
+	Kagerou
+	Kamikaze
+	Kasumi
+	Kawakaze
+	Kazagumo
+	Kikuzuki
+	Kisaragi
+	Kishinami
+	Kiyoshimo
+	Kuroshio
+	Maikaze
+	Makigumo
+	Matsukaze
+	Michishio
+	Mikazuki
+	Minazuki
+	Minegumo
+	Miyuki
+	Mochizuki
+	Murakumo
+	Murasame
+	Mutsuki
+	Naganami
+	Nagatsuki
+	Nowaki
+	Oboro
+	Okinami
+	Ooshio
+	Oyashio
+	Sagiri
+	Samidare
+	Satsuki
+	Sazanami
+	Shigure
+	Shikinami
+	Shimakaze
+	Shiranui
+	Shiratsuyu
+	Shirayuki
+	Suzukaze
+	Suzutsuki
+	Takanami
+	Tanikaze
+	Teruzuki
+	Tokitsukaze
+	Umikaze
+	Urakaze
+	Uranami
+	Ushio
+	Uzuki
+	Wakaba
+	Yamagumo
+	Yamakaze
+	Yayoi
+	Yukikaze
+	Yuudachi
+	Yuugumo
+	Aoba
+	Ashigara
+	Atago
+	Chikuma
+	Choukai
+	Furutaka
+	Haguro
+	Kako
+	Kinugasa
+	Kumano
+	Maya
+	Mikuma
+	Mogami
+	Myoko
+	Nachi
+	Suzuya
+	Takao
+	Tone
+	Akagi
+	Amagi
+	Chitose
+	Chiyoda
+	Hiryuu
+	Hiyou
+	Houshou
+	Junyou
+	Kaga
+	Katsuragi
+	Ryuuhou
+	RJ
+	Shinyou
+	Shouhou
+	Shokaku
+	Souryuu
+	Taiho
+	Taiyou
+	Unryuu
+	Zuihou
+	Zuikaku
+	Fusou
+	Haruna
+	Hiei
+	Hyuuga
+	Ise
+	Kongo
+	Musashi
+	Mutsu
+	Nagato
+	Yamashiro
+	Yamato
+	Z1
+	Z3
+	Eugen
+	Bismarck
+	GrafGraf
+	U-511
+	Maestrale
+	Grecale
+	Libeccio
+	DucadegliAbruzzi
+	GiuseppeGaribaldi
+	Pola
+	Zara
+	Italia
+	Roma
+	Aquila
+	LuigiTorelli
+				}
+			}
+
+		}
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {		             	
+	SamuelB.Roberts
+    Fletcher
+    Johnston
+	Jervis
+	Janus
+	Tashkent
+	Verniy
+	Shimushu
+	Kunashiri
+	Hachijou
+	Ishigaki
+	Etorofu
+	Matsuwa
+	Sado
+	Tsushima
+	Hirato
+	Fukae
+	Hiburi
+	Daitou
+	I-8
+	I-13
+	I-14
+	I-19
+	I-26
+	I-58
+	I-168
+	I-400
+	I-401
+	Ro-500
+	Akashi
+	AkitsuMaru
+	Akitsushima
+	Hayasui
+	Kamoi
+	Mizuho
+	Nisshin
+	ShinshuuMaru
+	Akatsuki
+	Akebono
+	Akigumo
+	Akishimo
+	Akizuki
+	Amagiri
+	Amatsukaze
+	Arare
+	Arashi
+	Arashio
+	Asagumo
+	Asakaze
+	Asashimo
+	Asashio
+	Ayanami
+	Fubuki
+	Fujinami
+	Fumizuki
+	Hagikaze
+	Hamakaze
+	Hamanami
+	Harukaze
+	Harusame
+	Hatakaze
+	Hatsuharu
+	Hatsukaze
+	Hatsushimo
+	Hatsuyuki
+	Hatsuzuki
+	Hayanami
+	Hayashimo
+	Ikazuchi
+	Inazuma
+	Isokaze
+	Isonami
+	Kagerou
+	Kamikaze
+	Kasumi
+	Kawakaze
+	Kazagumo
+	Kikuzuki
+	Kisaragi
+	Kishinami
+	Kiyoshimo
+	Kuroshio
+	Maikaze
+	Makigumo
+	Matsukaze
+	Michishio
+	Mikazuki
+	Minazuki
+	Minegumo
+	Miyuki
+	Mochizuki
+	Murakumo
+	Murasame
+	Mutsuki
+	Naganami
+	Nagatsuki
+	Nowaki
+	Oboro
+	Okinami
+	Ooshio
+	Oyashio
+	Sagiri
+	Samidare
+	Satsuki
+	Sazanami
+	Shigure
+	Shikinami
+	Shimakaze
+	Shiranui
+	Shiratsuyu
+	Shirayuki
+	Suzukaze
+	Suzutsuki
+	Takanami
+	Tanikaze
+	Teruzuki
+	Tokitsukaze
+	Umikaze
+	Urakaze
+	Uranami
+	Ushio
+	Uzuki
+	Wakaba
+	Yamagumo
+	Yamakaze
+	Yayoi
+	Yukikaze
+	Yuudachi
+	Yuugumo
+	Z1
+	Z3
+	U-511
+	Maestrale
+	Grecale
+	Libeccio
+	LuigiTorelli
+				}
+			}
+
+		}
+     #leader scope
+		leader = { #scientists, generals, admirals, governor
+			
+			add = {
+				trigger = {
+					NOR = {
+					has_leader_flag = leader_Fubuki_flag
+					has_leader_flag = leader_Murakumo_flag
+					has_leader_flag = leader_Gotland_flag
+					has_leader_flag = leader_Inazuma_flag
+					has_leader_flag = leader_Samidare_flag
+					has_leader_flag = leader_Sazanami_flag
+					}
+				}	
+				portraits = {
+	SamuelB.Roberts
+    Fletcher
+    Johnston
+	Atlanta
+	Houston
+	Colorado
+	Iowa
+	GambierBay
+	Saratoga
+	Intrepid
+	Jervis
+	Janus
+	Warsprite
+	Nelson
+	ArkRoyal
+	Tashkent
+	Verniy
+	Gangut
+	Richelieu
+	CommandantTeste
+	Shimushu
+	Kunashiri
+	Hachijou
+	Ishigaki
+	Etorofu
+	Matsuwa
+	Sado
+	Tsushima
+	Hirato
+	Fukae
+	Hiburi
+	Daitou
+	I-8
+	I-13
+	I-14
+	I-19
+	I-26
+	I-58
+	I-168
+	I-400
+	I-401
+	Ro-500
+	Akashi
+	AkitsuMaru
+	Akitsushima
+	Hayasui
+	Kamoi
+	Mizuho
+	Nisshin
+	ShinshuuMaru
+	Abukuma
+	Agano
+	Isuzu
+	Jintsu
+	Kashima
+	Katori
+	Kinu
+	Kiso
+	Kitakami
+	Kuma
+	Nagara
+	Naka
+	Natori
+	Noshiro
+	Ooi
+	Ooyodo
+	Sakawa
+	Sendai
+	Tama
+	Tatsuta
+	Tenryuu
+	Yahagi
+	Yura
+	Yuubari
+	Akatsuki
+	Akebono
+	Akigumo
+	Akishimo
+	Akizuki
+	Amagiri
+	Amatsukaze
+	Arare
+	Arashi
+	Arashio
+	Asagumo
+	Asakaze
+	Asashimo
+	Asashio
+	Ayanami
+	Fubuki
+	Fujinami
+	Fumizuki
+	Hagikaze
+	Hamakaze
+	Hamanami
+	Harukaze
+	Harusame
+	Hatakaze
+	Hatsuharu
+	Hatsukaze
+	Hatsushimo
+	Hatsuyuki
+	Hatsuzuki
+	Hayanami
+	Hayashimo
+	Ikazuchi
+	Inazuma
+	Isokaze
+	Isonami
+	Kagerou
+	Kamikaze
+	Kasumi
+	Kawakaze
+	Kazagumo
+	Kikuzuki
+	Kisaragi
+	Kishinami
+	Kiyoshimo
+	Kuroshio
+	Maikaze
+	Makigumo
+	Matsukaze
+	Michishio
+	Mikazuki
+	Minazuki
+	Minegumo
+	Miyuki
+	Mochizuki
+	Murakumo
+	Murasame
+	Mutsuki
+	Naganami
+	Nagatsuki
+	Nowaki
+	Oboro
+	Okinami
+	Ooshio
+	Oyashio
+	Sagiri
+	Samidare
+	Satsuki
+	Sazanami
+	Shigure
+	Shikinami
+	Shimakaze
+	Shiranui
+	Shiratsuyu
+	Shirayuki
+	Suzukaze
+	Suzutsuki
+	Takanami
+	Tanikaze
+	Teruzuki
+	Tokitsukaze
+	Umikaze
+	Urakaze
+	Uranami
+	Ushio
+	Uzuki
+	Wakaba
+	Yamagumo
+	Yamakaze
+	Yayoi
+	Yukikaze
+	Yuudachi
+	Yuugumo
+	Aoba
+	Ashigara
+	Atago
+	Chikuma
+	Choukai
+	Furutaka
+	Haguro
+	Kako
+	Kinugasa
+	Kumano
+	Maya
+	Mikuma
+	Mogami
+	Myoko
+	Nachi
+	Suzuya
+	Takao
+	Tone
+	Akagi
+	Amagi
+	Chitose
+	Chiyoda
+	Hiryuu
+	Hiyou
+	Houshou
+	Junyou
+	Kaga
+	Katsuragi
+	Ryuuhou
+	RJ
+	Shinyou
+	Shouhou
+	Shokaku
+	Souryuu
+	Taiho
+	Taiyou
+	Unryuu
+	Zuihou
+	Zuikaku
+	Fusou
+	Haruna
+	Hiei
+	Hyuuga
+	Ise
+	Kongo
+	Musashi
+	Mutsu
+	Nagato
+	Yamashiro
+	Yamato
+	Z1
+	Z3
+	Eugen
+	Bismarck
+	GrafGraf
+	U-511
+	Maestrale
+	Grecale
+	Libeccio
+	DucadegliAbruzzi
+	GiuseppeGaribaldi
+	Pola
+	Zara
+	Italia
+	Roma
+	Aquila
+	LuigiTorelli
+	perth
+	DeR
+	Gotland
+	Take
+	Scirocco
+	Sheffield
+	Washington
+		}
+			}
+			
+			add = {#丛云
+				trigger = {
+					has_leader_flag = leader_Murakumo_flag
+				}
+				portraits = {
+					Murakumo
+				}
+			}
+			
+			add = {#电
+				trigger = {
+					has_leader_flag = leader_Inazuma_flag
+				}
+				portraits = {
+						Inazuma
+				}
+			}
+			
+			add = {#涟
+				trigger = {
+					has_leader_flag = leader_Sazanami_flag
+				}
+				portraits = {
+					Sazanami
+				}
+			}
+			
+			add = {#五月雨
+				trigger = {
+					has_leader_flag = leader_Samidare_flag
+				}
+				portraits = {
+					Samidare
+				}
+			}
+			add = {#哥特兰
+				trigger = {
+					has_leader_flag = leader_Gotland_flag
+				}
+				portraits = {
+					Gotland
+				}
+			}			
+			add = {#爽哥
+				trigger = {
+					has_leader_flag = leader_ywwuyi_flag
+				}
+				portraits = {
+					ywwuyi
+				}
+			}
+			
+			add = {#吹雪
+				trigger = {
+					has_leader_flag = leader_Fubuki_flag
+				}
+				portraits = {
+					Fubuki
+				}
+			}
+
+
+
+
+
+
+
+
+
+		}	
+		#leader scope 
+		ruler = {
+			add = {
+				portraits = {
+	Akagi
+	Amagi
+	Chitose
+	Chiyoda
+	Hiryuu
+	Hiyou
+	Houshou
+	Junyou
+	Kaga
+	Katsuragi
+	Ryuuhou
+	RJ
+	Shinyou
+	Shouhou
+	Shokaku
+	Souryuu
+	Taiho
+	Taiyou
+	Unryuu
+	Zuihou
+	Zuikaku
+	Fusou
+	Haruna
+	Hiei
+	Hyuuga
+	Ise
+	Kongo
+	Musashi
+	Mutsu
+	Nagato
+	Yamashiro
+	Yamato
+				}
+			}
+
+		}
+	}

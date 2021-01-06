@@ -1,0 +1,54 @@
+kancolle_modifier_Neuroi = {
+		ship_hull_regen_add_perc = 0.5
+		ship_armor_regen_add_perc = 0.5
+		ships_upkeep_mult = -0.05
+}
+
+kancolle_modifier_witches = {
+		ship_shield_mult = 0.2
+		ship_base_speed_mult = 0.05
+		army_damage_mult = 0.05
+}
+
+kancolle_modifier_CIA = {
+	icon="gfx/interface/icons/traits/CIA.dds"
+		ship_archeaological_site_clues_add = 3
+		science_ship_survey_speed = 0.10
+		ship_anomaly_generation_chance_mult = 0.05
+		ship_anomaly_research_speed_mult = 0.05
+}
+
+kancolle_modifier_redpasta = {
+	icon="gfx/interface/icons/traits/redpasta.dds"
+		country_war_exhaustion_mult = -0.05
+}
+
+kancolle_modifier_sengan = {
+	icon="gfx/interface/icons/traits/sengan.dds"
+		planet_decision_enact_speed_mult = 0.1
+}
+
+kancolle_modifier_3333 = {
+	icon="gfx/interface/icons/traits/3333.dds"
+		starbase_shipyard_build_cost_mult = 0.10
+		starbase_shipyard_build_speed_mult = 0.20
+}
+
+kancolle_modifier_4662 = {
+	icon="gfx/interface/icons/traits/4662.dds"
+		starbase_shipyard_build_cost_mult = 0.15
+		starbase_shipyard_build_speed_mult = -0.20
+		ship_weapon_damage = 0.1
+}
+
+kancolle_modifier_namiyaojing = {
+	icon="gfx/interface/icons/traits/namiyaojing.dds"
+		num_tech_alternatives_add = 1
+}
+
+kancolle_modifier_fe_cheat = {
+	ship_evasion_mult = 0.10
+	shipclass_starbase_damage_mult = 3.00
+	shipclass_military_station_damage_mult = 6.00
+	shipclass_starbase_hull_mult = 20.0
+}

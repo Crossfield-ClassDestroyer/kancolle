@@ -1,0 +1,120 @@
+namespace = ywwuyi
+country_event = {
+	id = ywwuyi.0
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_ascension_perk = ap_kancolle_ywwuyi_coming
+	}
+	immediate = {
+		country_event = { id = ywwuyi.1 days = 10  }
+	}
+}
+
+country_event = {
+	id = ywwuyi.1
+	title = ywwuyi.1.name
+	desc = ywwuyi.1.desc
+	picture = GFX_evt_ywwuyi_lighting
+	is_triggered_only = yes
+
+	immediate = {
+	    capital_scope.star = {
+			create_ambient_object = {
+				type = "space_storm_2"
+				location = this
+			}
+			last_created_ambient_object = {
+				save_event_target_as = ywwuyi_storm
+			}
+		}
+		country_event = { id = ywwuyi.3 days = 10  }
+		country_event = { id = ywwuyi.2 days = 20  }
+	}
+
+	option = {
+		name = "ywwuyi.1.a"
+	}
+}
+
+country_event = {
+	id = ywwuyi.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    event_target:ywwuyi_storm = {
+			destroy_ambient_object = this
+		}
+	}
+
+}
+country_event = {
+	id = ywwuyi.3
+	title = ywwuyi.3.name
+	desc = ywwuyi.3.desc
+	picture = GFX_evt_ywwuyi_coming
+	show_sound = event_kancolle_Ceddin_Deden
+	is_triggered_only = yes
+
+	after = {
+		hidden_effect = {				
+			create_leader = {
+				class = governor
+				species = event_target:kc_species
+				name = ywwuyi
+				immortal = yes
+				skill = 10
+				traits = {
+					trait = leader_trait_governor_ywwuyi
+				}
+				event_leader = yes	# prevents this leader from leading factions and winning elections
+				effect = {
+					set_leader_flag = leader_ywwuyi_flag
+				}
+			}
+			last_created_leader = {
+				save_global_event_target_as = leader_ywwuyi
+				set_is_female = yes
+				set_age = 211
+				change_leader_portrait = ywwuyi
+			}
+		}
+	}
+
+	option = {
+		name = "ywwuyi.3.a"
+		custom_tooltip = ywwuyi.3.a.response
+		owner = {
+			add_resource = { unity = 100}
+		}
+	}
+	option = {
+		name = "ywwuyi.3.b"
+		custom_tooltip = ywwuyi.3.b.response
+		owner = {
+			add_resource = { influence = 50 }
+		}	
+	}
+	option = {
+		name = "ywwuyi.3.c"
+		custom_tooltip = ywwuyi.3.c.response
+		owner = {
+			add_resource = { energy = 500 }
+		}	
+	}
+}
+
+country_event = {
+	id = ywwuyi.4
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_ascension_perk = ap_kancolle_ywwuyi_coming
+	}
+	immediate = {
+		event_target:leader_ywwuyi = {
+				change_leader_portrait = ywwuyi
+		}
+	}
+}

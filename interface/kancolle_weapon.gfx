@@ -1,0 +1,90 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_105mm_gun"
+		texturefile = "gfx/interface/icons/ship_parts/105mm_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_80mm_gun"
+		texturefile = "gfx/interface/icons/ship_parts/80mm_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_80mmkai_gun"
+		texturefile = "gfx/interface/icons/ship_parts/80mmkai_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_100mm_gun"
+		texturefile = "gfx/interface/icons/ship_parts/100mm_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_100mmkai_gun"
+		texturefile = "gfx/interface/icons/ship_parts/100mmkai_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_120mm_gun"
+		texturefile = "gfx/interface/icons/ship_parts/120mm_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_127mm_gun"
+		texturefile = "gfx/interface/icons/ship_parts/127mm_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_127mmB2_gun"
+		texturefile = "gfx/interface/icons/ship_parts/127mmB2_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_127mmC2_gun"
+		texturefile = "gfx/interface/icons/ship_parts/127mmC2_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_127mmD3_gun"
+		texturefile = "gfx/interface/icons/ship_parts/127mmD3_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_140mm_gun"
+		texturefile = "gfx/interface/icons/ship_parts/140mm_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_140mmkai_gun"
+		texturefile = "gfx/interface/icons/ship_parts/140mmkai_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_152mm_gun"
+		texturefile = "gfx/interface/icons/ship_parts/152mm_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_8inch_gun"
+		texturefile = "gfx/interface/icons/ship_parts/8inch_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_203mm3_gun"
+		texturefile = "gfx/interface/icons/ship_parts/203mm3_gun.dds"
+	}
+
+	spriteType = {
+		name = "GFX_356mm_kaini"
+		texturefile = "gfx/interface/icons/ship_parts/356mm_kaini.dds"
+	}
+	spriteType = {
+		name = "GFX_410_kaini"
+		texturefile = "gfx/interface/icons/ship_parts/410mm_kaini.dds"
+	}
+
+	spriteType = {
+		name = "GFX_460_kai"
+		texturefile = "gfx/interface/icons/ship_parts/460mm_kai.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mk7_gfcs"
+		texturefile = "gfx/interface/icons/ship_parts/mk7_gfcs.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_bofors_gun"
+		texturefile = "gfx/interface/icons/ship_parts/bofors_gun.dds"
+	}
+
+	spriteType = {
+		name = "GFX_kari_gun"
+		texturefile = "gfx/interface/icons/ship_parts/kari_gun.dds"
+	}

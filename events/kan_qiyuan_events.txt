@@ -1,0 +1,232 @@
+namespace = kan
+country_event = {
+	id = kan.0
+	hide_window = yes
+	fire_only_once = yes
+	location = root
+
+	trigger = {has_origin = origin_kancolle}
+
+	immediate = {
+		give_technology = { tech = tech_kancolle_ziyuan }
+		give_technology = { tech = tech_automated_exploration }
+		set_country_flag = no_machine_uprising
+		set_country_flag = synth_detector
+	}
+}
+
+country_event = {
+	id = kan.1
+	title = "kan.1.name"
+	desc = "kan.1.desc"
+	picture = GFX_evt_kantai_collection
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {has_authority = auth_kan }
+
+	immediate = {
+		random_country = {
+			limit = {		
+				is_ai = no
+				OR = {
+					has_authority = auth_kan
+				}		
+			}
+		}
+	}
+	option = {
+		name = "kan.1.a"
+		custom_tooltip = kan.1.a.tooltip
+		hidden_effect = {				
+			create_leader = {
+				class = governor
+				species = event_target:kc_species
+				name = Fubuki
+				immortal = yes
+				skill = 1
+				traits = {
+					trait = leader_trait_governor_startship
+				}
+				event_leader = yes	# prevents this leader from leading factions and winning elections
+				effect = {
+					set_leader_flag = leader_Fubuki_flag
+				}
+			}
+			last_created_leader = {
+				set_is_female = yes
+				set_age = 14
+				change_leader_portrait = Fubuki
+			}
+		}
+	}
+	option = {
+		name = "kan.1.b"
+		custom_tooltip = kan.1.b.tooltip
+		hidden_effect = {				
+			create_leader = {
+				class = governor
+				species = event_target:kc_species
+				name = Murakumo
+				immortal = yes
+				skill = 1
+				traits = {
+					trait = leader_trait_governor_startship
+				}
+				event_leader = yes	# prevents this leader from leading factions and winning elections
+				effect = {
+					set_leader_flag = leader_Murakumo_flag
+				}
+			}
+			last_created_leader = {
+				set_is_female = yes
+				set_age = 14 
+				change_leader_portrait = Murakumo
+			}
+		}
+	}
+	option = {
+		name = "kan.1.c"
+		custom_tooltip = kan.1.c.tooltip
+		hidden_effect = {				
+			create_leader = {
+				class = governor
+				species = event_target:kc_species
+				name = Inazuma
+				immortal = yes
+				skill = 1
+				traits = {
+					trait = leader_trait_governor_startship
+				}
+				event_leader = yes	# prevents this leader from leading factions and winning elections
+				effect = {
+					set_leader_flag = leader_Inazuma_flag
+				}
+			}
+			last_created_leader = {
+				set_is_female = yes
+				set_age = 14 
+				change_leader_portrait = Inazuma
+			}
+		}
+	}
+	option = {
+		name = "kan.1.d"
+		custom_tooltip = kan.1.d.tooltip
+		hidden_effect = {				
+			create_leader = {
+				class = governor
+				species = event_target:kc_species
+				name = Sazanami
+				immortal = yes
+				skill = 1
+				traits = {
+					trait = leader_trait_governor_startship
+				}
+				event_leader = yes	# prevents this leader from leading factions and winning elections
+				effect = {
+					set_leader_flag = leader_Sazanami_flag
+				}
+			}
+			last_created_leader = {
+				set_is_female = yes
+				set_age = 14 
+				change_leader_portrait = Sazanami
+			}
+		}
+	}
+	option = {
+		name = "kan.1.e"
+		custom_tooltip = kan.1.e.tooltip
+		hidden_effect = {				
+			create_leader = {
+				class = governor
+				species = event_target:kc_species
+				name = Samidare
+				immortal = yes
+				skill = 1
+				traits = {
+					trait = leader_trait_governor_startship
+				}
+				event_leader = yes	# prevents this leader from leading factions and winning elections
+				effect = {
+					set_leader_flag = leader_Samidare_flag
+				}
+			}
+			last_created_leader = {
+				set_is_female = yes
+				set_age = 14 
+				change_leader_portrait = Samidare
+			}
+		}
+	}
+	option = {
+		default_hide_option = yes
+		name = "kan.1.f"
+		custom_tooltip = kan.1.f.tooltip
+		hidden_effect = {				
+			create_leader = {
+				class = governor
+				species = event_target:kc_species
+				name = Gotland
+				immortal = yes
+				skill = 1
+				traits = {
+					trait = leader_trait_governor_startship
+				}
+				event_leader = yes	# prevents this leader from leading factions and winning elections
+				effect = {
+					set_leader_flag = leader_Gotland_flag
+				}
+			}
+			last_created_leader = {
+				set_is_female = yes
+				set_age = 14 
+				change_leader_portrait = Gotland
+			}
+		}
+	}
+}
+
+#检测地块
+country_event = {
+	id = kan.2
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_authority = auth_kan
+		NOT = { has_country_flag = kancolle_home_deposit }
+	}
+	immediate = {
+		set_country_flag = kancolle_home_deposit
+		random_owned_planet = {
+			limit = {
+				has_planet_flag = kanmusu_home				
+			}
+			clear_deposits = yes
+			add_deposit = r_navy_factory	
+			add_deposit = r_united_fleet_dormitory
+			add_deposit = r_konishi
+			add_deposit = d_shinkai_center
+			add_deposit = d_iron_bottom_sound
+			add_deposit = d_plant_sutsutsuki
+			add_deposit = d_elf_power_station
+			add_deposit = d_oriur_sea	
+			add_deposit = d_big_therm				
+		}		
+	}
+}
+
+country_event = {
+	id = kan.3
+	hide_window = yes
+	fire_only_once = yes
+	location = root
+
+	trigger = { has_authority = auth_kan }
+
+	immediate = {
+		set_country_flag = no_machine_uprising
+		set_country_flag = synth_detector
+	}
+}

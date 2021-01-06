@@ -1,0 +1,121 @@
+#宪兵队
+kancolle_gendarmerie = {
+	damage = 1.0
+	morale = 1.00
+	morale_damage = 1.0
+	collateral_damage = 0.5
+	war_exhaustion = 0.05
+	health = 0.7
+	time = 30
+	icon_frame = 11
+	has_species = no
+
+	resources = {
+		category = armies
+		cost = {
+			energy = 50
+		}
+
+		upkeep = {
+			energy = 0.5
+		}
+	}
+
+	potential = {
+		owner = { has_authority = auth_kan }
+		
+	}
+	
+}
+
+#特大动发艇+战车11联队
+kancolle_senshia11 = {
+	damage = 2.5
+	has_morale = no
+	morale_damage = 2.0
+	collateral_damage = 0.5
+	war_exhaustion = 0.05
+	health = 2.5
+	time = 200
+	icon_frame = 4
+	has_species = no
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 200
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	prerequisites = { "tech_senshia11" }
+	potential = {	
+		owner = { has_authority = auth_kan }
+	}
+	
+}
+
+#特二式内火艇
+kancolle_tonishiki = {
+	damage = 3.5
+	has_morale = no
+	morale_damage = 3.5
+	collateral_damage = 0.5
+	war_exhaustion = 1
+	health = 5.5
+	time = 400
+	icon_frame = 4
+	has_species = no
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 800
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	prerequisites = { "tech_tonishiki" }
+	potential = {
+		owner = { has_authority = auth_kan }
+		
+	}
+	
+}
+
+#M4A1DD
+kancolle_M4A1DD = {
+	damage = 5.0
+	has_morale = no
+	morale_damage = 5.0
+	collateral_damage = 4.5
+	war_exhaustion = 1.00
+	health = 8.5
+	time = 600
+	icon_frame = 4
+	has_species = no
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 2000
+		}
+
+		upkeep = {
+			energy = 8
+		}
+	}
+
+	prerequisites = { "tech_M4A1DD" }
+	potential = {
+		owner = { has_authority = auth_kan }
+		
+	}
+	
+}

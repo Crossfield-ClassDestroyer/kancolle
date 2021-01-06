@@ -1,0 +1,392 @@
+##################
+# Species Traits #
+##################
+#普通建造
+kancolle_trait_3333={
+	cost=0
+	allowed_archetypes={KANMUSU}
+	opposites = { "kancolle_trait_4662" }
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/3333.dds"
+	modifier={
+		starbase_shipyard_build_cost_mult = 0.10
+		starbase_shipyard_build_speed_mult = 0.20
+	}
+	opposites = {}
+}
+
+#大型建造
+kancolle_trait_4662={
+	cost=0
+	allowed_archetypes={KANMUSU}
+	opposites = { "kancolle_trait_3333" }
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/4662.dds"
+	modifier={
+		starbase_shipyard_build_cost_mult = 0.15
+		starbase_shipyard_build_speed_mult = -0.20
+		ship_weapon_damage = 0.1
+	}
+	opposites = {}
+}
+
+#戒指
+kancolle_trait_jiehun = {
+	cost = 0
+	allowed_archetypes = { KANMUSU }
+	#initial = yes
+	modification = yes
+	randomized = no
+	#sentient = no
+	icon = "gfx/interface/icons/traits/jiezhi.dds"
+	opposites = { }
+	allowed_classes = { KAN }
+
+	modifier = {
+		leader_skill_levels = 7
+	}
+}
+
+#舰娘
+kancolle_trait_kanmusu={
+	cost=2
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	modification=no
+	randomized=no
+	advanced_trait=no
+	improves_leaders = yes
+	immortal_leaders = yes
+	icon="gfx/interface/icons/traits/kanmusu.dds"
+	modifier={
+		pop_growth_speed = -0.2
+		pop_assembly_speed = 0.1
+		pc_ocean_habitability = 0.2
+		pop_housing_usage_mult = -0.05
+	}
+	opposites = {}
+}
+
+#舰娘
+kancolle_trait_kanmusu1={
+	cost=0
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	modification=no
+	initial = no
+	randomized=no
+	advanced_trait=no
+	improves_leaders = yes
+	immortal_leaders = yes
+	icon="gfx/interface/icons/traits/kanmusu1.dds"
+	modifier={
+		pop_growth_speed = -0.1
+		pop_assembly_speed = 0.15
+		pc_ocean_habitability = 0.5
+		pop_housing_usage_mult = -0.1
+	}
+	opposites = {}
+}
+
+#舰娘
+kancolle_trait_kanmusu2={
+	cost=0
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	modification=no
+	randomized=no
+	initial = no
+	advanced_trait=no
+	improves_leaders = yes
+	immortal_leaders = yes
+	icon="gfx/interface/icons/traits/kanmusu2.dds"
+	modifier={
+		pop_growth_speed = 0.2
+		pop_assembly_speed = 0.3
+		pc_ocean_habitability = 1
+		pop_housing_usage_mult = -0.2
+	}
+	opposites = {}
+}
+#戒尺
+kancolle_trait_kaisaki={
+	cost=1
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/kaisaki.dds"
+	modifier={
+		planet_jobs_unity_produces_mult = 0.25
+		country_leader_pool_size = 2
+	}
+	opposites = {}
+}
+
+#特制红菜pasta!
+kancolle_trait_redpasta={
+	cost=1
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/redpasta.dds"
+	modifier={
+		country_war_exhaustion_mult = -0.05
+		army_damage_mult = 0.2	
+	}
+	opposites = {}
+}
+
+#给粮舰间宫
+kancolle_trait_mamiya={
+	cost=1
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/mamiya.dds"
+	modifier={
+		pop_amenities_usage_mult = -0.2
+		pop_happiness = 0.15
+	}
+	opposites = {}
+}
+
+#宿舍宣传板
+kancolle_trait_sengan={
+	cost=1
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/sengan.dds"
+	modifier={
+		edict_length_mult = 0.10
+		edicts_cost_mult = -0.20
+		planet_decision_enact_speed_mult = 0.1
+	}
+	opposites = {}
+}
+
+#拼图
+kancolle_trait_pintu={
+	cost=1
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/pintu.dds"
+	modifier={
+		pop_growth_speed = 0.20
+	}
+	opposites = {}
+}
+
+#合理化资源应用
+kancolle_trait_resource={
+	cost=2
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/resource.dds"
+	modifier={
+		planet_jobs_produces_mult = 0.05
+	}
+	opposites = {}
+}
+
+#秋月级农业
+kancolle_trait_sutsutsuki={
+	cost=2
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/sutsutsuki.dds"
+	modifier={
+		planet_jobs_food_produces_mult = 0.15
+	}
+	opposites = {}
+}
+
+#省吃俭用
+kancolle_trait_setsuyaku={
+	cost=2
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/setsuyaku.dds"
+	modifier={
+		planet_jobs_energy_produces_mult = 0.15
+	}
+	opposites = {}
+}
+
+#远征
+kancolle_trait_yanse={
+	cost=2
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/yanse.dds"
+	modifier={
+		planet_jobs_minerals_produces_mult = 0.15
+	}
+	opposites = {}
+}
+
+#衣阿华的窃听器
+kancolle_trait_CIA={
+	cost=2
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/CIA.dds"
+	modifier={
+		ship_archeaological_site_clues_add = 3
+		science_ship_survey_speed = 0.10
+		ship_anomaly_generation_chance_mult = 0.05
+		ship_anomaly_research_speed_mult = 0.05
+	}
+	opposites = {}
+}
+
+#聪明
+kancolle_trait_conghui={
+	cost=3
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/conghui.dds"
+	modifier={
+		planet_jobs_engineering_research_produces_mult = 0.3
+		planet_jobs_physics_research_produces_mult = 0.3
+		planet_jobs_society_research_produces_mult = 0.3
+		species_leader_exp_gain = 0.3
+	}
+	opposites = {}
+}
+
+#海陆争端
+kancolle_trait_hailu={
+	cost=-1
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/hailu.dds"
+	modifier={
+		army_damage_mult = -0.1
+	}
+	opposites = {}
+}
+
+#低下的出击效率
+kancolle_trait_11={
+	cost=-1
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/11.dds"
+	modifier={
+		species_leader_exp_gain = -0.1
+	}
+	opposites = {}
+}
+
+#假摔
+kancolle_trait_jiashuai={
+	cost=-1
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/jiashuai.dds"
+	modifier={
+		army_health = -0.1
+	}
+	opposites = {}
+}
+
+#镇守府的被炉
+kancolle_trait_beilu={
+	cost=-2
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/beilu.dds"
+	modifier={
+		planet_jobs_produces_mult = -0.05
+		pop_resettlement_cost_mult = 0.3
+	}
+	opposites = {}
+}
+
+#田中卫星
+kancolle_trait_weixing={
+	cost=-3
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/weixing.dds"
+	modifier={
+		pop_growth_speed = -0.3
+	}
+	opposites = {}
+}	
+
+#五月病
+kancolle_trait_mayday={
+	cost=-3
+	allowed_archetypes={KANMUSU}
+	sorting_priority = 30
+	icon="gfx/interface/icons/traits/mayday.dds"
+	modifier={
+		planet_jobs_produces_mult = -0.1
+	}
+	opposites = {}
+}
+
+#高速建造
+kancolle_trait_gaosujianzao = {
+	cost = 4
+	initial = no
+	randomized = no
+	#advanced_trait = yes
+	opposites = {}
+	icon="gfx/interface/icons/traits/gaosujianzao.dds"
+	allowed_archetypes = { KANMUSU }
+	prerequisites = { tech_kancolle_high_DNA }
+	modifier = {
+		pop_growth_speed = 0.3
+		pop_assembly_speed = 0.3
+	}
+}
+
+#空间折叠舰装
+kancolle_trait_kukan = {
+	cost = 4
+	initial = no
+	randomized = no
+	#advanced_trait = yes
+	opposites = {}
+	icon="gfx/interface/icons/traits/kukan.dds"
+	allowed_archetypes = { KANMUSU }
+	prerequisites = { tech_kancolle_high_DNA }
+	modifier = {
+		pop_housing_usage_mult = -0.2
+		planet_pops_consumer_goods_upkeep_mult = -0.2
+		pop_amenities_usage_mult = -0.2
+	}
+}
+
+#塔纳特妮姆能源
+kancolle_trait_tanatonium = {
+	cost = 4
+	initial = no
+	randomized = no
+	#advanced_trait = yes
+	opposites = {}
+	icon="gfx/interface/icons/traits/tanatonium.dds"
+	allowed_archetypes = { KANMUSU }
+	prerequisites = { tech_kancolle_high_DNA }
+	modifier = {
+		planet_jobs_produces_mult = 0.2
+	}
+}
+
+#纳米妖精
+kancolle_trait_namiyaojing = {
+	cost = 5
+	initial = no
+	randomized = no
+	#advanced_trait = yes
+	opposites = {}
+	icon="gfx/interface/icons/traits/namiyaojing.dds"
+	allowed_archetypes = { KANMUSU }
+	prerequisites = { tech_kancolle_high_DNA }
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.5
+		planet_jobs_physics_research_produces_mult = 0.5
+		planet_jobs_society_research_produces_mult = 0.5
+		species_leader_exp_gain = 0.7
+		num_tech_alternatives_add = 1
+	}
+}

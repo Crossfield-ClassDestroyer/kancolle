@@ -1,0 +1,33 @@
+﻿#起源
+l_english:
+origin_kancolle:0 "Kanmusu Origin"
+origin_kancolle_desc:0 "In 2199 AD, with the destruction of the last abyssal pivot vessels on the planet, the abyssal ship formed by the sinking resentmentof Kanmusus completely disappeared from the planet. According to years of research on Abyssal ship technology, The Navy Base has gradually become an organization that transcends the country during years of confrontation in the Abyssal. With the development of space technology, the Navy Base controls the real power of the planet. Now, the Navy Base will march the hand into space. Engrave the victory at the dawn horizon!"
+civic_tooltip_kancolle_effects:0 "Got 300k resources storage when game started。"
+origin_kancolle_fallen_empire:0 "Degenerate Kanmusu"
+origin_kancolle_fallen_empire_desc:0 "The kanmusu who survived the last galactic disaster have high-tech that ordinary civilization can't imagine and understand."
+origin_kancolle_fallen_effect:0 ""
+
+#法令
+edict_kancolle_colony:0 "Colonial expansion"
+edict_kancolle_colony_desc:0 "After entering the universe, the original home planet can no longer withstand our development, and we must move more populations to new colonies."
+edict_kancolle_ship_damage:0 "Antimatter Type 1 Armor Piercing Shell Kai"
+edict_kancolle_ship_damage_desc:0 "A powerful armor-piercing projectile made of Tanatonium crystal as the main material has significantly improved the combat effectiveness of our fleet"
+edict_kancolle_resource:0 "Energy optimization"
+edict_kancolle_resource_desc:0 "Tanatonium crystal will be applied to basic energy production。"
+edict_kancolle_remove_alien:0 "Remove aliens"
+edict_kancolle_remove_alien_desc:0 "Make kancolle great again!remove other kantai game! Make Kancolle Great Again!"
+
+#政策
+policy_kancolle_economy_policy:0 "The economic policy of the government"
+policy_kancolle_economy_policy_desc:0 "Different economic policies bring different effects"
+kancolle_planned_economy:0 "Planned economy"
+kancolle_planned_economy_desc:0 "The economic system led by Ganggut uses a huge mathematical model to calculate the economic trend of the entire Navy Base. Unemployed Kanmusu will all be transferred to new jobs. All enterprises will be officially operated by the Navy Base. All other Kanmusu are not allowed to do business!"
+kancolle_normal_economy:0 "Navy Base economy"
+kancolle_normal_economy_desc:0 "Navy Base's most common economic system is collectively loose and free."
+kancolle_market_economy:0 "Market economy"
+kancolle_market_economy_desc:0 "The economic system led by Iowa and a free market economy accelerated the output of consumer products and scientific research, but it also increased unnecessary waste."
+kancolle_war_time_economy:0 "Wartime economy"
+kancolle_war_time_economy_desc:0 "An economic system prepared for war, with all military production and maintenance as the main focus."
+
+#船模
+United_fleet:0 "Combined fleet"

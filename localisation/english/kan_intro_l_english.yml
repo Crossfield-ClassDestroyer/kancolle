@@ -1,0 +1,111 @@
+﻿#开局介绍
+l_english:
+kan.1.name:0 "Welcome to play this mod"
+kan.1.desc:0 "Welcome to play this kantai collection Mod，this mod is currently under development，if you have any question or found any issue please leave a comment，If you have some idea about this mod or want help develop, welcome to join group chat in tencent qq：1078235038。Admiral has already return to command, engrave the victory at horizon of dawn！"
+kan.1.a:0 "Initial Kanmusu：Fubuki"
+kan.1.a.tooltip:0 "Add governer Fubuki"
+kan.1.b:0 "Initial Kanmusu：Murakumo"
+kan.1.b.tooltip:0 "Add governer Murakumo"
+kan.1.c:0 "Initial Kanmusu：Inazuma"
+kan.1.c.tooltip:0 "Add governer Inazuma"
+kan.1.d:0 "Initial Kanmusu：Sazanami"
+kan.1.d.tooltip:0 "Add governer Sazanami"
+kan.1.e:0 "Initial Kanmusu：Samidare"
+kan.1.e.tooltip:0 "Add governer Samidare"
+kan.1.f:0 "Initial Kanmusu：Gotland（Strange, isn't Gotland the initial kanmusu?）"
+kan.1.f.tooltip:0 "Add governer Gotland"
+
+#区划
+district_kancolle_kanmusu_city:0 "Kanmusu dormitory area"
+district_kancolle_kanmusu_city_desc:0 "High-rise buildings one after another, high-end bathhouses and hot springs can be seen everywhere, built in the heavenly accommodation area of ​​the Navy Base."
+district_kancolle_kanmusu_city_plural:"Kanmusu dormitory area"
+mod_planet_district_kancolle_kanmusu_city_build_speed_mult:"Kanmusu dormitory area construction speed"
+
+district_kancolle_kanmusu_research:0 "Navy Base Research Area"
+district_kancolle_kanmusu_research_desc:0 "Towering laboratories are everywhere, and there are facilities that satisfy all scientific research institutes."
+district_kancolle_kanmusu_research_plural:"Navy Base Research Area"
+mod_planet_district_kancolle_kanmusu_research_build_speed_mult:"Navy Base research area construction speed"
+
+district_kancolle_kanmusu_IndustrialArea:0 "Navy Base Industrial Zone"
+district_kancolle_kanmusu_IndustrialArea_desc:0 "Huge factories are everywhere here, and countless fairies and Kanmusu can be seen running around in them."
+district_kancolle_kanmusu_IndustrialArea_plural:"Navy Base Industrial Zone"
+mod_planet_district_kancolle_kanmusu_IndustrialArea_build_speed_mult:"Navy Base industrial area construction speed"
+
+district_kancolle_kanmusu_resource:0 "Navy Base resource area"
+district_kancolle_kanmusu_resource_desc:0 "Countless chemical plants are located here, and the exhaust gas produced will be purified by the graviton reactor, so the environment is unexpectedly good."
+district_kancolle_kanmusu_resource_plural:"Navy Base resource area"
+mod_planet_district_kancolle_kanmusu_resource_build_speed_mult:"Navy Base resource area construction speed"
+
+district_kancolle_kanmusu_soldier:0 "Navy Base Administrative Military District"
+district_kancolle_kanmusu_soldier_desc:0 "The administrative hub area of ​​Navy Base, where a large number of administrative personnel gather, is also the most important military area, which combines military and political affairs."
+district_kancolle_kanmusu_soldier_plural:"Navy Base Administrative Military District"
+mod_planet_district_kancolle_kanmusu_soldier_build_speed_mult:"Navy Base administrative military district construction speed"
+
+#地块
+r_navy_factory:0 "Navy Factory ruins of first season"
+r_navy_factory_desc:0 "Since the opening of the second seaon, the naval factory in the first season has been abandoned, and we seem to be able to reuse it."
+
+d_navy_factory:0 "Navy Factory of first season"
+d_navy_factory_desc:0 "First Season’s naval factory is fully online, let’s produce Kanmusu."
+
+r_united_fleet_dormitory:0 "Overseas kanmusu dormitory decoration"
+r_united_fleet_dormitory_desc:0 "The new overseas kanmusu dormitory is under renovation"
+
+d_united_fleet_dormitory:0 "Overseas Kanmusu dormitory"
+d_united_fleet_dormitory_desc:0 "The exquisite overseas kanmusu dormitory has been officially opened, and Bismarck cordially invited everyone to visit."
+
+r_konishi:0 "Tanaka Mountains"
+r_konishi_desc:0 "Mountains name as producer tenaka, looks very annoying"
+
+d_konishi:0 "Conish Plane"
+d_konishi_desc:0 "To commemorate conish, who was in the dark house of Tanaka, this flattened plain is called the conish Plain."
+
+d_shinkai_center:0 "Abyssal pivot"
+d_shinkai_center_desc:0 "The only pivot left in the Hawaiian Islands, it looks like it can’t move. It is an excellent study of the abyssal material."
+
+d_iron_bottom_sound:0 "Iron Bottom"
+d_iron_bottom_sound_desc:0 "During the fight against Abyssal, the strait that we entered and exited many times had a lot of resources for us to use to build Kanmusu."
+
+d_plant_sutsutsuki:0 "suzutsuki's pumpkin garden and zara's vegatable garden"
+d_plant_sutsutsuki_desc:0 "The only agricultural area in Navy Base, the pumpkins that seem to be planted after genetic modification may actually contain a variety of luxurious dishes."
+
+d_elf_power_station:0 "Fairy Power Station"
+d_elf_power_station_desc:0 "The seemingly high-end power stations are actually countless fairies acting as turbine generators"
+
+d_oriur_sea:0 "Orel Sea"
+d_oriur_sea_desc:0 "The map engraved in DNA, after unifying the world, we found the Eastern Orel Sea again."
+
+d_tanatonium_core:0 "Tanatonium Planet Core"
+d_tanatonium_core_desc:0 "Planting the Tanatonium crystal into the core of the planet, high pressure will rush a large amount of minerals and nutrients to the surface, significantly increasing resource output."
+
+d_big_therm:0 "Giant hot spring"
+d_big_therm_desc:0 "The hot springs of Navy Base, Kanmusu people come here every day to enjoy the bath and relieve the fatigue of the day."
+
+#星球
+pc_kancolle:0 "Navy Base World"
+pc_kancolle_desc:0 "The world surrounded by endless oceans, the difference is that the entire Navy Base city has covered the surface of the planet, with endless possibilities."
+pc_kari:0 "Curry Planet"
+pc_kari_desc:0 "The planets wrapped in Hiei curry often produce natural gas due to the mysterious chemical reaction between the materials in the curry and the planets, and dark matter is occasionally found. I don't know why."
+
+#决议
+decision_kancolle_world:0 "Build Navy Base World"
+decision_kancolle_world_desc:0 "With the application of Tanatonium technology, we will transform our Navy Base, and the entire planet will be surrounded by our Navy Base city."
+decision_kancolle_world_change:0 "Terraform"
+decision_kancolle_world_change_desc:0 "The use of Tanatonium energy makes it possible for us to expand the area of ​​the planet, and we can transform the entire planet into a more advanced planet."
+decision_kancolle_world_change_effects:0 "Terraform planet into Gaia planet with size 25, and add special deposits"
+
+#殖民地类型
+col_kancolle_kanmusu_ciry:0 "Navy Base City"
+col_kancolle_kanmusu_ciry_desc:0 "Building towering, countless bureaucratic and military institutions will be located here."
+
+col_kancolle_kanmusu_industy:0 "Industrial Navy Base"
+col_kancolle_kanmusu_industy_desc:0 "Building towering, countless factories will be located here."
+
+col_kancolle_kanmusu_research:0 "Research Navy Base"
+col_kancolle_kanmusu_research_desc:0 "This planet will lead the scientific research progress of Navy Base, the most important planet under the umbrella of the Navy Base United Academy of Sciences."
+
+col_kancolle_kanmusu_resource:0 "Resource Navy Base"
+col_kancolle_kanmusu_resource_desc:0 "Our rare resources are so scarce, but now it is different. There are countless chemical plants all over the Navy Base, which completely solves the problem of our scarce resource shortage."
+
+col_kancolle_kanmusu_soldier:0 "Executive Navy Base"
+col_kancolle_kanmusu_soldier_desc:0 "The administrative center of Navy Base, this is the location of the most important administrative district and military district of the entire Navy Base."

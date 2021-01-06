@@ -1,0 +1,29 @@
+﻿#资源
+l_english:
+sr_tanatonium:"Tanatonium Crystal"
+sr_tanatonium_desc:0"The core materials for the equipment production of the Fog Fleet can produce various advanced fog weapons, and at the same time can produce a large number of rare resources."
+
+senka:"Points"
+
+#明石商店战果相关事宜
+kancolle_shopping.0.name:0 "Point store reopened"
+kancolle_shopping.0.desc:0 "Ah, admiral, you are finally here. The point store has been reopened. If you have any points, please come and replace them immediately."
+kancolle_shopping.0.a.response:0 "Then I will waiting for you here。"
+kancolle_shopping.0.a:0 "Let's see what weird things the ranking rewards will give。"
+kancolle_senka_shopping_hello1:0 "let me take this job for emergency repairs at the port! I will support Kanmusu who is on the front line!"
+kancolle_senka_shopping_hello2:0 "Welcome to Akashi's point store！"
+kancolle_senka_shopping_hello3:0 "Admiral, please advise!"
+kancolle_shopping.2.name:0 "Akashi's point store"
+kancolle_shopping.2.a:0 "Inquery points"
+kancolle_shopping.2.a.response:0 "You currently has§Y[Root.senka]§! $senka$ There is only one way to get points in the game. After contacting our store, a special star system called Brunei Borough will be opened near your capital. The Abyssal fleet will be refreshed every year in this star system, to defeat these abyssal fleets, you can get points!"
+kancolle_shopping.2.b:0 "Enter point exchange interface"
+kancolle_senka_shopping_exit:0 "Leave Akashi store"
+kancolle_shopping.3.desc:0 "Welcome to the point exchange area of the Akashi Store！There are 4 ways to exchange point，If you don’t go to Brunei Port to destroy the deep sea fleet, you will not get the chance to redeem points. By the way, even if you get enough points, there will probably be nothing in the lottery, and there probably may even to deduct your points."
+kancolle_shopping.3.a:0 "Rank 3（Small chance to get technology）"
+kancolle_shopping.3.b:0 "Rank 2（Medium chance to get technology）"
+kancolle_shopping.3.c:0 "Rank 1（Big chance to get technology）"
+kancolle_shopping.3.d:0 "Joint（Most chance to get technology）"
+kancolle_senka_shopping_return_to_main:0 "Back to main menu of Akashi Store"
+kancolle_shopping.4.name:0 "Brunei Port opened"
+kancolle_shopping.4.desc:0 "With the opening of the point store, we need a place to obtain points. A star system similar to that of Brunei Borough was discovered near our home planet. According to observations, there seems to be a lot of resentment. Maybe we can meet the Abyssal fleet there?"
+kancolle_shopping.4.a:0 "Then let's see what's in there"

@@ -1,0 +1,33 @@
+﻿#起源
+l_simp_chinese:
+origin_kancolle:0 "舰娘起源"
+origin_kancolle_desc:0 "公元2199年，随着星球上最后一个中枢栖姬被摧毁，过去舰娘们因为沉没的怨念而形成的深海栖舰彻底从这颗星球上失去了踪迹，根据多年对深海栖舰技术的研究，镇守府在多年的对抗深海中逐渐成为了一个超越国家的组织的存在，随着对太空技术的研发，镇守府掌控了这颗星球的实权，现在，镇守府将向太空进发。在拂晓的水平线上刻下胜利吧！"
+civic_tooltip_kancolle_effects:0 "开局获得30万资源储备。"
+origin_kancolle_fallen_empire:0 "堕落舰娘"
+origin_kancolle_fallen_empire_desc:0 "上一次银河灾难中存活下来的舰娘们，拥有一般文明无法想象和理解的高科技。"
+origin_kancolle_fallen_effect:0 ""
+
+#法令
+edict_kancolle_colony:0 "殖民扩张"
+edict_kancolle_colony_desc:0 "步入星空之后，原有的母星已经无法承受我们的发展，我们必须将更多的人口移往新的殖民地。"
+edict_kancolle_ship_damage:0 "反物质一式彻甲弹改"
+edict_kancolle_ship_damage_desc:0 "将塔纳特妮姆水晶作为主要材料制造成的强大撤甲弹，显著提升了我们舰队的战斗力"
+edict_kancolle_resource:0 "能源优化"
+edict_kancolle_resource_desc:0 "塔纳特妮姆水晶将应用在基础能源产出上。"
+edict_kancolle_remove_alien:0 "移除外星人"
+edict_kancolle_remove_alien_desc:0 "make kancolle great again!今天我们就是狂暴穆C林！remove 舰like类game,kancolle strong!"
+
+#政策
+policy_kancolle_economy_policy:0 "镇守府经济状态"
+policy_kancolle_economy_policy_desc:0 "不同的经济政策带来不同的效果"
+kancolle_planned_economy:0 "计划经济"
+kancolle_planned_economy_desc:0 "甘古特领导的经济体制，运用庞大的数学模型计算整个镇守府的经济走向，失业舰娘将全部调往新工作地工作，企业全部由镇守府官方进行运营，其余舰娘一律不允许经商！"
+kancolle_normal_economy:0 "镇守府经济"
+kancolle_normal_economy_desc:0 "镇守府最平常的经济体制，集体散漫而自由。"
+kancolle_market_economy:0 "市场经济"
+kancolle_market_economy_desc:0 "衣阿华领导的经济体制，自由的市场经济加快了消费品的产出和科研的研究，但也增加了无谓的浪费。"
+kancolle_war_time_economy:0 "战时经济"
+kancolle_war_time_economy_desc:0 "一套为了战争而准备的经济体系，一切以军事生产和维护为主。"
+
+#船模
+United_fleet:0 "联合舰队"

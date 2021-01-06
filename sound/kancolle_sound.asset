@@ -1,0 +1,11 @@
+sound = {
+	name = "event_kancolle_Ceddin_Deden"
+	file = "event/event_kancolle_Ceddin_Deden.wav"
+	volume = 0.5
+}
+
+sound = {
+	name = "event_kancolle_yukikaze_kiseki"
+	file = "event/event_kancolle_yukikaze_kiseki.wav"
+	volume = 0.5
+}

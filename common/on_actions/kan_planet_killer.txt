@@ -1,0 +1,5 @@
+on_destroy_planet_with_PLANET_KILLER_KARI = {
+	events = {
+		kantaicollection.6
+	}
+}

@@ -1,0 +1,42 @@
+﻿#领袖天赋
+l_english:
+
+leader_trait_admiral_kanmusu:"Kanmusu"
+leader_trait_admiral_kanmusu_desc:0"Genetic technology makes our Kanmusu more adaptable to space combat"
+leader_trait_admiral_kanmusu1:"Kanmusu"
+leader_trait_admiral_kanmusu1_desc:0"The application of Tanatonium make Kanmusu completely adaptable to space battle"
+leader_trait_admiral_yukikaze:"The Miracle of Yukikaze"
+leader_trait_admiral_yukikaze_desc:0"Because Yukikaze's strong luck，our entire fleet's evasion and retreat chance are increased. As unsinkable ship！"
+
+leader_trait_general_kanmusu:"Kanmusu"
+leader_trait_general_kanmusu_desc:0"Genetic technology makes our Kanmusu more adaptable to plantary combat"
+leader_trait_general_kanmusu1:"Kanmusu"
+leader_trait_general_kanmusu1_desc:0"The teachings of the Soviet Navy and the application of Tanatonium energy make us fully adapted to plantary warfare"
+leader_trait_general_yukikaze:"The Miracle of Yukikaze"
+leader_trait_general_yukikaze_desc:0"Because Yukikaze's strong luck，our entire army's toughness and retreat chance are increased. As unsinkable ship！"
+
+leader_trait_governor_kanmusu:"Kanmusu"
+leader_trait_governor_kanmusu_desc:0"Genetic technology has increased our ability of communication, our administration ability has increased."
+leader_trait_governor_kanmusu1:"Kanmusu"
+leader_trait_governor_kanmusu1_desc:0"The application of Tanatonium will enable the ship-mounted radar range to cover the entire stellar area, greatly improving administrative efficiency。"
+leader_trait_governor_yukikaze:"The Miracle of Yukikaze"
+leader_trait_governor_yukikaze_desc:0"Because Yukikaze's strong luck，our entire system's stability and happiness are increased. As unsinkable ship！"
+
+
+leader_trait_scientist_kanmusu:"Kanmusu"
+leader_trait_scientist_kanmusu_desc:0"Genetic technology makes our brains smarter。"
+leader_trait_scientist_kanmusu1:"Kanmusu"
+leader_trait_scientist_kanmusu1_desc:0"The application of Tanatonium has completely improved our brains and can undertake more research efforts."
+leader_trait_scientist_yukikaze:"The Miracle of Yukikaze"
+leader_trait_scientist_yukikaze_desc:0"Because Yukikaze's strong luck，our can got inexplicable breakthrough sometimes. As unsinkable ship！"
+
+leader_trait_ruler_kanmusu:"Flagship"
+leader_trait_ruler_kanmusu_desc:0"Genetic technology has given our Kanmusu a higher level of credibility."
+leader_trait_ruler_kanmusu1:"Flagship"
+leader_trait_ruler_kanmusu1_desc:0"The application of Tanatonium has completely changed the life of the flagship, and there is more time to improve the guard house."
+
+leader_trait_governor_startship:"Initial Kanmusu"
+leader_trait_governor_startship_desc:0"The initial Kanmusu of Navy Base, your ID1 kanmusu, cherish her."
+
+leader_trait_governor_ywwuyi:"Ywwuyi"
+leader_trait_governor_ywwuyi_desc:0"Ywwuyi of Ywwuyi Ywwuyi of Ywwuyi Ywwuyi of Ywwuyi Ywwuyi of Ywwuyi Ywwuyi of Ywwuyi Ywwuyi of Ywwuyi Ywwuyi of Ywwuyi Ywwuyi of Ywwuyi Ywwuyi of Ywwuyi Ywwuyi of Ywwuyi Ywwuyi of Ywwuyi Ywwuyi of Ywwuyi Ywwuyi of Ywwuyi Ywwuyi of Ywwuyi Ywwuyi of Ywwuyi Ywwuyi of Ywwuyi"

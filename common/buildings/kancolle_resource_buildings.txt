@@ -1,0 +1,84 @@
+################################
+# 行星建筑·资源生产类
+################################
+#塔纳特尼姆合成站
+building_kancolle_tanatonium = {
+	base_buildtime = 360
+	icon = "building_kancolle_tanatonium"
+	
+	category = manufacturing
+	
+	prerequisites = { "tech_kancolle_tanatonium" }
+	
+	planet_modifier = {
+		job_tanatonium_add = 2
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1200
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+	
+	triggered_desc = {	#自定义描述文本
+		text = job_tanatonium_effect_desc
+	}
+}
+#重力子反应堆
+building_kancolle_zhonglizi = {
+	base_buildtime = 300
+	icon = "building_kancolle_zhonglizi"
+	
+	category = manufacturing
+	
+	prerequisites = { "tech_kancolle_zhonglizi" }
+	
+	planet_modifier = {
+		job_zhonglizi_add = 2
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 600
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	
+	triggered_desc = {	#自定义描述文本
+		text = job_zhonglizi_effect_desc
+	}
+}
+#塔纳特妮姆反应堆
+building_kancolle_fanyingdui = {
+	base_buildtime = 300
+	icon = "building_kancolle_fanyingdui"
+	
+	category = manufacturing
+	
+	prerequisites = { "tech_kancolle_tanatonium" }
+	
+	planet_modifier = {
+		job_fanyingdui_add = 2
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 2000
+		}
+		upkeep = {
+			energy = 10
+		}
+	}
+	
+	triggered_desc = {	#自定义描述文本
+		text = job_fanyingdui_effect_desc
+	}
+}

@@ -1,0 +1,135 @@
+#克莱因力场护盾
+component_set = {
+	key = "KLEIN_FIELD_SHIELD"
+
+	icon = "GFX_tech_klein"
+	icon_frame = 1
+}
+
+#矢量推进器
+component_set = {
+	key = "VECTOR_THRUSTER"
+
+	icon = "GFX_tech_vector_thruster"
+	icon_frame = 1
+}
+
+#重力子引擎
+component_set = {
+	key = "FTL_KANCOLLE"
+
+	icon = "GFX_tech_ftl_kancolle"
+	icon_frame = 1
+}
+
+#海雾反应堆
+component_set = {
+	key = "tech_shinkai_processor"
+
+	icon = "GFX_tech_shinkai_processor"
+	icon_frame = 1
+}
+
+#超重力炮
+component_set = {
+	key = "Hypergravity_gun"
+
+	icon = "GFX_tech_Hypergravity_gun"
+	icon_frame = 1
+}
+
+#侵蚀鱼雷
+component_set = {
+	key = "Erosion_torpedo"
+
+	icon = "GFX_tech_Erosion_torpedo"
+	icon_frame = 1
+}
+
+#一级改造舰装
+component_set = {
+	key = "first_navy_gun"
+
+	icon = "GFX_105mm_gun"
+	icon_frame = 1
+}
+
+#二级改造舰装
+component_set = {
+	key = "second_navy_gun"
+
+	icon = "GFX_80mm_gun"
+	icon_frame = 1
+}
+
+#三级改造舰装
+component_set = {
+	key = "third_navy_gun"
+
+	icon = "GFX_80mmkai_gun"
+	icon_frame = 1
+}
+
+#四级改造舰装
+component_set = {
+	key = "fourth_navy_gun"
+
+	icon = "GFX_100mm_gun"
+	icon_frame = 1
+}
+
+#五级改造舰装
+component_set = {
+	key = "fifth_navy_gun"
+
+	icon = "GFX_100mmkai_gun"
+	icon_frame = 1
+}
+
+#35.6cm波动连装炮改二
+component_set = {
+	key = "356_gun"
+
+	icon = "GFX_356mm_kaini"
+	icon_frame = 1
+}
+
+#41cm波动连装炮改二
+component_set = {
+	key = "410_gun"
+
+	icon = "GFX_410_kaini"
+	icon_frame = 1
+}
+
+#46cm波动连装炮改
+component_set = {
+	key = "460_gun"
+
+	icon = "GFX_460_kai"
+	icon_frame = 1
+}
+
+#16inch三连装空间碎裂炮mk.7+GFCS
+component_set = {
+	key = "406_gun"
+
+	icon = "GFX_mk7_gfcs"
+	icon_frame = 1
+}
+
+#点防波动炮
+component_set = {
+	key = "kancolle_point_defence"
+
+	icon = "GFX_bofors_gun"
+	icon_frame = 1
+}
+
+#咖喱炮
+component_set = {
+	key = "kancolle_kari_gun"
+
+	icon = "GFX_kari_gun"
+	icon_frame = 1
+}

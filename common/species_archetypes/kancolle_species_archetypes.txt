@@ -1,0 +1,5 @@
+KANMUSU = {
+	species_trait_points = 3
+	species_max_traits = 8
+}
+

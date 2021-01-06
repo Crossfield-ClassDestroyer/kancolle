@@ -1,0 +1,65 @@
+﻿l_default:
+####################################名字汉化
+Fubuki:"Fubuki"
+Murakumo:"Murakumo"
+Sazanami:"Sazanami"
+Inazuma:"Inazuma"
+Samidare:"Samidare"
+Gotland:"Gotland"
+Yukikaze:"Yukikaze"
+
+
+#舰船设计
+NAME_shinkai_Destroyer:0 "Expulsion of grade I late type elite"
+NAME_shinkai_Cruiser:0 "TSU level elite"
+NAME_shinkai_battleship:0 "TA class flagship"
+NAME_Hiei:0 "hiei"
+NAME_musashi:0 "musashi"
+NAME_colorado:0 "colorado"
+NAME_sado:0 "sado"
+NAME_kokutai:0 "Base aviation team"
+NAME_kamoyi:0 "kamoi"
+
+#舰队名称
+NAME_senkai_remnant_fleet1:0 "The enemy's trade sabotage invaded the fleet"
+NAME_senkai_remnant_fleet2:0 "Enemy trade sabotage invades high-speed mobile troops"
+NAME_senkai_remnant_fleet3:0 "Deep sea diving fleet group II"
+NAME_senkai_remnant_fleet4:0 "Deep sea diving fleet group III"
+NAME_senkai_remnant_fleet5:0 "Enemy sentry troops"
+NAME_senkai_remnant_fleet6:0 "Deep sea diving fleet group I"
+NAME_senkai_remnant_fleet7:0 "Flagship team of deep sea diving fleet group"
+NAME_KC_FE_CAPITAL_FLEET:"Combined fleet"
+NAME_KC_FE_COLONY_FLEET:"Ozawa mobile force"
+
+#国家
+NAME_senka_shop: "Akashi shop"
+NAME_yukikaze: "Yukikaze"
+NAME_kc_fallen_empire:"Lunar night horizon"
+
+#星系名称
+NAME_kc_fallen_empire_capital:"Lania Kea"
+NAME_kc_fe_star:"Lania Kea"
+NAME_kc_fe_ring1:"muteki"
+NAME_kc_fe_ring2:""
+NAME_kc_fe_ring3:""
+NAME_kc_fe_ring4:"frog"
+NAME_kc_fe_ring5:"" 
+NAME_kc_fe_ring6:"" 
+NAME_kc_fe_ring7:"keynon"
+NAME_kc_fe_ring8:""
+NAME_kc_fe_ring9:""
+NAME_kc_fe_ring10:"Salted fish"
+NAME_kc_fe_ring11:""
+NAME_kc_fe_ring12:""
+NAME_kc_fallen_empire_colony_1:"Tales of The Eternia"
+NAME_kc_fe_colony1:"saka"
+NAME_kc_fallen_empire_colony_2:"Dream beauty"
+NAME_kc_fe_colony2:"yuta"
+NAME_kc_fallen_empire_colony_3:"Wind flame"
+NAME_kc_fallen_empire_colony_4:"The soul of steel"
+NAME_kc_fallen_empire_star_A:"Apate"
+NAME_kc_fallen_empire_star_B:"Xianglin sister 8cm"
+
+#领导人
+PRESCRIPTED_ruler_title_kc_fe:0 "The world's first killer"
+PRESCRIPTED_ruler_name_kc_fe:"muteki"
